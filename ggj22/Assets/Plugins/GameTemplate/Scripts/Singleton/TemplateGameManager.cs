@@ -70,7 +70,7 @@ public class TemplateGameManager : Singleton<TemplateGameManager> {
 	[Header("Help"), Space]
 	[Tooltip("Inclusive minimum value")] public int minHelpLevel = 0;
 	[Tooltip("Inclusive maximum value")] public int maxHelpLevel = 2;
-	[Tooltip("")] public int startHelpLevel = 2;
+	[Tooltip("")] public int startHelpLevel = 1;
 
 	[Header("Resources"), Space]
 	[SerializeField] int[] startResources;
@@ -139,7 +139,7 @@ public class TemplateGameManager : Singleton<TemplateGameManager> {
 
 			//TODO: save this on exit and load on enter
 			//TODO: use this for each save
-			helpLevelMode = startHelpLevel;
+			HelpLevelMode = startHelpLevel;
 
 			//TODO: save this on exit and load on enter
 			//TODO: use this for each save
