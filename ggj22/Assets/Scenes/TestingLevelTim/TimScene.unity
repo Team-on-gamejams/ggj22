@@ -319,33 +319,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111292640}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &111980914 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8508864386392253329, guid: 545ed84c26d8e094f95669104388d42c,
-    type: 3}
-  m_PrefabInstance: {fileID: 5440287780571413248}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &111980921 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8508864386392253335, guid: 545ed84c26d8e094f95669104388d42c,
-    type: 3}
-  m_PrefabInstance: {fileID: 5440287780571413248}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &111980922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 111980914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d474e5a602663604da61f7c38873041a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapons:
-  - {fileID: 1550822126}
-  - {fileID: 1522125410}
 --- !u!1 &165438873
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,51 +703,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &482831335
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 482831336}
-  - component: {fileID: 482831337}
-  m_Layer: 8
-  m_Name: MeleeAttackbox
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &482831336
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482831335}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.8264, z: 0.6662}
-  m_LocalScale: {x: 1.1975, y: 1.6833487, z: 1.0523143}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1550822125}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &482831337
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482831335}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &494881955
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,7 +792,7 @@ GameObject:
   - component: {fileID: 533079746}
   - component: {fileID: 533079745}
   m_Layer: 5
-  m_Name: HPText_001
+  m_Name: Help Not Implemented
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1192,67 +1120,6 @@ Transform:
   m_Father: {fileID: 514676808}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &953835820
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 953835821}
-  - component: {fileID: 953835822}
-  - component: {fileID: 953835823}
-  m_Layer: 7
-  m_Name: Hitbox
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &953835821
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953835820}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.912, z: 0}
-  m_LocalScale: {x: 0.5811949, y: 1.7729182, z: 0.3107}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 111980921}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &953835822
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953835820}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &953835823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953835820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7acc99991c3d9224eb9abd6dc11a9e23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: {fileID: 505188822}
-  isOverrideArmorType: 0
-  armorTypeOverride: 0
 --- !u!1 &985503203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1521,36 +1388,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427959220}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1522125410 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1522125410, guid: 545ed84c26d8e094f95669104388d42c,
-    type: 3}
-  m_PrefabInstance: {fileID: 5440287780571413248}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbe7cfa1e10682048ba5fcbff61ee613, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1550822125 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1550822125, guid: 545ed84c26d8e094f95669104388d42c,
-    type: 3}
-  m_PrefabInstance: {fileID: 5440287780571413248}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1550822126 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1550822126, guid: 545ed84c26d8e094f95669104388d42c,
-    type: 3}
-  m_PrefabInstance: {fileID: 5440287780571413248}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b96924ed3ccbb364ab00f78242044fdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1597222550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2698,26 +2535,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 3808872186215330916, guid: ff37cd42dac93db41b102d51d5c289a9,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3808872186215330916, guid: ff37cd42dac93db41b102d51d5c289a9,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6736550608379272070, guid: ff37cd42dac93db41b102d51d5c289a9,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6736550608379272070, guid: ff37cd42dac93db41b102d51d5c289a9,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff37cd42dac93db41b102d51d5c289a9, type: 3}
 --- !u!1001 &2739339818904750673
@@ -2801,7 +2618,7 @@ GameObject:
   - component: {fileID: 8420599265185173924}
   - component: {fileID: 7961444096654766440}
   m_Layer: 5
-  m_Name: HPText
+  m_Name: Help Used
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2861,7 +2678,7 @@ GameObject:
   - component: {fileID: 4902981107489081148}
   - component: {fileID: 4902981107489081145}
   m_Layer: 5
-  m_Name: HealthWorldCanvas_001
+  m_Name: HelpTexts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2882,42 +2699,6 @@ PrefabInstance:
       propertyPath: m_UIInputModule
       value: 
       objectReference: {fileID: 1409994936}
-    - target: {fileID: 1522125410, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
-      propertyPath: fraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1522125410, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
-      propertyPath: endingTime
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1522125410, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
-      propertyPath: damage.fraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1550822126, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
-      propertyPath: fraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1550822126, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
-      propertyPath: cooldownTime
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1550822126, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
-      propertyPath: attackCollider
-      value: 
-      objectReference: {fileID: 482831337}
-    - target: {fileID: 1550822126, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
-      propertyPath: damage.fraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1550822126, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
-      propertyPath: attackTriggerName
-      value: IsPunch
-      objectReference: {fileID: 0}
-    - target: {fileID: 1550822126, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
-      propertyPath: attackAnimationName
-      value: Punching
-      objectReference: {fileID: 0}
     - target: {fileID: 5440287780133923540, guid: 545ed84c26d8e094f95669104388d42c,
         type: 3}
       propertyPath: m_Name
@@ -2978,16 +2759,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5440287780133923542, guid: 545ed84c26d8e094f95669104388d42c,
-        type: 3}
-      propertyPath: fraction
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5440287780133923542, guid: 545ed84c26d8e094f95669104388d42c,
-        type: 3}
-      propertyPath: armor.fraction
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
 --- !u!224 &5724661166137897759
@@ -3039,7 +2810,7 @@ MonoBehaviour:
     RMB
     / RB - attack 2
 
-    Shift / LT - toggle run
+    CTRLf / LT - toggle run
 
 '
   m_isRightToLeft: 0
@@ -3068,7 +2839,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64
+  m_fontSize: 62.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
