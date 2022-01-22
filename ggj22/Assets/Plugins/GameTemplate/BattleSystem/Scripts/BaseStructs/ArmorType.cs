@@ -5,6 +5,8 @@ using UnityEngine;
 namespace BattleSystem
 {
 	public enum ArmorType : byte {
-		None,
+		NormalArmor,
+		WeakSpotArmor,
+		ArmoredArmor,
 	}
 }

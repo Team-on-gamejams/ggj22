@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BattleSystem
-{
+namespace BattleSystem.Health.UI {
 	[RequireComponent(typeof(Health))]
-    public class HealthFloatingText : MonoBehaviour
-    {
+	public class HealthFloatingText : MonoBehaviour {
 		[Header("Refs"), Space]
 		[SerializeField] Health health;
 		[SerializeField] Transform textAnchor;

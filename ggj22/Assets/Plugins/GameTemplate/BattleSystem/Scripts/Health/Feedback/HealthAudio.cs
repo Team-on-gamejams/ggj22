@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BattleSystem
-{
+namespace BattleSystem.Health.Feedback {
 	[RequireComponent(typeof(Health))]
-	public class HealthAudio : MonoBehaviour
-    {
+	public class HealthAudio : MonoBehaviour {
 		[Header("Audio"), Space]
 		[SerializeField] AudioClip onGetHealClip;
 		[SerializeField] AudioClip onGetDamageClip;
@@ -22,16 +20,16 @@ namespace BattleSystem
 #endif
 
 		private void OnEnable() {
-			if(onGetHealClip || onGetDamageClip)
+			if (onGetHealClip || onGetDamageClip)
 				health.onGetDamage += OnGetDamage;
-			if(onDieClip)
+			if (onDieClip)
 				health.onDie += OnDie;
 		}
 
 		private void OnDisable() {
-			if(onGetHealClip || onGetDamageClip)
+			if (onGetHealClip || onGetDamageClip)
 				health.onGetDamage -= OnGetDamage;
-			if(onDieClip)
+			if (onDieClip)
 				health.onDie -= OnDie;
 		}
 
@@ -39,7 +37,7 @@ namespace BattleSystem
 			if (data.isDie)
 				return;
 
-			if(data.recievedDamage > 0) {
+			if (data.recievedDamage > 0) {
 				if (onGetHealClip)
 					AudioManager.Instance.Play3D(onGetHealClip, transform);
 			}

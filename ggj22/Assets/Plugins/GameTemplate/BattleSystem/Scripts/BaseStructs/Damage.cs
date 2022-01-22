@@ -17,7 +17,7 @@ namespace BattleSystem {
 			float totalDamage = baseDamage;
 
 			switch (type) {
-				case DamageType.Heal:
+				case DamageType.HealDamage:
 					break;
 				default:
 					totalDamage = -totalDamage;

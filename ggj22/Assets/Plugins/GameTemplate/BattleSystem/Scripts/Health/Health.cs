@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
 
-namespace BattleSystem {
+namespace BattleSystem.Health {
 	public class Health : MonoBehaviour {
 		public event Action<HealthCallbackData> onGetDamage;
 		public event Action onDie;
@@ -27,6 +27,21 @@ namespace BattleSystem {
 		[Header("Refs"), Space]
 		[SerializeField] GameObject destroyOnDie;
 
+#if UNITY_EDITOR
+		private void Reset() {
+			destroyOnDie = gameObject;
+
+			armor = new Armor() {
+				type = armor.type,
+				baseArmor = armor.baseArmor,
+				armorMods = new SerializedDictionary<DamageType, float>() {
+					{ DamageType.NormalDamage, 1.0f },
+					{ DamageType.HealDamage, 0.0f },
+				}
+			};
+		}
+#endif
+
 
 		private void Start() {
 			ReInitHealth(maxHealth, maxHealth);
@@ -41,11 +56,10 @@ namespace BattleSystem {
 			if (Input.GetKeyDown(KeyCode.T)) {
 				GetDamage(new Damage() { 
 					baseDamage = 10,
-					type = DamageType.Heal,
+					type = DamageType.HealDamage,
 				});
 			}
 		}
-
 		public void GetDamage(Damage damageStruct) {
 			if (IsDead)
 				return;
@@ -54,7 +68,7 @@ namespace BattleSystem {
 			bool isLastChance = false;
 
 			switch (damageStruct.type) {
-				case DamageType.Heal:
+				case DamageType.HealDamage:
 					damage = Heal(damageStruct);
 					break;
 

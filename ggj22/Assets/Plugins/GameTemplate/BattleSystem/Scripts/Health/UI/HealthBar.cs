@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-namespace BattleSystem {
+namespace BattleSystem.Health.UI {
 	public class HealthBar : MonoBehaviour {
 		[Header("UI")]
 		[SerializeField] Slider firstSlider;

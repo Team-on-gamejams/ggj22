@@ -4,16 +4,16 @@ using UnityEngine;
 
 namespace BattleSystem {
 	public enum DamageType : byte {
-		None,
-		Heal,
+		NormalDamage,
+		HealDamage,
 	}
 
 	public static class DamageTypeExtensions {
 		public static Color ToColor(this DamageType type) {
 			switch (type) {
-				case DamageType.None:
+				case DamageType.NormalDamage:
 					return Color.grey;
-				case DamageType.Heal:
+				case DamageType.HealDamage:
 					return Color.green;
 				default:
 					return Color.white;
