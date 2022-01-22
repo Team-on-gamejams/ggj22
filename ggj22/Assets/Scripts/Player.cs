@@ -114,6 +114,9 @@ public class Player : MonoBehaviour {
 
 	void ProcessAttacks(int id) {
 		if (attacksDown[id]) {
+			thirdPersonController.Strafe(true);
+			thirdPersonController.Sprint(false);
+
 			for (int i = 0; i < attacks.Length; ++i) {
 				if (i != id && attacks[i].IsAttacking()) {
 					if (attacks[i].IsCanInterruptAttack()) {
@@ -166,6 +169,7 @@ public class Player : MonoBehaviour {
 			}
 			else {
 				attacks[id].OnInputActionUp();
+				thirdPersonController.Strafe(false);
 			}
 		}
 
