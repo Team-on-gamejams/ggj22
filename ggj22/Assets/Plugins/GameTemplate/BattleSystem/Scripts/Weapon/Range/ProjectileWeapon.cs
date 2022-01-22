@@ -6,12 +6,15 @@ using BattleSystem.Weapons.Range.Projectiles;
 
 namespace BattleSystem.Weapons.Range { 
 	public class ProjectileWeapon : BaseWeapon {
+		Transform spawnPos => projectilesSpawnPos[spawnPosId];
+
 		[Header("Values"), Space]
 		[SerializeField] ProjectileValues projectileValues = new ProjectileValues(20, 50);
 
 		[Header("Refs"), Space]
-		[SerializeField] Transform projectileSpawnPos;
+		[SerializeField] Transform[] projectilesSpawnPos;
 		[SerializeField] Transform aimTo;
+		int spawnPosId = 0;
 
 		[Header("Prefabs"), Space]
 		[SerializeField] GameObject projectilePrefab;
@@ -20,15 +23,18 @@ namespace BattleSystem.Weapons.Range {
 		BaseProjectile baseProjectile;
 
 		private void Awake() {
-			if (!projectileSpawnPos)
-				projectileSpawnPos = transform;
+			if (projectilesSpawnPos == null || projectilesSpawnPos.Length == 0) {
+				projectilesSpawnPos = new Transform[] { transform };
+			}
 		}
 
 		protected override void StartAttack() {
-			projectile = Instantiate(projectilePrefab, projectileSpawnPos.position, projectileSpawnPos.rotation);
+			projectile = Instantiate(projectilePrefab, spawnPos.position, spawnPos.rotation);
 			baseProjectile = projectile.GetComponent<BaseProjectile>();
 
 			baseProjectile.Init(damage, projectileValues);
+
+			spawnPosId = (int)Mathf.Repeat(spawnPosId + 1, projectilesSpawnPos.Length);
 		}
 
 		protected override void DoAttack() {

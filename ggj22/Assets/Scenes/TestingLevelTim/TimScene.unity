@@ -1321,6 +1321,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2404650105772879594}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1373661595 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8508864386345676702, guid: 545ed84c26d8e094f95669104388d42c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5440287780571413248}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1409994936 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5363235051881476837, guid: 14b6d67c72c68224c8fa3228bf8283b4,
@@ -2191,6 +2197,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013547438}
   m_CullTransparentMesh: 1
+--- !u!4 &2036980245 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8508864386909076041, guid: 545ed84c26d8e094f95669104388d42c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5440287780571413248}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2037791196
 GameObject:
   m_ObjectHideFlags: 0
@@ -3083,11 +3095,31 @@ PrefabInstance:
       objectReference: {fileID: 367868156}
     - target: {fileID: 1522125410, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
       propertyPath: cooldownTime
-      value: 0.05
+      value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1522125410, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
+      propertyPath: damage.baseDamage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522125410, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
+      propertyPath: projectilesSpawnPos.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522125410, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
+      propertyPath: projectilesSpawnPos.Array.data[0]
+      value: 
+      objectReference: {fileID: 2036980245}
+    - target: {fileID: 1522125410, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
+      propertyPath: projectilesSpawnPos.Array.data[1]
+      value: 
+      objectReference: {fileID: 1373661595}
     - target: {fileID: 1550822126, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
       propertyPath: cooldownTime
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1550822126, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
+      propertyPath: damage.baseDamage
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5440287780133923540, guid: 545ed84c26d8e094f95669104388d42c,
         type: 3}
