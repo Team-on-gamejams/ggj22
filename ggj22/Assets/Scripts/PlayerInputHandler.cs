@@ -45,14 +45,14 @@ public class PlayerInputHandler : MonoBehaviour {
 		if (input.started)
 			attackButtonDown?.Invoke(0);
 		else if (input.canceled)
-			attackButtonDown?.Invoke(0);
+			attackButtonUp?.Invoke(0);
 	}
 
 	public void OnAttack2(InputAction.CallbackContext input) {
 		if (input.started)
 			attackButtonDown?.Invoke(1);
 		else if (input.canceled)
-			attackButtonDown?.Invoke(1);
+			attackButtonUp?.Invoke(1);
 	}
 
 	public void OnSpell1(InputAction.CallbackContext input) {

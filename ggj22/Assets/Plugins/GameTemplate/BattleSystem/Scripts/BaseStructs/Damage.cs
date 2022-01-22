@@ -6,14 +6,16 @@ using UnityEngine;
 namespace BattleSystem {
 	[Serializable]
 	public struct Damage {
+		public Fraction fraction;
 		public DamageType type;
 		public int baseDamage;
 		[Space]
 		public bool isIgnoreArmor;
+		public bool isFriendlyFire;
 		[Space]
 		public SerializedDictionary<ArmorType, float> damageMods;
 
-		public int GetDamage(Armor armor) {
+		public int GetDamage(Armor armor, ArmorType armorType) {
 			float totalDamage = baseDamage;
 
 			switch (type) {
@@ -24,8 +26,8 @@ namespace BattleSystem {
 					break;
 			}
 
-			if(damageMods != null && damageMods.ContainsKey(armor.type))
-				totalDamage *= damageMods[armor.type];
+			if(damageMods != null && damageMods.ContainsKey(armorType))
+				totalDamage *= damageMods[armorType];
 
 			if (!isIgnoreArmor) {
 				float reduction = armor.GetReductionForDamage(this);

@@ -10,10 +10,11 @@ namespace BattleSystem.Health {
 		public event Action onDie;
 		public event Action onReInit;
 
-		public bool IsDead { get; private set; } = false;
 
 		public int CurrHealth { get; private set; }
 		public int MaxHealth => maxHealth;
+		public bool IsDead { get; private set; } = false;
+		public Armor Armor => armor;
 
 
 		[Header("Values")]
@@ -47,44 +48,35 @@ namespace BattleSystem.Health {
 			ReInitHealth(maxHealth, maxHealth);
 		}
 
-		private void Update() {
-			if (Input.GetKeyDown(KeyCode.R)) {
-				GetDamage(new Damage() { 
-					baseDamage = 10,
-				});
-			}
-			if (Input.GetKeyDown(KeyCode.T)) {
-				GetDamage(new Damage() { 
-					baseDamage = 10,
-					type = DamageType.HealDamage,
-				});
-			}
-		}
-		public void GetDamage(Damage damageStruct) {
+		public void GetDamage(Damage damageStruct, ArmorType? armorTypeOverride) {
 			if (IsDead)
+				return;
+
+			if (damageStruct.fraction == armor.fraction && damageStruct.type != DamageType.HealDamage && !damageStruct.isFriendlyFire)
 				return;
 
 			int damage = 0;
 			bool isLastChance = false;
+			ArmorType armorType = armorTypeOverride.HasValue ? armorTypeOverride.Value : armor.type;
 
 			switch (damageStruct.type) {
 				case DamageType.HealDamage:
-					damage = Heal(damageStruct);
+					damage = Heal(damageStruct, armorType);
 					break;
 
 				default:
-					damage = GetActualDamage(damageStruct, out isLastChance);
+					damage = GetActualDamage(damageStruct, out isLastChance, armorType);
 					break;
 			}
 
-			onGetDamage?.Invoke(new HealthCallbackData(damageStruct.type, damage, isLastChance, CurrHealth == 0));
+			onGetDamage?.Invoke(new HealthCallbackData(damageStruct.type, armorType, damage, isLastChance, CurrHealth == 0));
 
 			if (CurrHealth == 0)
 				Die();
 		}
 
-		int GetActualDamage(Damage damageStruct, out bool isNeedLastChance) {
-			int damage = damageStruct.GetDamage(armor);
+		int GetActualDamage(Damage damageStruct, out bool isNeedLastChance, ArmorType armorType) {
+			int damage = damageStruct.GetDamage(armor, armorType);
 
 			isNeedLastChance = isHaveLastChance && lastChanceHealth < CurrHealth && CurrHealth + damage <= 0;
 
@@ -98,8 +90,8 @@ namespace BattleSystem.Health {
 			return damage;
 		}
 
-		int Heal(Damage damageStruct) {
-			int heal = damageStruct.GetDamage(armor);
+		int Heal(Damage damageStruct, ArmorType armorType) {
+			int heal = damageStruct.GetDamage(armor, armorType);
 
 			if (CurrHealth + heal > MaxHealth)
 				heal = MaxHealth - CurrHealth;
@@ -127,13 +119,15 @@ namespace BattleSystem.Health {
 		}
 
 		public struct HealthCallbackData {
-			public DamageType type;
+			public DamageType damageType;
+			public ArmorType armorType;
 			public int recievedDamage;
 			public bool isLastChance;
 			public bool isDie;
 
-			public HealthCallbackData(DamageType type, int recievedDamage, bool isLastChance, bool isDie) {
-				this.type = type;
+			public HealthCallbackData(DamageType damageType, ArmorType armorType, int recievedDamage, bool isLastChance, bool isDie) {
+				this.damageType = damageType;
+				this.armorType = armorType;
 				this.recievedDamage = recievedDamage;
 				this.isLastChance = isLastChance;
 				this.isDie = isDie;

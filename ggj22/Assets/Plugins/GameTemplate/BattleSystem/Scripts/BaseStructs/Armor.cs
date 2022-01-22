@@ -6,14 +6,11 @@ using UnityEngine;
 namespace BattleSystem {
 	[Serializable]
 	public struct Armor {
+		public Fraction fraction;
 		public ArmorType type;
 		public int baseArmor;
 		[Space]
 		public SerializedDictionary<DamageType, float> armorMods;
-
-		public int GetDamage(Damage damage) {
-			return damage.GetDamage(this);
-		}
 
 		public float GetReductionForDamage(Damage damage) {
 			float reduction = baseArmor;

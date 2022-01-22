@@ -30,18 +30,32 @@ namespace BattleSystem.Health.UI {
 		}
 
 		void OnGetDamage(Health.HealthCallbackData data) {
-			FloatingText text = Instantiate(floatingTextPrefabForNumbers, textAnchor.position + Vector3.up * (data.isLastChance || data.isDie ? 0.5f : 0f), Quaternion.identity).GetComponent<FloatingText>();
+			int offsets = 0;
 
+			if (data.isLastChance) ++offsets;
+			if (data.isDie) ++offsets;
+			if (data.armorType == ArmorType.ArmoredArmor) ++offsets;
+
+
+			FloatingText text = Instantiate(floatingTextPrefabForNumbers, textAnchor.position + Vector3.up * offsets * 0.3f, Quaternion.identity).GetComponent<FloatingText>();
 			if (data.recievedDamage > 0) {
-				text.Play(data.recievedDamage.ToString(), data.type.ToColor());
+				text.Play(data.recievedDamage.ToString(), data.damageType.ToColor(data.armorType));
 			}
 			else {
-				text.Play(Mathf.Abs(data.recievedDamage).ToString(), data.type.ToColor());
+				text.Play(Mathf.Abs(data.recievedDamage).ToString(), data.damageType.ToColor(data.armorType));
 			}
+			--offsets;
 
 			if (data.isLastChance) {
 				text = Instantiate(floatingTextPrefabForText, textAnchor.position, Quaternion.identity).GetComponent<FloatingText>();
 				text.PlayLocalized("BATTLE_SYSTEM_LAST_CHANCE", Color.red);
+				--offsets;
+			}
+
+			if (data.armorType == ArmorType.ArmoredArmor) {
+				text = Instantiate(floatingTextPrefabForText, textAnchor.position, Quaternion.identity).GetComponent<FloatingText>();
+				text.PlayLocalized("BATTLE_SYSTEM_ARMORED", Color.gray);
+				--offsets;
 			}
 		}
 

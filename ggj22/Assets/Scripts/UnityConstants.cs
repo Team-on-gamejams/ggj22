@@ -72,6 +72,18 @@ namespace UnityConstants
         /// Index of layer 'UI'.
         /// </summary>
         public const int UI = 5;
+        /// <summary>
+        /// Index of layer 'AlwaysOnTopUI'.
+        /// </summary>
+        public const int AlwaysOnTopUI = 6;
+        /// <summary>
+        /// Index of layer 'Hitbox'.
+        /// </summary>
+        public const int Hitbox = 7;
+        /// <summary>
+        /// Index of layer 'Attackbox'.
+        /// </summary>
+        public const int Attackbox = 8;
 
         /// <summary>
         /// Bitmask of layer 'Default'.
@@ -93,6 +105,18 @@ namespace UnityConstants
         /// Bitmask of layer 'UI'.
         /// </summary>
         public const int UIMask = 1 << 5;
+        /// <summary>
+        /// Bitmask of layer 'AlwaysOnTopUI'.
+        /// </summary>
+        public const int AlwaysOnTopUIMask = 1 << 6;
+        /// <summary>
+        /// Bitmask of layer 'Hitbox'.
+        /// </summary>
+        public const int HitboxMask = 1 << 7;
+        /// <summary>
+        /// Bitmask of layer 'Attackbox'.
+        /// </summary>
+        public const int AttackboxMask = 1 << 8;
     }
 
     public static class Scenes
@@ -102,9 +126,9 @@ namespace UnityConstants
         /// </summary>
         public const int MainMenu = 0;
         /// <summary>
-        /// ID of scene 'SampleScene2D'.
+        /// ID of scene 'TimScene'.
         /// </summary>
-        public const int SampleScene2D = 1;
+        public const int TimScene = 1;
     }
 
     public static class Axes
