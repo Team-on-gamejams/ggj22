@@ -66,9 +66,9 @@ namespace BattleSystem.Weapons {
 				if (isDoSingleAttack || isPlayerHoldInput) {
 					state = WeaponState.Starting;
 
-					if (IsAnimator()) {
+					if (IsAnimator())
 						animator.SetTrigger(attackTriggerName);
-					}
+					StartAttack();
 				}
 			}
 
@@ -136,10 +136,15 @@ namespace BattleSystem.Weapons {
 		}
 
 		#region Attack
+		virtual protected void StartAttack() { }
 		abstract protected void DoAttack();
 		#endregion
 
 		#region Scripts interface
+		public bool IsCanAttack() {
+			return state == WeaponState.Ready;
+		}
+
 		public void DoSingleAttack() {
 			timer = 0;
 			isDoSingleAttack = true;

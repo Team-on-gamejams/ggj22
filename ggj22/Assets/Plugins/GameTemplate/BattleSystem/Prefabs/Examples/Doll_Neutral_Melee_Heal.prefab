@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8546555252913627977
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2569194771267300098, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2569194771267300098, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069752878171902653, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_Name
+      value: NeutralMeleeHealWeapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069752878171902655, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: damage.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3069752878171902655, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: damage.fraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935446035553526786, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: armor.fraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935446035553526798, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_Name
+      value: Doll_Neutral_Melee_Heal
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935446035553526799, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935446035553526799, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935446035553526799, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935446035553526799, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935446035553526799, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.01736369
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935446035553526799, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935446035553526799, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99984926
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935446035553526799, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935446035553526799, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935446035553526799, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 181.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935446035553526799, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935446037494538535, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c6594c3e724e654b979a4ad2e03cbf9, type: 2}
+    - target: {fileID: 5332614957168329952, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332614957168329952, guid: cdb95d4977c8e714f8c3655a21983aad,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cdb95d4977c8e714f8c3655a21983aad, type: 3}

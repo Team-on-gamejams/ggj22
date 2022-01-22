@@ -25,6 +25,11 @@ public class Player : MonoBehaviour {
 
 	private void Awake() {
 		attacksDown = new bool[attacks.Length];
+		Cursor.lockState = CursorLockMode.Locked;
+	}
+
+	private void OnDestroy() {
+		Cursor.lockState = CursorLockMode.None;
 	}
 
 	private void OnEnable() {
@@ -36,15 +41,15 @@ public class Player : MonoBehaviour {
 	}
 
 	private void Update() {
-		StringBuilder sb = new StringBuilder(32);
+	//	StringBuilder sb = new StringBuilder(32);
 
-		for(int i = 0; i < attacks.Length; ++i) {
-			sb.Append($"{attacksDown[i]}-{attacks[i].IsAttacking()}");
-			if (i != attacks.Length - 1)
-				sb.Append(" | ");
-		}
+	//	for(int i = 0; i < attacks.Length; ++i) {
+	//		sb.Append($"{attacksDown[i]}-{attacks[i].IsAttacking()}");
+	//		if (i != attacks.Length - 1)
+	//			sb.Append(" | ");
+	//	}
 
-		Debug.Log(sb.ToString());
+	//	Debug.Log(sb.ToString());
 	}
 
 	#region Inputs

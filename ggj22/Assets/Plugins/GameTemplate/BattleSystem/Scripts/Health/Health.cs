@@ -48,12 +48,9 @@ namespace BattleSystem.Health {
 			ReInitHealth(maxHealth, maxHealth);
 		}
 
-		public void GetDamage(Damage damageStruct, ArmorType? armorTypeOverride) {
+		public int GetDamage(Damage damageStruct, ArmorType? armorTypeOverride) {
 			if (IsDead)
-				return;
-
-			if (damageStruct.fraction == armor.fraction && damageStruct.type != DamageType.HealDamage && !damageStruct.isFriendlyFire)
-				return;
+				return 0;
 
 			int damage = 0;
 			bool isLastChance = false;
@@ -69,10 +66,15 @@ namespace BattleSystem.Health {
 					break;
 			}
 
+			if (damage == 0)
+				return 0;
+
 			onGetDamage?.Invoke(new HealthCallbackData(damageStruct.type, armorType, damage, isLastChance, CurrHealth == 0));
 
 			if (CurrHealth == 0)
 				Die();
+
+			return damage;
 		}
 
 		int GetActualDamage(Damage damageStruct, out bool isNeedLastChance, ArmorType armorType) {

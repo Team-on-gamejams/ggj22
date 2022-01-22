@@ -16,6 +16,17 @@ namespace BattleSystem {
 		public SerializedDictionary<ArmorType, float> damageMods;
 
 		public int GetDamage(Armor armor, ArmorType armorType) {
+			//Neutral attack/heal everyone
+			if (fraction != Fraction.Neutral) {
+				//Don't damage friends
+				if (type != DamageType.HealDamage && fraction == armor.fraction && !isFriendlyFire)
+					return 0;
+
+				//Don't heal enemies
+				if (type == DamageType.HealDamage && fraction != armor.fraction)
+					return 0;
+			}
+
 			float totalDamage = baseDamage;
 
 			switch (type) {
@@ -32,10 +43,16 @@ namespace BattleSystem {
 			if (!isIgnoreArmor) {
 				float reduction = armor.GetReductionForDamage(this);
 
-				if(totalDamage < 0)
+				if(totalDamage < 0) {
 					totalDamage += reduction;
-				else
+					if (totalDamage > 0)
+						totalDamage = 0;
+				}
+				else {
 					totalDamage -= reduction;
+					if (totalDamage < 0)
+						totalDamage = 0;
+				}
 			}
 
 			return Mathf.RoundToInt(totalDamage);

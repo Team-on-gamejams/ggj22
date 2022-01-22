@@ -8,14 +8,21 @@ namespace BattleSystem.Weapons.Melee {
 		[Header("Refs - melee"), Space]
 		[SerializeField] Collider attackCollider;
 
+		Collider[] colliders = null;
+		List<HealthHitbox> hitboxes = new List<HealthHitbox>(1);
+		HealthHitbox hitbox;
+
+		byte i, j;
+		bool findSame;
+		float dist1;
+		float dist2;
+
 		void Start() {
 			attackCollider.gameObject.SetActive(false);
 		}
 
 		protected override void DoAttack() {
-			Collider[] colliders = null;
-			List<HealthHitbox> hitboxes = new List<HealthHitbox>();
-
+			colliders = null;
 			switch (attackCollider) {
 				case BoxCollider box:
 					colliders = Physics.OverlapBox(
@@ -28,9 +35,16 @@ namespace BattleSystem.Weapons.Melee {
 					break;
 
 				case CapsuleCollider capsule:
+					Debug.LogError($"Not implemented collider type for {gameObject.name}");
 					break;
 
 				case SphereCollider sphere:
+					colliders = Physics.OverlapSphere(
+						attackCollider.transform.position + sphere.center,
+						sphere.radius * attackCollider.transform.lossyScale.x,
+						LayerMask.GetMask("Hitbox"),
+						QueryTriggerInteraction.Collide
+					);
 					break;
 
 				default:
@@ -38,40 +52,44 @@ namespace BattleSystem.Weapons.Melee {
 					return;
 			}
 
-			foreach (var collider in colliders) {
-				HealthHitbox hitbox = collider.GetComponent<HealthHitbox>();
+			if(colliders.Length == 0) {
+				return;
+			}
+			else {
+				hitboxes.Clear();
+			}
+
+			for (i = 0; i < colliders.Length; ++i) {
+				hitbox = colliders[i].GetComponent<HealthHitbox>();
 
 				if (hitbox) {
-					bool findSame = false;
-					float dist1 = -1;
-					float dist2;
+					findSame = false;
+					dist1 = -1;
 
-					foreach (var hitbox2 in hitboxes) {
-						if (hitbox.IsSameParent(hitbox2)) {
+					for (j = 0; j < hitboxes.Count; ++j) {
+						if (hitbox.IsSameParent(hitboxes[j])) {
 							findSame = true;
-							if (dist1 == -1) {
+							if (dist1 == -1)
 								dist1 = (hitbox.transform.position - attackCollider.transform.position).sqrMagnitude;
-							}
-							dist2 = (hitbox2.transform.position - attackCollider.transform.position).sqrMagnitude;
+							dist2 = (hitboxes[j].transform.position - attackCollider.transform.position).sqrMagnitude;
 
 
 							if (dist1 < dist2) {
-								hitboxes.Remove(hitbox2);
+								hitboxes.Remove(hitboxes[j]);
 								hitboxes.Add(hitbox);
 							}
 							break;
 						}
 					}
 
-					if(!findSame)
+					if (!findSame)
 						hitboxes.Add(hitbox);
 				}
 			}
 
-			foreach (var hitbox in hitboxes) {
-				hitbox.GetDamage(damage);
+			for (i = 0; i < hitboxes.Count; ++i) {
+				hitboxes[i].GetDamage(damage);
 			}
-
 		}
 	}
 }
