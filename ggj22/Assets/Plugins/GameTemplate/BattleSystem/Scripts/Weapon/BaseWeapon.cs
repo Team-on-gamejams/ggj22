@@ -119,7 +119,7 @@ namespace BattleSystem.Weapons {
 		}
 
 		public bool IsAttacking() {
-			return state == WeaponState.Starting || state == WeaponState.Performing || state == WeaponState.Ending || state == WeaponState.Ended;
+			return isDoSingleAttack || isPlayerHoldInput;
 		}
 
 		public bool IsCanInterruptAttack() {

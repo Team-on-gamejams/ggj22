@@ -40,18 +40,6 @@ public class Player : MonoBehaviour {
 		UnSubscribeInputs();
 	}
 
-	private void Update() {
-	//	StringBuilder sb = new StringBuilder(32);
-
-	//	for(int i = 0; i < attacks.Length; ++i) {
-	//		sb.Append($"{attacksDown[i]}-{attacks[i].IsAttacking()}");
-	//		if (i != attacks.Length - 1)
-	//			sb.Append(" | ");
-	//	}
-
-	//	Debug.Log(sb.ToString());
-	}
-
 	#region Inputs
 	void SubscribeInputs() {
 		inputs.attackButtonDown += AttackDown;
