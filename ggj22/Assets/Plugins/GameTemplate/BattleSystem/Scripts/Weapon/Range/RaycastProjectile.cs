@@ -21,7 +21,7 @@ namespace BattleSystem.Weapons.Range.Projectiles {
 		float flyedDist;
 
 		private void Awake() {
-			hits = new RaycastHit[1];
+			hits = new RaycastHit[4];
 		}
 
 		private void Update() {

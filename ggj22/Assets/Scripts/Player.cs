@@ -3,6 +3,7 @@ using System.Text;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using BattleSystem.Weapons;
 using Invector.vCharacterController;
 
@@ -11,10 +12,16 @@ public class Player : MonoBehaviour {
 	[SerializeField] BaseWeapon[] attacks;
 	bool[] attacksDown;
 
+	[Header("Refs - Map"), Space]
+	[SerializeField] RenderTexture mapTexture;
+	[SerializeField] RawImage minimapImage;
+	[SerializeField] RawImage mapImage;
+
 	[Header("Refs - general"), Space]
 	[SerializeField] PlayerInputHandler inputs;
 	[SerializeField] vThirdPersonController thirdPersonController;
 	[SerializeField] vThirdPersonCamera camera;
+	[SerializeField] Camera minimapCamera;
 
 
 #if UNITY_EDITOR
@@ -26,6 +33,7 @@ public class Player : MonoBehaviour {
 	private void Awake() {
 		attacksDown = new bool[attacks.Length];
 		Cursor.lockState = CursorLockMode.Locked;
+		ToggleMapToMinimap();
 	}
 
 	private void OnDestroy() {
@@ -93,10 +101,12 @@ public class Player : MonoBehaviour {
 		if (state) {
 			Cursor.lockState = CursorLockMode.None;
 			camera.enabled = false;
+			ToggleMapToBigmap();
 		}
 		else {
 			Cursor.lockState = CursorLockMode.Locked;
 			camera.enabled = true;
+			ToggleMapToMinimap();
 		}
 	}
 
@@ -184,6 +194,26 @@ public class Player : MonoBehaviour {
 				}
 			}
 		}
+	}
+
+	void ToggleMapToMinimap() {
+		minimapImage.gameObject.SetActive(true);
+		mapImage.gameObject.SetActive(false);
+
+		if (minimapCamera.targetTexture != null) 
+			minimapCamera.targetTexture.Release();
+		minimapImage.texture = minimapCamera.targetTexture = new RenderTexture((int)minimapImage.rectTransform.rect.width, (int)minimapImage.rectTransform.rect.height, 24);
+		minimapCamera.orthographicSize = 20;
+	}
+
+	void ToggleMapToBigmap() {
+		minimapImage.gameObject.SetActive(false);
+		mapImage.gameObject.SetActive(true);
+
+		if (minimapCamera.targetTexture != null)
+			minimapCamera.targetTexture.Release();
+		mapImage.texture = minimapCamera.targetTexture = new RenderTexture((int)mapImage.rectTransform.rect.width, (int)mapImage.rectTransform.rect.height, 24);
+		minimapCamera.orthographicSize = 100;
 	}
 	#endregion
 }
