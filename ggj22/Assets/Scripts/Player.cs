@@ -17,7 +17,6 @@ public class Player : MonoBehaviour {
 	[SerializeField] vThirdPersonCamera camera;
 
 
-
 #if UNITY_EDITOR
 	private void Reset() {
 		inputs = GetComponent<PlayerInputHandler>();
@@ -110,7 +109,7 @@ public class Player : MonoBehaviour {
 	}
 
 	void Interact() {
-		Debug.Log($"Interact");
+		PickupSystem.Pickupable.Selected?.Pickup();
 	}
 
 	void ProcessAttacks(int id) {

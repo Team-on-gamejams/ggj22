@@ -16,17 +16,21 @@ namespace BattleSystem.Weapons.Utils
 		float distMin;
 		RaycastHit minHit;
 
+		float maxDist = 50;
+		int layerMask;
+
 		private void Awake() {
 			screenCenter = new Vector2(0.5f, 0.5f);
 			hits = new RaycastHit[8];
+			layerMask = LayerMask.GetMask("Default");
 		}
 
 		private void Update() {
 			ray = TemplateGameManager.Instance.Camera.ViewportPointToRay(screenCenter);
-			len = Physics.RaycastNonAlloc(ray, hits);
+			len = Physics.RaycastNonAlloc(ray, hits, maxDist, layerMask, QueryTriggerInteraction.Ignore);
 
 			if (len == 0) {
-				transform.position = ray.origin + ray.direction * 50;
+				transform.position = ray.origin + ray.direction * maxDist;
 			}
 			else {
 				minHit = hits[0];

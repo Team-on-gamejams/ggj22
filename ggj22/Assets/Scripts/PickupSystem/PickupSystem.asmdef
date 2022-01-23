@@ -1,0 +1,17 @@
+{
+    "name": "PickupSystem",
+    "rootNamespace": "PickupSystem",
+    "references": [
+        "GUID:ae812f69a4e1ac149be22210b081ef2c",
+        "GUID:432b8b1a65d435f458d6969ef99d85e2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
