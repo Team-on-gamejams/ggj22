@@ -53,6 +53,7 @@ namespace BattleSystem.Weapons.Melee {
 			}
 
 			if(colliders.Length == 0) {
+				onMissAttack?.Invoke();
 				return;
 			}
 			else {
@@ -87,8 +88,16 @@ namespace BattleSystem.Weapons.Melee {
 				}
 			}
 
+			int camulatedDamage = 0;
 			for (i = 0; i < hitboxes.Count; ++i) {
-				hitboxes[i].GetDamage(damage);
+				camulatedDamage += Mathf.Abs(hitboxes[i].GetDamage(damage));
+			}
+
+			if(camulatedDamage == 0) {
+				onMissAttack?.Invoke();
+			}
+			else {
+				onHitAttack?.Invoke();
 			}
 		}
 	}

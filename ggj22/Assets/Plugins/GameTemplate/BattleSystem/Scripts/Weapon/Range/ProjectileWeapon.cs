@@ -32,7 +32,7 @@ namespace BattleSystem.Weapons.Range {
 			projectile = Instantiate(projectilePrefab, spawnPos.position, spawnPos.rotation);
 			baseProjectile = projectile.GetComponent<BaseProjectile>();
 
-			baseProjectile.Init(damage, projectileValues);
+			baseProjectile.Init(damage, projectileValues, onHitAttack, onMissAttack);
 
 			spawnPosId = (int)Mathf.Repeat(spawnPosId + 1, projectilesSpawnPos.Length);
 		}

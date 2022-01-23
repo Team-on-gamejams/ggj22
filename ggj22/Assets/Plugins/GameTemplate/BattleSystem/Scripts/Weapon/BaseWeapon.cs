@@ -17,6 +17,9 @@ namespace BattleSystem.Weapons {
 			Cooldown,       // can't be used
 		}
 
+		public event Action onStartAttack;
+		public Action onHitAttack;
+		public Action onMissAttack;
 		public event Action onEndAttack;
 		public event Action<float, float> onCooldownUpdate;
 
@@ -75,6 +78,7 @@ namespace BattleSystem.Weapons {
 					if (IsAnimator())
 						animator.SetTrigger(attackTriggerName);
 					StartAttack();
+					onStartAttack?.Invoke();
 				}
 			}
 

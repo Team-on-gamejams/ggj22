@@ -6,9 +6,9 @@ namespace BattleSystem.Health.Feedback {
 	[RequireComponent(typeof(Health))]
 	public class HealthAudio : MonoBehaviour {
 		[Header("Audio"), Space]
-		[SerializeField] AudioClip onGetHealClip;
-		[SerializeField] AudioClip onGetDamageClip;
-		[SerializeField] AudioClip onDieClip;
+		[SerializeField] AudioClip[] onGetHealClip;
+		[SerializeField] AudioClip[] onGetDamageClip;
+		[SerializeField] AudioClip[] onDieClip;
 
 		[Header("Refs"), Space]
 		[SerializeField] Health health;
@@ -20,16 +20,16 @@ namespace BattleSystem.Health.Feedback {
 #endif
 
 		private void OnEnable() {
-			if (onGetHealClip || onGetDamageClip)
+			if ((onGetHealClip != null && onGetHealClip.Length != 0) || (onGetDamageClip != null && onGetDamageClip.Length != 0))
 				health.onGetDamage += OnGetDamage;
-			if (onDieClip)
+			if (onDieClip != null && onDieClip.Length != 0)
 				health.onDie += OnDie;
 		}
 
 		private void OnDisable() {
-			if (onGetHealClip || onGetDamageClip)
+			if ((onGetHealClip != null && onGetHealClip.Length != 0) || (onGetDamageClip != null && onGetDamageClip.Length != 0))
 				health.onGetDamage -= OnGetDamage;
-			if (onDieClip)
+			if (onDieClip != null && onDieClip.Length != 0)
 				health.onDie -= OnDie;
 		}
 
@@ -38,17 +38,17 @@ namespace BattleSystem.Health.Feedback {
 				return;
 
 			if (data.recievedDamage > 0) {
-				if (onGetHealClip)
-					AudioManager.Instance.Play3D(onGetHealClip, transform);
+				if (onGetHealClip != null && onGetHealClip.Length != 0)
+					AudioManager.Instance.Play3D(onGetHealClip.Random(), transform);
 			}
 			else {
-				if (onGetDamageClip)
-					AudioManager.Instance.Play3D(onGetDamageClip, transform);
+				if (onGetDamageClip != null && onGetDamageClip.Length != 0)
+					AudioManager.Instance.Play3D(onGetDamageClip.Random(), transform);
 			}
 		}
 
 		void OnDie() {
-			AudioManager.Instance.Play3D(onDieClip, transform.position);
+			AudioManager.Instance.Play3D(onDieClip.Random(), transform.position);
 		}
 	}
 }

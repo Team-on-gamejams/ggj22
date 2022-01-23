@@ -55,6 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6672801339411959969}
   - component: {fileID: 6672801339411959970}
+  - component: {fileID: 1962379016}
   m_Layer: 0
   m_Name: PlayerMeleeWeapon
   m_TagString: Untagged
@@ -93,7 +94,7 @@ MonoBehaviour:
   damage:
     fraction: 1
     type: 0
-    baseDamage: 10
+    baseDamage: 20
     isIgnoreArmor: 1
     isFriendlyFire: 0
     damageMods:
@@ -105,11 +106,41 @@ MonoBehaviour:
       - key: 2
         value: 0.5
       error: 0
+  uiData:
+    name: Punch
+    description: 
+    image: {fileID: 21300000, guid: 14aa8b90674d7394d892f44384199070, type: 3}
   animator: {fileID: 0}
   emptyAnimationName: Empty
   attackTriggerName: IsPunch
   layer: 1
-  cooldownTime: 0.1
+  cooldownTime: 0.05
   startingTime: 0
   endingTime: 0
   attackCollider: {fileID: 6672801338345017765}
+--- !u!114 &1962379016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6672801339411959968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a37346caf2a3ca48aac6ad27b0485e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onAttackStart: []
+  onAttackHit:
+  - {fileID: 8300000, guid: f89ec4a6a8612954fa03442cfde07505, type: 3}
+  - {fileID: 8300000, guid: 3c4d73ff22af84348a2031bffcc0d1c2, type: 3}
+  - {fileID: 8300000, guid: 0f699a2898e1de942876208ff5d5ab0e, type: 3}
+  - {fileID: 8300000, guid: 152997775afea084f853ec112fc2e28c, type: 3}
+  - {fileID: 8300000, guid: 0a8e5d5428dfcbf48ba25be0bee8698f, type: 3}
+  onAttackMiss:
+  - {fileID: 8300000, guid: 7d8c998fb8be22f4f91a8485315cec22, type: 3}
+  - {fileID: 8300000, guid: 0f900c44a9cc8354da700e06dd69ea2b, type: 3}
+  - {fileID: 8300000, guid: 3f1d481b08293aa479181e418c5496a0, type: 3}
+  - {fileID: 8300000, guid: ed8f8c35f8b51a14390d65a0b65223b9, type: 3}
+  - {fileID: 8300000, guid: 081acb21e9a3d7340a97b3ac3512100c, type: 3}
+  weapon: {fileID: 6672801339411959970}

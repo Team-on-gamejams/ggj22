@@ -235,9 +235,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d35344e6ad9b944a8189ca718a07890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onGetHealClip: {fileID: 8300000, guid: cd8398fae11f7a642a6b89265538c325, type: 3}
-  onGetDamageClip: {fileID: 8300000, guid: 9b1eff0194c85f24d9a2703592248d88, type: 3}
-  onDieClip: {fileID: 8300000, guid: a513eff9a9f3bac4a9aeba63e00cdae1, type: 3}
+  onGetHealClip: []
+  onGetDamageClip: []
+  onDieClip:
+  - {fileID: 8300000, guid: a513eff9a9f3bac4a9aeba63e00cdae1, type: 3}
   health: {fileID: 5440287780133923542}
 --- !u!114 &5440287780133923543
 MonoBehaviour:
@@ -286,6 +287,7 @@ MonoBehaviour:
   - {fileID: 1522125410}
   inputs: {fileID: 505188825}
   thirdPersonController: {fileID: 8508864386392253333}
+  camera: {fileID: 0}
 --- !u!114 &505188827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1111,12 +1113,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc9b148a2950aaf4cba8422632222c5d, type: 3}
---- !u!4 &8508864386019797784 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4425428723184043026, guid: fc9b148a2950aaf4cba8422632222c5d,
-    type: 3}
-  m_PrefabInstance: {fileID: 5440287781473267466}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8508864386345676702 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4425428722988318868, guid: fc9b148a2950aaf4cba8422632222c5d,
@@ -1199,12 +1195,12 @@ PrefabInstance:
     - target: {fileID: 6672801339411959969, guid: b02a783787d25c74fb23ee5bd263e282,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.684
       objectReference: {fileID: 0}
     - target: {fileID: 6672801339411959969, guid: b02a783787d25c74fb23ee5bd263e282,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: 6672801339411959969, guid: b02a783787d25c74fb23ee5bd263e282,
         type: 3}
@@ -1246,16 +1242,6 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 8508864386392253334}
-    - target: {fileID: 6672801339411959970, guid: b02a783787d25c74fb23ee5bd263e282,
-        type: 3}
-      propertyPath: cooldownTime
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 6672801339411959970, guid: b02a783787d25c74fb23ee5bd263e282,
-        type: 3}
-      propertyPath: damage.baseDamage
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b02a783787d25c74fb23ee5bd263e282, type: 3}
 --- !u!114 &1550822126 stripped
@@ -1282,26 +1268,6 @@ PrefabInstance:
       propertyPath: aimTo
       value: 
       objectReference: {fileID: 367868156}
-    - target: {fileID: 6704240220292044473, guid: 962e9253718ce6b499507b8745991b39,
-        type: 3}
-      propertyPath: cooldownTime
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6704240220292044473, guid: 962e9253718ce6b499507b8745991b39,
-        type: 3}
-      propertyPath: damage.baseDamage
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6704240220292044473, guid: 962e9253718ce6b499507b8745991b39,
-        type: 3}
-      propertyPath: projectileSpawnPos
-      value: 
-      objectReference: {fileID: 8508864386019797784}
-    - target: {fileID: 6704240220292044473, guid: 962e9253718ce6b499507b8745991b39,
-        type: 3}
-      propertyPath: projectilesSpawnPos.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6704240220292044473, guid: 962e9253718ce6b499507b8745991b39,
         type: 3}
       propertyPath: projectilesSpawnPos.Array.data[0]

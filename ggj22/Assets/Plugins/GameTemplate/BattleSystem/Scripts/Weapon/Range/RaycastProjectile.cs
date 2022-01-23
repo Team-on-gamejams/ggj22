@@ -31,11 +31,16 @@ namespace BattleSystem.Weapons.Range.Projectiles {
 
 			isHit = false;
 			RaycastAndCheckHit(LayerMask.GetMask("Hitbox"), QueryTriggerInteraction.Collide);
+			if (isHit) {
+				onHit?.Invoke();
+			}
+
 			if (!isHit)
 				RaycastIsHitAnything(LayerMask.GetMask("Default"), QueryTriggerInteraction.Ignore);
 
 			if (isHit) {
 				Stop();
+				onMiss?.Invoke();
 			}
 			else {
 				transform.position += transform.forward * movePerFrame;
@@ -45,8 +50,8 @@ namespace BattleSystem.Weapons.Range.Projectiles {
 			}
 		}
 
-		public override void Init(Damage _damage, ProjectileWeapon.ProjectileValues projectileValues) {
-			base.Init(_damage, projectileValues);
+		public override void Init(Damage _damage, ProjectileWeapon.ProjectileValues projectileValues, Action _onHit, Action _onMiss) {
+			base.Init(_damage, projectileValues, _onHit, _onMiss);
 			flyedDist = 0;
 			enabled = false;
 		}

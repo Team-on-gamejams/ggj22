@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6704240220292044474}
   - component: {fileID: 6704240220292044473}
+  - component: {fileID: 1522125412}
   m_Layer: 0
   m_Name: PlayerRangeWeapon
   m_TagString: Untagged
@@ -47,7 +48,7 @@ MonoBehaviour:
   damage:
     fraction: 1
     type: 0
-    baseDamage: 10
+    baseDamage: 5
     isIgnoreArmor: 0
     isFriendlyFire: 0
     damageMods:
@@ -59,14 +60,45 @@ MonoBehaviour:
       - key: 2
         value: 0.5
       error: 0
+  uiData:
+    name: gunshot
+    description: 
+    image: {fileID: 21300000, guid: 709360ad86a23ac4d95ed39341d2afb0, type: 3}
   animator: {fileID: 0}
   emptyAnimationName: Empty
   attackTriggerName: 
   layer: 1
-  cooldownTime: 0.5
+  cooldownTime: 0.2
   startingTime: 0
   endingTime: 0
-  speed: 4
-  projectileSpawnPos: {fileID: 0}
+  projectileValues:
+    speed: 20
+    maxFlyLength: 50
+  projectilesSpawnPos:
+  - {fileID: 0}
+  - {fileID: 0}
+  aimTo: {fileID: 0}
   projectilePrefab: {fileID: 5335947245597779792, guid: f69a47525375ce04cab10342f008cb03,
     type: 3}
+--- !u!114 &1522125412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6704240220292044475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a37346caf2a3ca48aac6ad27b0485e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onAttackStart:
+  - {fileID: 8300000, guid: ad2ec94723691614f94d925f9ce55ec3, type: 3}
+  - {fileID: 8300000, guid: aeae15950b32a404383649662086a0b3, type: 3}
+  onAttackHit:
+  - {fileID: 8300000, guid: 618f338bd2e11564a856a8b2a25a0012, type: 3}
+  - {fileID: 8300000, guid: cb9c0e712e0cb76449a75fb9e25665b1, type: 3}
+  - {fileID: 8300000, guid: f2ff8b1f422664a45a19542bfa41dc7c, type: 3}
+  - {fileID: 8300000, guid: b956fb9d361e1bf4493f543fb23f568c, type: 3}
+  onAttackMiss: []
+  weapon: {fileID: 6704240220292044473}

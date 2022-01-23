@@ -26,7 +26,7 @@ namespace BattleSystem.Weapons.Utils
 			len = Physics.RaycastNonAlloc(ray, hits);
 
 			if (len == 0) {
-				transform.position = ray.origin + ray.direction * 10;
+				transform.position = ray.origin + ray.direction * 50;
 			}
 			else {
 				minHit = hits[0];

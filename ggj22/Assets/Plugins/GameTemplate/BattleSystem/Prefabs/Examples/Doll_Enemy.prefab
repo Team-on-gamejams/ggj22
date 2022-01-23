@@ -270,9 +270,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d35344e6ad9b944a8189ca718a07890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onGetHealClip: {fileID: 8300000, guid: 4a45593c9fa33734290c45795c2979ef, type: 3}
-  onGetDamageClip: {fileID: 8300000, guid: 7586b3b6a7496474bbe73c540ffb9266, type: 3}
-  onDieClip: {fileID: 8300000, guid: b8b21f042cf3b0c4e8109366bdbc451a, type: 3}
+  onGetHealClip: []
+  onGetDamageClip: []
+  onDieClip:
+  - {fileID: 8300000, guid: b4e646457cac1b943bf29038cd15e72d, type: 3}
+  - {fileID: 8300000, guid: 980f15e902332174ab3f63177a22218d, type: 3}
   health: {fileID: 4656438191725244963}
 --- !u!114 &4656438191725244973
 MonoBehaviour:
