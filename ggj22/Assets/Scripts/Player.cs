@@ -14,6 +14,7 @@ public class Player : MonoBehaviour {
 	[Header("Refs - general"), Space]
 	[SerializeField] PlayerInputHandler inputs;
 	[SerializeField] vThirdPersonController thirdPersonController;
+	[SerializeField] vThirdPersonCamera camera;
 
 
 
@@ -90,7 +91,14 @@ public class Player : MonoBehaviour {
 	}
 
 	void MapToggle(bool state) {
-		Debug.Log($"map toggle {state}");
+		if (state) {
+			Cursor.lockState = CursorLockMode.None;
+			camera.enabled = false;
+		}
+		else {
+			Cursor.lockState = CursorLockMode.Locked;
+			camera.enabled = true;
+		}
 	}
 
 	void Dodge() {

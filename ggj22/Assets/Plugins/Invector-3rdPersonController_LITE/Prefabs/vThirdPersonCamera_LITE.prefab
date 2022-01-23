@@ -56,7 +56,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.03
-  far clip plane: 15
+  far clip plane: 50
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -200,8 +200,8 @@ MonoBehaviour:
     m_Bits: 1
   lockCamera: 0
   rightOffset: 0
-  defaultDistance: 2.5
-  height: 1.4
+  defaultDistance: 4
+  height: 2.5
   smoothFollow: 10
   xMouseSensitivity: 3
   yMouseSensitivity: 3

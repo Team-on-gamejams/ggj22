@@ -143,7 +143,7 @@ namespace Invector.vCharacterController
         /// </summary>
         protected virtual void JumpInput()
         {
-            if (Input.GetKeyDown(jumpInput) && JumpConditions())
+            if ((Input.GetKeyDown(jumpInput) || (UnityEngine.InputSystem.Gamepad.current?.buttonSouth?.wasPressedThisFrame ?? false)) && JumpConditions())
                 cc.Jump();
         }
 
