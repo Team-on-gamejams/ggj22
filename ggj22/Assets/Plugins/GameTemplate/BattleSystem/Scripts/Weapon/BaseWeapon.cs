@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
 using UnityForge.PropertyDrawers;
+using BattleSystem.Weapons.UI;
 
 namespace BattleSystem.Weapons {
 	abstract public class BaseWeapon : MonoBehaviour {
@@ -17,12 +18,17 @@ namespace BattleSystem.Weapons {
 		}
 
 		public event Action onEndAttack;
+		public event Action<float, float> onCooldownUpdate;
 
 		public float Cooldown => cooldownTime;
+		public WeaponUIData UIData => uiData;
 
 
 		[Header("Values"), Space]
 		[SerializeField] protected Damage damage;
+
+		[Header("Visuals"), Space]
+		[SerializeField] protected WeaponUIData uiData;
 
 		[Header("Animation"), Space]
 		[SerializeField] Animator animator;
@@ -87,6 +93,7 @@ namespace BattleSystem.Weapons {
 			if(state == WeaponState.Performing) {
 				DoAttack();
 				state = WeaponState.Ending;
+				onCooldownUpdate?.Invoke(0, cooldownTime);
 			}
 
 			if (state == WeaponState.Ending) {
@@ -111,9 +118,11 @@ namespace BattleSystem.Weapons {
 				if (timer >= cooldownTime) {
 					timer -= cooldownTime;
 					state = WeaponState.Ready;
+					onCooldownUpdate?.Invoke(cooldownTime, cooldownTime);
 				}
 				else {
 					timer += Time.deltaTime;
+					onCooldownUpdate?.Invoke(timer, cooldownTime);
 				}
 			}
 		}
