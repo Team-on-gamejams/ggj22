@@ -11,6 +11,7 @@ namespace BattleSystem.Weapons.Range.Projectiles {
 		float movePerFrame;
 
 		byte i, j;
+		Health.Health health;
 		HealthHitbox hitboxMin;
 		HealthHitbox hitbox;
 		bool isHit;
@@ -30,7 +31,7 @@ namespace BattleSystem.Weapons.Range.Projectiles {
 
 			isHit = false;
 			RaycastAndCheckHit(LayerMask.GetMask("Hitbox"), QueryTriggerInteraction.Collide);
-			if(!isHit)
+			if (!isHit)
 				RaycastIsHitAnything(LayerMask.GetMask("Default"), QueryTriggerInteraction.Ignore);
 
 			if (isHit) {
@@ -83,7 +84,7 @@ namespace BattleSystem.Weapons.Range.Projectiles {
 				}
 
 				if (hitboxMin) {
-					if(hitboxMin.GetDamage(damage) != 0) {
+					if (hitboxMin.GetDamage(damage) != 0) {
 						isHit = true;
 					}
 				}
@@ -91,13 +92,33 @@ namespace BattleSystem.Weapons.Range.Projectiles {
 		}
 
 		void RaycastIsHitAnything(int layerMask, QueryTriggerInteraction queryTriggerInteraction) {
-			//isHit = Physics.Raycast(
-			//	transform.position,
-			//	transform.forward,
-			//	movePerFrame,
-			//	layerMask,
-			//	queryTriggerInteraction
-			//);
+			len = (byte)Physics.RaycastNonAlloc(
+				transform.position,
+				transform.forward,
+				hits,
+				movePerFrame,
+				layerMask,
+				queryTriggerInteraction
+			);
+
+
+			if (len != 0) {
+				for (i = 0; i < len && !isHit; ++i) {
+					if ((health = hits[i].collider.GetComponent<Health.Health>())) {
+						if (health.Armor.fraction != damage.fraction) {
+							isHit = true;
+						}
+					}
+					else if (hitbox = hits[i].collider.GetComponent<HealthHitbox>()) {
+						if (!hitbox.IsSameFraction(damage.fraction)) {
+							isHit = true;
+						}
+					}
+					else {
+						isHit = true;
+					}
+				}
+			}
 		}
 	}
 }

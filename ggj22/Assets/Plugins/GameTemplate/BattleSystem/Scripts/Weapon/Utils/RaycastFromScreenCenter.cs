@@ -6,7 +6,6 @@ namespace BattleSystem.Weapons.Utils
 {
     public class RaycastFromScreenCenter : MonoBehaviour
     {
-		const float maxDist = 50;
 		Ray ray;
 		Vector2 screenCenter;
 		RaycastHit[] hits;
