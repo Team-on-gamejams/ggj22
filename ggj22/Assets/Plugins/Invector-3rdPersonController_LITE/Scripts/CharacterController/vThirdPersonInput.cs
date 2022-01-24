@@ -85,6 +85,8 @@ namespace Invector.vCharacterController
         {
             cc.input.x = Input.GetAxis(horizontalInput);
             cc.input.z = Input.GetAxis(verticallInput);
+			if (cc.input.x == cc.input.z && cc.input.x == 0)
+				cc.Sprint(false);
         }
 
         protected virtual void CameraInput()
@@ -141,7 +143,7 @@ namespace Invector.vCharacterController
         /// </summary>
         protected virtual void JumpInput()
         {
-            if (Input.GetKeyDown(jumpInput) && JumpConditions())
+            if ((Input.GetKeyDown(jumpInput) || (UnityEngine.InputSystem.Gamepad.current?.buttonSouth?.wasPressedThisFrame ?? false)) && JumpConditions())
                 cc.Jump();
         }
 

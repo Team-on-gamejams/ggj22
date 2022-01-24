@@ -81,7 +81,7 @@ namespace Invector.vCharacterController
             }
         }
         internal bool isGrounded { get; set; }
-        internal bool isSprinting { get; set; }
+        public bool isSprinting { get; set; }
         public bool stopMove { get; protected set; }
 
         internal float inputMagnitude;                      // sets the inputMagnitude to update the animations in the animator controller

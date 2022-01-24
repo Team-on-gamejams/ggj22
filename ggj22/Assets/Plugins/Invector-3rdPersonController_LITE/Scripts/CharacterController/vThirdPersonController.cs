@@ -112,6 +112,11 @@ namespace Invector.vCharacterController
             isStrafing = !isStrafing;
         }
 
+        public virtual void Strafe(bool val)
+        {
+            isStrafing = val;
+        }
+
         public virtual void Jump()
         {
             // trigger jump behaviour

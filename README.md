@@ -66,8 +66,21 @@ Video about TriJam from Rocknight Studios: https://www.youtube.com/watch?v=6PysB
 # Used assets
  * Unity game template - https://github.com/Team-on/UnityGameTemplate
  * Assets from template - https://github.com/Team-on/UnityGameTemplate/wiki/Used-assets
- * link - where used
+ * https://freesound.org/people/fisu/sounds/350770/ - melee hit
+ * https://freesound.org/people/saturdaysoundguy/sounds/391446/ -  melee miss
+ * https://freesound.org/people/magnuswaker/sounds/528263/ - range hit
+ * https://freesound.org/people/FilmmakersManual/sounds/522308/ - range hit
+ * https://freesound.org/people/FilmmakersManual/sounds/522505/ - range hit
+ * https://freesound.org/people/FilmmakersManual/sounds/522307/ - range hit
+ * https://freesound.org/people/FilmmakersManual/sounds/522390/ - range miss
+ * https://freesound.org/people/FilmmakersManual/sounds/522277/ - range miss
+ * https://freesound.org/people/FilmmakersManual/sounds/522280/ - range miss
+ * https://freesound.org/people/FilmmakersManual/sounds/522279/ - range start attack
+ * https://freesound.org/people/vox_artist/sounds/513621/ - enemy die
+ * https://freesound.org/people/Daleonfire/sounds/406113/ - hero die
+ * https://freesound.org/people/ryusa/sounds/531082/ - heal
  
+
  
 # Downloads and Links
 Available in [Windows, OSX, Linux, Android and Web](GAME_LINK).  

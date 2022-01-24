@@ -1,0 +1,20 @@
+{
+    "name": "UpgradeSystem",
+    "rootNamespace": "UpgradeSystem",
+    "references": [
+        "GUID:776d03a35f1b52c4a9aed9f56d7b4229",
+        "GUID:0a18a4d019ad8f449b889debd23c2127",
+        "GUID:38fe782b688022a4a98328b1d5900bdb",
+        "GUID:2bafac87e7f4b9b418d9448d219b01ab",
+        "GUID:696a0953692949b40bec8730e64e1fdd"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
