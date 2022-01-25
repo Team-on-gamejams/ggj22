@@ -48,6 +48,10 @@ namespace BattleSystem.Health {
 			ReInitHealth(maxHealth, maxHealth);
 		}
 
+		public void ApplyArmorMod(float mod) {
+
+		}
+			
 		public int GetDamage(Damage damageStruct, ArmorType? armorTypeOverride) {
 			if (IsDead)
 				return 0;

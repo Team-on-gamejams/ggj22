@@ -188,5 +188,15 @@ namespace BattleSystem.Weapons {
 				state = WeaponState.Ended;
 		}
 		#endregion
+
+		#region Powers
+		virtual public void ApplyAttackSpeedMod(float mod) {
+
+		}
+
+		virtual public void ApplyDamageMod(float mod) {
+
+		}
+		#endregion
 	}
 }
