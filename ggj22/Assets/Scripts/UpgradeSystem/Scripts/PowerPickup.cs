@@ -14,21 +14,16 @@ namespace UpgradeSystem {
 		[Header("Popup"), Space]
 		[SerializeField] PowerPopup popup;
 
+		[Header("Power"), Space]
+		[SerializeField] bool isRandomPower = true;
 		[SerializeField] Power power;
 
+		private void Start() {
+			if (isRandomPower) {
+				power = Power.GetRandomPower();
+			}
 
-		private void Awake() {
-			power = new Power() {
-				condition = (PowerCondition)UnityEngine.Random.Range(0, Enum.GetValues(typeof(PowerCondition)).Length),
-				pair = (PowerPair)UnityEngine.Random.Range(0, Enum.GetValues(typeof(PowerPair)).Length),
-				buffPower = 1.25f,
-				debuffPower = 0.85f,
-			};
-
-			buffIcon.SetSprite(power.pair, pairsSprites, true);
-			debuffIcon.SetSprite(power.pair, pairsSprites, false);
-
-			condionIcon.SetSprite(power.condition, conditionSprites);
+			popup.Init(power, true);
 		}
 
 		public void Pickup() {
