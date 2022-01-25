@@ -8,7 +8,11 @@ namespace Invector.vCharacterController
 
 		public override void SetControllerMoveSpeed(vMovementSpeed speed) {
 			base.SetControllerMoveSpeed(speed);
-			moveSpeed *= SpeedModifier;
+
+			if (speed.walkByDefault)
+				moveSpeed = Mathf.Lerp(moveSpeed, (isSprinting ? speed.runningSpeed : speed.walkSpeed) * SpeedModifier, speed.movementSmooth * Time.deltaTime);
+			else
+				moveSpeed = Mathf.Lerp(moveSpeed, (isSprinting ? speed.sprintSpeed : speed.runningSpeed) * SpeedModifier, speed.movementSmooth * Time.deltaTime);
 		}
 
 		public virtual void ControlAnimatorRootMotion()

@@ -28,7 +28,8 @@ namespace BattleSystem.Weapons {
 			set {
 				if(attackSpeedModifier != value) {
 					attackSpeedModifier = value;
-					animator.speed = attackSpeedModifier;
+					if(animator)
+						animator.speed = attackSpeedModifier;
 				}
 			}
 		}
