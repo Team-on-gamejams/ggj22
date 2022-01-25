@@ -36,9 +36,9 @@ namespace BattleSystem.Weapons {
 		float attackSpeedModifier = 1.0f;
 
 		public WeaponUIData UIData => uiData;
-		public float CooldownTime => cooldownTime * AttackSpeedModifier;
-		public float StartingTime => startingTime * AttackSpeedModifier;
-		public float EndingTime => endingTime * AttackSpeedModifier;
+		public float CooldownTime => cooldownTime / AttackSpeedModifier;
+		public float StartingTime => startingTime / AttackSpeedModifier;
+		public float EndingTime => endingTime / AttackSpeedModifier;
 
 
 		[Header("Values"), Space]
