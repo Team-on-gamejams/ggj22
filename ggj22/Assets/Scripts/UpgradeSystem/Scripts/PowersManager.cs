@@ -7,6 +7,7 @@ namespace UpgradeSystem {
 	public class PowersManager : MonoBehaviour {
 		static public PowersManager Instance { get; set; }
 
+		public event Action<Power> onPowerAdded;
 		public event Action<Dictionary<PowerPair, float>> onPowersReapply;
 
 		public SerializedDictionary<PowerCondition, Sprite> ConditionSprites => conditionSprites;
@@ -58,6 +59,8 @@ namespace UpgradeSystem {
 		public void AddPower(Power power) {
 			allPowers.Add(power);
 
+			onPowerAdded?.Invoke(power);
+
 			ApplyPowers();
 		}
 		
@@ -66,22 +69,7 @@ namespace UpgradeSystem {
 				modifiers[pair] = 1.0f;
 
 			foreach (var power in allPowers) {
-				float mod;
-				switch (power.condition) {
-					case PowerCondition.Move:
-						mod = power.GetMod(IsMoving);
-						break;
-
-					case PowerCondition.Stay:
-						mod = power.GetMod(!IsMoving);
-						break;
-
-					default:
-						Debug.LogError("Not inplemented power type");
-						mod = 1.0f;
-						break;
-				}
-
+				float mod = power.GetMod(power.GetConditionBool());
 				modifiers[power.pair] += mod - 1.0f;
 			}
 

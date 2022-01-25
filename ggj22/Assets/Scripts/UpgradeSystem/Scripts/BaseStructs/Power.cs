@@ -20,6 +20,20 @@ namespace UpgradeSystem
 			return debuffPower;
 		}
 
+		public bool GetConditionBool() {
+			switch (condition) {
+				case PowerCondition.Move:
+					return PowersManager.Instance.IsMoving;
+
+				case PowerCondition.Stay:
+					return !PowersManager.Instance.IsMoving;
+
+				default:
+					Debug.LogError("Not inplemented power type");
+					return true;
+			}
+		}
+
 		public static Power GetRandomPower() {
 			PowerCondition powerCondition = PowersManager.Instance.Conditions.Random();
 			PowerPair pair = PowersManager.Instance.Pairs.Random();
@@ -36,8 +50,8 @@ namespace UpgradeSystem
 
 			switch (pair) {
 				case PowerPair.TimeControl:
-					buffPower = 0.75f;
-					debuffPower = 1.15f;
+					buffPower = 0.9f;
+					debuffPower = 1.1f;
 					break;
 
 				case PowerPair.Armor:

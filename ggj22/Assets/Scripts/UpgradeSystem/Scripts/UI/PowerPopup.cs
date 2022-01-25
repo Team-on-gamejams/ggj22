@@ -4,7 +4,7 @@ using UnityEngine;
 using UpgradeSystem.UI;
 using TMPro;
 
-namespace UpgradeSystem
+namespace UpgradeSystem.UI
 {
     public class PowerPopup : MonoBehaviour
     {
