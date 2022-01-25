@@ -23,8 +23,21 @@ namespace BattleSystem.Weapons {
 		public event Action onEndAttack;
 		public event Action<float, float> onCooldownUpdate;
 
-		public float Cooldown => cooldownTime;
+		public float AttackSpeedModifier {
+			get => attackSpeedModifier;
+			set {
+				if(attackSpeedModifier != value) {
+					attackSpeedModifier = value;
+					animator.speed = attackSpeedModifier;
+				}
+			}
+		}
+		float attackSpeedModifier = 1.0f;
+
 		public WeaponUIData UIData => uiData;
+		public float CooldownTime => cooldownTime * AttackSpeedModifier;
+		public float StartingTime => startingTime * AttackSpeedModifier;
+		public float EndingTime => endingTime * AttackSpeedModifier;
 
 
 		[Header("Values"), Space]
@@ -71,7 +84,7 @@ namespace BattleSystem.Weapons {
 #endif
 
 		void Update() {
-			if(state == WeaponState.Ready) {
+			if (state == WeaponState.Ready) {
 				if (isDoSingleAttack || isPlayerHoldInput) {
 					state = WeaponState.Starting;
 
@@ -84,8 +97,8 @@ namespace BattleSystem.Weapons {
 
 			if(state == WeaponState.Starting) {
 				if (!IsAnimator()) {
-					if(timer >= startingTime) {
-						timer -= startingTime;
+					if(timer >= StartingTime) {
+						timer -= StartingTime;
 						state = WeaponState.Performing;
 					}
 					else {
@@ -97,13 +110,13 @@ namespace BattleSystem.Weapons {
 			if(state == WeaponState.Performing) {
 				DoAttack();
 				state = WeaponState.Ending;
-				onCooldownUpdate?.Invoke(0, cooldownTime);
+				onCooldownUpdate?.Invoke(0, CooldownTime);
 			}
 
 			if (state == WeaponState.Ending) {
 				if (!IsAnimator()) {
-					if (timer >= endingTime) {
-						timer -= endingTime;
+					if (timer >= EndingTime) {
+						timer -= EndingTime;
 						state = WeaponState.Ended;
 					}
 					else {
@@ -119,14 +132,14 @@ namespace BattleSystem.Weapons {
 			}
 
 			if (state == WeaponState.Cooldown) {
-				if (timer >= cooldownTime) {
-					timer -= cooldownTime;
+				if (timer >= CooldownTime) {
+					timer -= CooldownTime;
 					state = WeaponState.Ready;
-					onCooldownUpdate?.Invoke(cooldownTime, cooldownTime);
+					onCooldownUpdate?.Invoke(CooldownTime, CooldownTime);
 				}
 				else {
 					timer += Time.deltaTime;
-					onCooldownUpdate?.Invoke(timer, cooldownTime);
+					onCooldownUpdate?.Invoke(timer, CooldownTime);
 				}
 			}
 		}
@@ -191,11 +204,11 @@ namespace BattleSystem.Weapons {
 
 		#region Powers
 		virtual public void ApplyAttackSpeedMod(float mod) {
-
+			AttackSpeedModifier = mod;
 		}
 
 		virtual public void ApplyDamageMod(float mod) {
-
+			damage.Modifier = mod;
 		}
 		#endregion
 	}

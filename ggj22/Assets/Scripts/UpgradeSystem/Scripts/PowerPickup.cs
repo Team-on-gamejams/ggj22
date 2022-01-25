@@ -31,13 +31,13 @@ namespace UpgradeSystem {
 			};
 
 			buffIcon.SetSprite(power.pair, pairsSprites, true);
-			buffIcon.SetSprite(power.pair, pairsSprites, false);
+			debuffIcon.SetSprite(power.pair, pairsSprites, false);
 
 			condionIcon.SetSprite(power.condition, conditionSprites);
 		}
 
 		public void Pickup() {
-			PowersManager.instance.AddPower(power);
+			PowersManager.Instance.AddPower(power);
 			Destroy(gameObject);
 		}
 	}

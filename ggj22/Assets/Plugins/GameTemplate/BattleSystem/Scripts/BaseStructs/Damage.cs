@@ -6,6 +6,8 @@ using UnityEngine;
 namespace BattleSystem {
 	[Serializable]
 	public struct Damage {
+		public float Modifier { get; set; }
+	
 		public Fraction fraction;
 		public DamageType type;
 		public int baseDamage;
@@ -39,6 +41,9 @@ namespace BattleSystem {
 
 			if(damageMods != null && damageMods.ContainsKey(armorType))
 				totalDamage *= damageMods[armorType];
+
+			if (Modifier != 0)
+				totalDamage *= Modifier;
 
 			if (!isIgnoreArmor) {
 				float reduction = armor.GetReductionForDamage(this);

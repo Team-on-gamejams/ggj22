@@ -49,7 +49,7 @@ namespace BattleSystem.Health {
 		}
 
 		public void ApplyArmorMod(float mod) {
-
+			armor.Modifier = mod;
 		}
 			
 		public int GetDamage(Damage damageStruct, ArmorType? armorTypeOverride) {

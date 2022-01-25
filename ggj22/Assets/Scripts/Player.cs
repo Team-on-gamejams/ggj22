@@ -46,20 +46,24 @@ public class Player : MonoBehaviour {
 	private void OnEnable() {
 		SubscribeInputs();
 
-		PowersManager.instance.onPowersReapply += ReapplyPowers;
+		PowersManager.Instance.onPowersReapply += ReapplyPowers;
 	}
 
 	private void OnDisable() {
 		UnSubscribeInputs();
 
-		PowersManager.instance.onPowersReapply -= ReapplyPowers;
+		PowersManager.Instance.onPowersReapply -= ReapplyPowers;
+	}
+
+	private void Update() {
+		PowersManager.Instance.IsMoving = thirdPersonController.input != Vector3.zero;
 	}
 
 	void ReapplyPowers(Dictionary<PowerPair, float> powers) {
 		foreach (var power in powers) {
 			switch (power.Key) {
 				case PowerPair.TimeControl:
-					Time.timeScale = power.Value;
+					Time.timeScale = Mathf.Clamp(1.0f - power.Value, 0.5f, 2.0f);
 					break;
 
 				case PowerPair.AttackSpeed:

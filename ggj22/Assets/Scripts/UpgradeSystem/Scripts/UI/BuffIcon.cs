@@ -16,7 +16,7 @@ namespace UpgradeSystem.UI {
 			powerImage.sprite = sprite;
 
 			buffImage.gameObject.SetActive(buffImage);
-			debuffImage.gameObject.SetActive(buffImage);
+			debuffImage.gameObject.SetActive(!buffImage);
 		}
 	}
 }

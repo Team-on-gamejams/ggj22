@@ -6,6 +6,10 @@ namespace Invector.vCharacterController
     {
 		public float SpeedModifier { get; set; } = 1.0f;
 
+		public override void SetControllerMoveSpeed(vMovementSpeed speed) {
+			base.SetControllerMoveSpeed(speed);
+			moveSpeed *= SpeedModifier;
+		}
 
 		public virtual void ControlAnimatorRootMotion()
         {

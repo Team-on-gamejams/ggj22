@@ -4951,6 +4951,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1945452763}
     - target: {fileID: 505188826, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 505188822}
+    - target: {fileID: 505188826, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
       propertyPath: mapImage
       value: 
       objectReference: {fileID: 90481946}

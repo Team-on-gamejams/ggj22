@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace UpgradeSystem {
 	public class PowersManager : MonoBehaviour {
-		static public PowersManager instance;
+		static public PowersManager Instance { get; set; }
 
 		public event Action<Dictionary<PowerPair, float>> onPowersReapply;
 
@@ -21,17 +21,6 @@ namespace UpgradeSystem {
 		}
 		bool isMoving = false;
 
-		public bool IsStaying {
-			get => isStaying;
-			set {
-				if (value != isStaying) {
-					isStaying = value;
-					ApplyPowers();
-				}
-			}
-		}
-		bool isStaying  = false;
-
 		//Values to get from user
 		Dictionary<PowerPair, float> modifiers = new Dictionary<PowerPair, float>();
 
@@ -39,7 +28,7 @@ namespace UpgradeSystem {
 		PowerPair[] allPairs;
 
 		private void Awake() {
-			instance = this;
+			Instance = this;
 
 			allPairs = (PowerPair[])Enum.GetValues(typeof(PowerPair));
 			foreach (PowerPair pair in allPairs)
@@ -64,7 +53,7 @@ namespace UpgradeSystem {
 						break;
 
 					case PowerCondition.Stay:
-						mod = power.GetMod(IsStaying);
+						mod = power.GetMod(!IsMoving);
 						break;
 
 					default:
