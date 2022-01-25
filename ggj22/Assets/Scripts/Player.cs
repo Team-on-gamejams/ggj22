@@ -63,7 +63,7 @@ public class Player : MonoBehaviour {
 		foreach (var power in powers) {
 			switch (power.Key) {
 				case PowerPair.TimeControl:
-					Time.timeScale = Mathf.Clamp(1.0f - power.Value, 0.5f, 2.0f);
+					Time.timeScale = Mathf.Clamp(power.Value, 0.5f, 2.0f);
 					break;
 
 				case PowerPair.AttackSpeed:

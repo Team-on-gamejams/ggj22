@@ -114,7 +114,7 @@ MonoBehaviour:
   emptyAnimationName: Empty
   attackTriggerName: IsPunch
   layer: 1
-  cooldownTime: 0.05
+  cooldownTime: 0.1
   startingTime: 0
   endingTime: 0
   attackCollider: {fileID: 6672801338345017765}

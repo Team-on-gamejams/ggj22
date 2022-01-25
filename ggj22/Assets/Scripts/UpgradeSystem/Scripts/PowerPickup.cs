@@ -12,15 +12,10 @@ namespace UpgradeSystem {
 		public Power Power => power;
 
 		[Header("Popup"), Space]
-		[SerializeField] BuffIcon buffIcon;
-		[SerializeField] BuffIcon debuffIcon;
-		[SerializeField] ConditionIcon condionIcon;
+		[SerializeField] PowerPopup popup;
 
-		[Header("Global data"), Space]
-		[SerializeField] SerializedDictionary<PowerCondition, Sprite> conditionSprites;
-		[SerializeField] SerializedDictionary<PowerPair, Sprite> pairsSprites;
+		[SerializeField] Power power;
 
-		Power power;
 
 		private void Awake() {
 			power = new Power() {

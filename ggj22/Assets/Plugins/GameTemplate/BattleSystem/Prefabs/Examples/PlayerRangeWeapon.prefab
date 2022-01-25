@@ -72,7 +72,7 @@ MonoBehaviour:
   startingTime: 0
   endingTime: 0
   projectileValues:
-    speed: 20
+    speed: 50
     maxFlyLength: 50
   projectilesSpawnPos:
   - {fileID: 0}

@@ -8,8 +8,8 @@ namespace UpgradeSystem.UI {
 		[Header("Refs"), Space]
 		[SerializeField] Image conditionImage;
 
-		public void SetSprite(PowerCondition condition, SerializedDictionary<PowerCondition, Sprite> sprites) {
-			Sprite sprite = sprites[condition];
+		public void SetSprite(PowerCondition condition) {
+			Sprite sprite = PowersManager.Instance.ConditionSprites[condition];
 			conditionImage.sprite = sprite;
 		}
 	}

@@ -9,7 +9,15 @@ namespace UpgradeSystem {
 
 		public event Action<Dictionary<PowerPair, float>> onPowersReapply;
 
-		//Values to set from user
+		public SerializedDictionary<PowerCondition, Sprite> ConditionSprites => conditionSprites;
+		public SerializedDictionary<PowerPair, Sprite> PairsSprites => pairsSprites;
+		public SerializedDictionary<PowerCondition, string> ConditionStringKeys => conditionStringKeys;
+		public SerializedDictionary<PowerPair, string> PairsStringKeys => pairsStringKeys;
+
+		public PowerPair[] Pairs => allPairs;
+		public PowerCondition[] Conditions => allConditions;
+
+		//////////////////////////////////// Values to set from user
 		public bool IsMoving {
 			get => isMoving;
 			set {
@@ -20,12 +28,22 @@ namespace UpgradeSystem {
 			}
 		}
 		bool isMoving = false;
+		////////////////////////////////////
 
-		//Values to get from user
+		//////////////////////////////////// Values to get from user
 		Dictionary<PowerPair, float> modifiers = new Dictionary<PowerPair, float>();
+		////////////////////////////////////
+
+		[Header("Global refs"), Space]
+		[SerializeField] SerializedDictionary<PowerCondition, Sprite> conditionSprites;
+		[SerializeField] SerializedDictionary<PowerPair, Sprite> pairsSprites;
+		[Space]
+		[SerializeField] SerializedDictionary<PowerCondition, string> conditionStringKeys;
+		[SerializeField] SerializedDictionary<PowerPair, string> pairsStringKeys;
 
 		List<Power> allPowers = new List<Power>();
 		PowerPair[] allPairs;
+		PowerCondition[] allConditions;
 
 		private void Awake() {
 			Instance = this;
@@ -33,6 +51,8 @@ namespace UpgradeSystem {
 			allPairs = (PowerPair[])Enum.GetValues(typeof(PowerPair));
 			foreach (PowerPair pair in allPairs)
 				modifiers.Add(pair, 1.0f);;
+
+			allConditions = (PowerCondition[])Enum.GetValues(typeof(PowerCondition));
 		}
 
 		public void AddPower(Power power) {
@@ -62,7 +82,7 @@ namespace UpgradeSystem {
 						break;
 				}
 
-				modifiers[power.pair] *= mod;
+				modifiers[power.pair] += mod - 1.0f;
 			}
 
 			onPowersReapply?.Invoke(modifiers);

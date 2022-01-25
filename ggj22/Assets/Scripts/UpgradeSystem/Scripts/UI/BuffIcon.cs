@@ -11,12 +11,12 @@ namespace UpgradeSystem.UI {
 		[SerializeField] Image buffImage;
 		[SerializeField] Image debuffImage;
 
-		public void SetSprite(PowerPair pair, SerializedDictionary<PowerPair, Sprite> sprites, bool isBuff) {
-			Sprite sprite = sprites[pair];
+		public void SetSprite(PowerPair pair, bool isBuff) {
+			Sprite sprite = PowersManager.Instance.PairsSprites[pair];
 			powerImage.sprite = sprite;
 
-			buffImage.gameObject.SetActive(buffImage);
-			debuffImage.gameObject.SetActive(!buffImage);
+			buffImage.gameObject.SetActive(isBuff);
+			debuffImage.gameObject.SetActive(!isBuff);
 		}
 	}
 }

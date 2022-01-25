@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &889786278885571547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7595892417991493242}
+  - component: {fileID: 816381041577824233}
+  m_Layer: 0
+  m_Name: PowersManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7595892417991493242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889786278885571547}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &816381041577824233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889786278885571547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8455f1510b2dfa8499ad883f25bb485a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conditionSprites:
+    pairs:
+    - key: 0
+      value: {fileID: 21300000, guid: d2f49fbfd4acb664581807b3fbf051ab, type: 3}
+    - key: 1
+      value: {fileID: 21300000, guid: d823dd8d75a8b5c43b9a5952a78f3fc2, type: 3}
+    error: 0
+  pairsSprites:
+    pairs:
+    - key: 0
+      value: {fileID: 21300000, guid: cf9c88373b3c1eb429790aacb8c24e64, type: 3}
+    - key: 1
+      value: {fileID: 21300000, guid: 69e57b10e7269a24bb450482acf8c17e, type: 3}
+    - key: 2
+      value: {fileID: 21300000, guid: 710e1b4c4cd26b74995c9382bc1acc71, type: 3}
+    - key: 3
+      value: {fileID: 21300000, guid: 0d8b33fc15cd7284ea6326198816c29b, type: 3}
+    - key: 4
+      value: {fileID: 21300000, guid: 9212f4a36c598154b8883319f7143078, type: 3}
+    error: 0
+  conditionStringKeys:
+    pairs:
+    - key: 0
+      value: POWER_COND_MOVE
+    - key: 1
+      value: POWER_COND_STAY
+    error: 0
+  pairsStringKeys:
+    pairs:
+    - key: 0
+      value: POWER_PAIR_TIME_SPEED
+    - key: 1
+      value: POWER_PAIR_ATTACK_SPEED
+    - key: 2
+      value: POWER_PAIR_MOVE_SPEED
+    - key: 3
+      value: POWER_PAIR_ARMOR
+    - key: 4
+      value: POWER_PAIR_DAMAGE
+    error: 0
