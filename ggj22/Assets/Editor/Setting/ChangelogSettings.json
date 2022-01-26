@@ -77,8 +77,20 @@
                 {
                     "isCommunityFeedback": false,
                     "type": 2,
+                    "scope": 1,
+                    "text": "After-death hub"
+                },
+                {
+                    "isCommunityFeedback": false,
+                    "type": 2,
                     "scope": 2,
                     "text": "End of Demo"
+                },
+                {
+                    "isCommunityFeedback": false,
+                    "type": 3,
+                    "scope": 1,
+                    "text": "Fix sometimes powers not working"
                 }
             ]
         }
