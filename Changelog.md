@@ -2,7 +2,7 @@ Note: 📢 indicates a change inspired by community feedback!
 
 
 ---------- 
-# 0.1 - Jam edition (core only) (1/4/2021)
+# 0.1 - Jam edition (core only) (1/26/2022)
 All core mechanics finished
 ### Features: 
 #### General: 
