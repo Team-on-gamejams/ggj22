@@ -16,7 +16,7 @@ MonoBehaviour:
   maxHelpLevel: 2
   startHelpLevel: 1
   startResources: 000000000000000000000000
-  buildNameString: 0.1 - Jam edition (1/4/2021)
+  buildNameString: 0.1 - Jam edition (core only) (1/4/2021)
   productName: GGJ22
   uiinput: {fileID: 0}
   eventSystem: {fileID: 0}

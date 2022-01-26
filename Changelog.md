@@ -2,5 +2,23 @@ Note: 📢 indicates a change inspired by community feedback!
 
 
 ---------- 
-# 0.1 - Jam edition (1/4/2021)
-Jam prototype release
+# 0.1 - Jam edition (core only) (1/4/2021)
+All core mechanics finished
+### Features: 
+#### General: 
+ * Upgrades
+ * Battle system
+ * Pickups
+ * Character controller
+ * Enemies AI
+ * Enemies
+#### LevelDesign: 
+ * Level generation
+#### Music: 
+ * Added game music
+#### SFX: 
+ * Added SFX to player actions
+
+### KnownIssues: 
+#### General: 
+ * Added a lot of bugs
