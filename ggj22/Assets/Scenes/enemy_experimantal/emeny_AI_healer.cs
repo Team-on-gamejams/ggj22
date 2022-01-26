@@ -17,7 +17,7 @@ public class emeny_AI_healer : MonoBehaviour {
 
 	public Vector3 agent;
 
-	public Transform player;
+	public Transform player; //enemies
 
 	public LayerMask whatIsGround, whatIsPlayer;
 
@@ -40,13 +40,16 @@ public class emeny_AI_healer : MonoBehaviour {
 
 	private void Awake() {
 
+		int hp = 100;
+
 		foreach (GameObject go in GameObject.FindGameObjectsWithTag("Enemy")) {
 			if (go != gameObject &&
 				go.TryGetComponent(out emeny_AI em) &&
-				em.playerInSightRange) {
+				em.playerInSightRange && 
+				go.GetComponent<Health>().CurrHealth <= hp) {
 
 				player = go.transform;
-				break;
+				hp = go.GetComponent<Health>().CurrHealth;
 			}
 		}
 
@@ -61,43 +64,55 @@ public class emeny_AI_healer : MonoBehaviour {
 		//Check for sight and attack range
 		//playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
 		//playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
-		if (player != null) {
-			if (Vector3.Distance(transform.position, player.position) <= sightRange)
-				playerInSightRange = true;
-			else
-				playerInSightRange = false;
 
-			if (Vector3.Distance(transform.position, player.position) <= attackRange)
-				playerInAttackRange = true;
-			else
-				playerInAttackRange = false;
+		if (player == null || player.gameObject.GetComponent<Health>().CurrHealth ==
+			player.gameObject.GetComponent<Health>().MaxHealth) {
 
-			//float distance = Vector3.Distance(transform.position, agent);
-			//float finalSpeed = (distance / speed);
-			//transform.position = Vector3.Lerp(transform.position, agent, Time.deltaTime / finalSpeed);
-			transform.position = Vector3.MoveTowards(transform.position, agent, speed);
+			int hp = 100;
 
-
-			if (!playerInSightRange && !playerInAttackRange) Patroling();
-			if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-			if (playerInAttackRange && playerInSightRange) AttackPlayer();
-		}
-		else {
 			foreach (GameObject go in GameObject.FindGameObjectsWithTag("Enemy")) {
-				if (go != gameObject && 
-					go.TryGetComponent(out emeny_AI em) && 
-					em.playerInSightRange) {
+				if (go != gameObject &&
+					go.TryGetComponent(out emeny_AI em) &&
+					em.playerInSightRange &&
+					go.GetComponent<Health>().CurrHealth <= hp) {
 
 					player = go.transform;
-					break;
+					hp = go.GetComponent<Health>().CurrHealth;
 				}
 			}
 
-			if (player == null) {
-				gameObject.GetComponent<emeny_AI>().enabled = true;
-				gameObject.GetComponent<emeny_AI_healer>().enabled = false;
-			}
 		}
+
+		if (player == null) {
+			gameObject.GetComponent<emeny_AI>().enabled = true;
+			gameObject.GetComponent<emeny_AI_healer>().enabled = false;
+		}
+
+
+		if (Vector3.Distance(transform.position, player.position) <= sightRange)
+			playerInSightRange = true;
+		else
+			playerInSightRange = false;
+
+		if (Vector3.Distance(transform.position, player.position) <= attackRange)
+			playerInAttackRange = true;
+		else
+			playerInAttackRange = false;
+
+		//float distance = Vector3.Distance(transform.position, agent);
+		//float finalSpeed = (distance / speed);
+		//transform.position = Vector3.Lerp(transform.position, agent, Time.deltaTime / finalSpeed);
+		transform.position = Vector3.MoveTowards(transform.position, agent, speed);
+
+
+		if (!playerInSightRange && !playerInAttackRange) Patroling();
+		if (playerInSightRange && !playerInAttackRange) ChasePlayer();
+		if (playerInAttackRange && playerInSightRange) AttackPlayer();
+
+		
+
+
+
 	}
 
 	private void Patroling() {
@@ -126,7 +141,7 @@ public class emeny_AI_healer : MonoBehaviour {
 	}
 
 	private void ChasePlayer() {
-		if (Vector3.Distance(transform.position, player.transform.position) >= attackRange - 1.5)
+		if (Vector3.Distance(transform.position, player.transform.position) >= attackRange - 3)
 			agent = player.position;
 		else
 			agent = transform.position;
