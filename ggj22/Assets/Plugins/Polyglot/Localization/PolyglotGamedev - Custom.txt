@@ -12,14 +12,14 @@ ADDITIONAL_INFO_IN_SELECT,Additional info to show when selecting language,,(100%
 SPLASH_SCREEN_ANYKEY_PROTOTYPE,,This is a prototype made in 4 days for Global Game Jam 2022.,Ceci est un prototype réalisé en 4 jours pour la confiture du jeu mondial 2022.,Este es un prototipo hecho en 4 días para Global Game Jam 2022.,"Dies ist ein Prototyp, der in 4 Tagen für den globalen Spielmarmelade 2022 hergestellt wurde.",Questo è un prototipo fatto in 4 giorni per Global Game Jam 2022.,Este é um protótipo feito em 4 dias para Jogo Global Jam 2022.,Este é um protótipo feito em 4 dias para Jogo Global Jam 2022.,"Это прототип, сделанный за 4 дня для глобального игрового джема 2022.",Αυτό είναι ένα πρωτότυπο που γίνεται σε 4 ημέρες για παγκόσμια μαρμελάδα του παιχνιδιού 2022.,"Bu, küresel oyun reçel 2022 için 4 günde yapılan bir prototiptir.",Dette er en prototype lavet i 4 dage til Global Game Jam 2022.,Dette er en prototype laget i 4 dager for Global Game Jam 2022.,Detta är en prototyp gjord i 4 dagar för Global Game Jam 2022.,Dit is een prototype gemaakt in 4 dagen voor Global Game Jam 2022.,Jest to prototyp wykonany w 4 dni na Global Game Jam 2022.,"Tämä on prototyyppi, joka on tehty 4 päivän kuluessa maailmanlaajuisesta pelin hillosta 2022.",これは、グローバルゲームJAM 2022の4日間のプロトタイプです。,这是全球游戏Jam 2022的4天内制作的原型。,这是全球游戏Jam 2022的4天内制作的原型。,이것은 글로벌 게임 잼 2022의 경우 4 일 동안 이루어진 프로토 타입입니다.,Jedná se o prototyp vyrobený za 4 dny pro globální jam 2022.,"Ez egy prototípus, amelyet 4 nap alatt gyártott a Global Game Jam 2022.",Acesta este un prototip realizat în 4 zile pentru jocul global de joc 2022.,นี่คือต้นแบบที่ทำใน 4 วันสำหรับเกม Global Jam 2022,"Това е прототип, направен в 4 дни за глобална игра Jam 2022.",זהו אב טיפוס שנעשה ב 4 ימים למשחק העולמי ריבה 2022.,هذا هو النموذج الأولي المحرز في 4 أيام لمرب الجمهوري Game 2022.,Ovo je prototip napravljen za 4 dana za globalnu igru ​​Jam 2022.,Ini adalah prototipe yang dibuat dalam 4 hari untuk Global Game Jam 2022.,Dit is 'n prototipe wat in 4 dae vir Global Game Jam 2022 gemaak is.,"Hau da, 4 egunetan Global Game Jam 2022an egindako prototipoa da.",Гэта прататып зрабіў у 4-х дзён для глабальнай гульні Jam 2022.,Aquest és un prototip realitzat en 4 dies per a Joc Global Jam 2022.,"See on prototüüp, mis on valmistatud 4 päeva jooksul globaalse mängu moosi 2022 jaoks.",Þetta er frumgerð gert í 4 daga fyrir Global Game Jam 2022.,"Tas ir prototips, kas izgatavots 4 dienu laikā pasaules spēļu ievārījumu 2022.",Tai yra prototipas per 4 dienas pasaulinio žaidimo uogiene 2022.,Toto je prototyp vyrobený za 4 dni pre globálnu hru džem 2022.,"To je prototip, izdelan v 4 dneh za Global Game Jam 2022.","Це прототип, зроблений за 4 дні для  Global Game Jam 2022.",Đây là một nguyên mẫu được thực hiện trong 4 ngày để trò chơi toàn cầu Jam 2022.
 SPLASH_SCREEN_ANYKEY_BEST_EXPERIENCED,,The game is best experienced with a Mouse and Keyboard.,Le jeu est mieux expérimenté avec une souris et un clavier.,El juego se experimenta mejor con un mouse y un teclado.,Das Spiel ist am besten mit Maus und Tastatur erlebt.,Il gioco è meglio esperienze con un mouse e una tastiera.,O jogo é melhor experiente com um mouse e teclado.,O jogo é melhor experiente com um mouse e teclado.,Игра лучше всего переживаться с мышью и клавиатурой.,Το παιχνίδι είναι καλύτερα έμπειρο με ένα ποντίκι και πληκτρολόγιο.,Oyun en iyi bir fare ve klavye ile deneyimlidir.,Spillet er bedst oplevet med en mus og tastatur.,Spillet er best opplevd med en mus og tastatur.,Spelet är bäst erfaren med en mus och tangentbord.,Het spel is het beste ervaren met een muis en een toetsenbord.,Gra najlepiej doświadczyć myszą i klawiaturą.,Peli on parhaiten kokenut hiirellä ja näppäimistöllä.,ゲームはマウスとキーボードで最高の経験豊富です。,游戏最好与鼠标和键盘经验丰富。,游戏最好与鼠标和键盘经验丰富。,이 게임은 마우스와 키보드로 가장 잘 경험됩니다.,Hra je nejlépe zkušený s myší a klávesnicí.,A játék a legjobban tapasztalt egy egérrel és billentyűzetgel.,Jocul este cel mai bine experimentat cu un mouse și tastatură.,เกมนี้มีประสบการณ์ที่ดีที่สุดด้วยเมาส์และคีย์บอร์ด,Играта е най-добре опитна с мишка и клавиатура.,המשחק הוא הטוב ביותר מנוסים עם עכבר ומקלדת.,اللعبة أفضل خبرة مع الماوس ولوحة المفاتيح.,Igra je najbolje iskusna sa mišem i tastaturom.,Gim ini paling baik dialami dengan mouse dan keyboard.,Die spel is die beste ervare met 'n muis en sleutelbord.,Jokoa sagua eta teklatuarekin esperientziarik onena da.,Гульня лепш за ўсё дасведчанага з дапамогай мышы і клавіятуры.,El joc és millor experimentat amb un ratolí i un teclat.,Mäng on kõige paremini kogenud hiire ja klaviatuuriga.,Leikurinn er bestur með mús og lyklaborð.,Spēle ir vislabāk pieredzējusi ar peli un tastatūru.,Žaidimas yra geriausias patyręs su pele ir klaviatūra.,Hra je najlepšie skúsenosti s myšou a klávesnicou.,Igra je najbolje doživela z miško in tipkovnico.,Гра найкраще грається з клавіатурою та мишею,Trò chơi có kinh nghiệm tốt nhất với một con chuột và bàn phím.
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-LOADING_TIP_1,,Shoot into enemies to kill them,Tirer dans des ennemis pour les tuer,Disparar a los enemigos para matarlos,"Schießen in Feinde, um sie zu töten",Sparare a nemici per ucciderli,Atirar em inimigos para matá-los,Atirar em inimigos para matá-los,"Стрелять в врагов, чтобы убить их",Πυροβολούν σε εχθρούς για να τους σκοτώσουν,Onları öldürmek için düşmanlara vur,Skyde ind i fjender for at dræbe dem,Skyte inn i fiender for å drepe dem,Skjuta i fiender för att döda dem,Schiet in vijanden om ze te doden,"Strzelaj do wrogów, żeby je zabić",Ampua vihollisia tappamaan heidät,彼らを殺すために敵に撃ちます,射入敌人杀死他们,射入敌人杀死他们,그들을 죽이기 위해 적을 쏴,"Střílet do nepřátel, aby je zabili","Lőni az ellenségeket, hogy megölje őket",Trage în dușmani pentru a le ucide,ยิงเข้าไปในศัตรูเพื่อฆ่าพวกเขา,"Стреля в врагове, за да ги убие",לירות לתוך אויבים להרוג אותם,تبادل لاطلاق النار في الأعداء لقتلهم,Pucajte u neprijatelje da ih ubijete,Tembak ke musuh untuk membunuh mereka,Skiet in vyande om hulle dood te maak,Tiro etsaiak hiltzeko,"Страляць ворагаў, каб забіць іх",Disparar en enemics per matar-los,Tulistada vaenlasi tappa neid,Skjóttu í óvini til að drepa þá,"Atvašu ienaidniekiem, lai nogalinātu tos",Šaudyti į priešus juos nužudyti,"Strieľať do nepriateľov, aby ich zabili","Ustreli v sovražnike, da jih ubijejo","Стріляйте в ворогів, щоб убити їх",Bắn vào kẻ thù để giết chúng
-LOADING_TIP_2,,When your HP goes below zero you will die,"Quand votre HP passe en dessous de zéro, tu mourras","Cuando su HP va por debajo de cero, morirás","Wenn Ihr HP unter Null geht, werden Sie sterben",Quando il tuo HP va sotto lo zero morirai,"Quando seu HP fica abaixo de zero, você morrerá","Quando seu HP fica abaixo de zero, você morrerá","Когда ваш HP идет ниже нуля, вы умрете",Όταν η HP σας πηγαίνει κάτω από το μηδέν θα πεθάνετε,HP'niz sıfırın altına geçtiğinde öleceksin,"Når din HP går under nul, vil du dø","Når HP går under null, vil du dø",När din HP går under noll kommer du att dö,"Wanneer je HP onder nul gaat, sterf je","Kiedy twój HP podchodzi poniżej zera, umrzesz","Kun hp menee alle nollan, kuolet",あなたのHPがゼロを下回ったとき、あなたは死ぬでしょう,当你的惠普低于零时，你会死,当你的惠普低于零时，你会死,HP가 0 이하로되면 당신이 죽을 것입니다,"Když váš HP jde pod nulu, zemřete","Amikor a HP nulla alatt megy, meghalsz","Când HP-ul dvs. merge sub zero, veți muri",เมื่อ HP ของคุณต่ำกว่าศูนย์คุณจะตาย,"Когато вашият HP отива под нулата, ще умреш",כאשר HP שלך הולך מתחת לאפס תמות,عندما يذهب HP إلى أقل من الصفر، سوف تموت,"Kad vaš HP ide ispod nule, umrijet ćete","Ketika HP Anda di bawah nol, Anda akan mati","Wanneer jou HP onder die nul gaan, sal jy sterf",Zure HP zero azpitik doa hilko zara,Калі ваш HP ідзе ніжэй за нуль вы памрэце,"Quan el vostre HP passi per sota de zero, morireu","Kui teie HP läheb alla nulli, siis surete",Þegar HP fer undir núll verður þú að deyja,"Kad jūsu HP iet zem nulles, jūs mirsiet","Kai jūsų HP eina žemiau nulio, jūs mirsite","Keď váš HP prejde pod nulu, zomriete","Ko bo vaš HP pod ničlo, boste umrli","Коли ваш HP впаде нижче нуля, ви помрете","Khi HP của bạn đi xuống dưới 0, bạn sẽ chết"
+LOADING_TIP_1,,Shoot into enemies to kill them,Tirer dans des ennemis pour les tuer,Disparar a los enemigos para matarlos,"Schießen in Feinde, um sie zu töten",Sparare a nemici per ucciderli,Atirar em inimigos para matá-los,Atirar em inimigos para matá-los,"Стрелять в врагов, чтобы убить их",Πυροβολούν σε εχθρούς για να τους σκοτώσουν,Onları öldürmek için düşmanlara vur,Skyde ind i fjender for at dræbe dem,Skyte inn i fiender for å drepe dem,Skjuta i fiender för att döda dem,Schiet in vijanden om ze te doden,"Strzelaj do wrogów, aby je zabić",Ampua vihollisia tappamaan heidät,彼らを殺すために敵に撃ちます,射入敌人杀死他们,射入敌人杀死他们,그들을 죽이기 위해 적을 쏴,"Střílet do nepřátel, aby je zabili","Lőni az ellenségeket, hogy megölje őket",Trage în dușmani pentru a le ucide,ยิงเข้าไปในศัตรูเพื่อฆ่าพวกเขา,"Стреля в врагове, за да ги убие",לירות לתוך אויבים להרוג אותם,تبادل لاطلاق النار في الأعداء لقتلهم,Pucajte u neprijatelje da ih ubijete,Tembak ke musuh untuk membunuh mereka,Skiet in vyande om hulle dood te maak,Tiro etsaiak hiltzeko,"Страляць ворагаў, каб забіць іх",Disparar en enemics per matar-los,Tulistada vaenlasi tappa neid,Skjóttu í óvini til að drepa þá,"Atvašu ienaidniekiem, lai nogalinātu tos",Šaudyti į priešus juos nužudyti,"Strieľať do nepriateľov, aby ich zabili","Ustreli v sovražnike, da jih ubijejo","Стріляйте в ворогів, щоб убити їх",Bắn vào kẻ thù để giết chúng
+LOADING_TIP_2,,When your HP goes below zero you will die,"Quand votre HP passe en dessous de zéro, tu mourras","Cuando su HP va por debajo de cero, morirás","Wenn Ihr HP unter Null geht, werden Sie sterben",Quando il tuo HP va sotto lo zero morirai,"Quando seu HP fica abaixo de zero, você morrerá","Quando seu HP fica abaixo de zero, você morrerá","Когда ваш HP идет ниже нуля, вы умрете",Όταν η HP σας πηγαίνει κάτω από το μηδέν θα πεθάνετε,HP'niz sıfırın altına geçtiğinde öleceksin,"Når din HP går under nul, vil du dø","Når HP går under null, vil du dø",När din HP går under noll kommer du att dö,"Wanneer je HP onder nul gaat, sterf je","Kiedy twój HP podchodzi poniżej zera, umrzesz","Kun hp menee alle nollan, kuolet",あなたのHPがゼロを下回ったとき、あなたは死ぬでしょう,当你的惠普低于零时，你会死,当你的惠普低于零时，你会死,HP가 0 이하로되면 당신이 죽을 것입니다,"Když váš HP jde pod nulu, zemřete","Amikor a HP nulla alatt megy, meghalsz","Când HP-ul dvs. merge sub zero, veți muri",เมื่อ HP ของคุณต่ำกว่าศูนย์คุณจะตาย,"Когато вашият HP отива под нулата, ще умреш",כאשר HP שלך הולך מתחת לאפס תמות,عندما يذهب HP إلى أقل من الصفر، ستموت,"Kad vaš HP ide ispod nule, umrijet ćete","Ketika HP Anda di bawah nol, Anda akan mati","Wanneer jou HP onder die nul gaan, sal jy sterf",Zure HP zero azpitik doa hilko zara,Калі ваш HP ідзе ніжэй за нуль вы памрэце,"Quan el vostre HP passi per sota de zero, morireu","Kui teie HP läheb alla nulli, siis surete",Þegar HP fer undir núll verður þú að deyja,"Kad jūsu HP iet zem nulles, jūs mirsiet","Kai jūsų HP eina žemiau nulio, jūs mirsite","Keď váš HP prejde pod nulu, zomriete","Ko bo vaš HP pod ničlo, boste umrli","Коли ваш HP впаде нижче нуля, ви помрете","Khi HP của bạn đi xuống dưới 0, bạn sẽ chết"
 LOADING_TIP_3,,"It's a roguelike, so losing is fun","C'est un roguelike, alors perdre est amusant","Es un rogolike, por lo que perder es divertido.","Es ist ein Rogelike, also lustig es macht Spaß","È un roguello, quindi perdere è divertente","É um roguelike, então perder é divertido","É um roguelike, então perder é divertido","Это roguelike, поэтому проигрыш это весело","Είναι ένα roguelike, έτσι χάνεται είναι διασκέδαση","Bu bir roguelie, bu yüzden kaybetmek eğlenceli","Det er en roguelike, så at miste er sjovt","Det er en roguelike, så å miste er morsomt","Det är en roguelike, så att förlora är kul","Het is een roguelike, dus verliezen is leuk","To roguelike, więc tracenie jest zabawne","Se on Rogeleike, joten menettäminen on hauskaa",それはローグルのようなので、失わって楽しみです,这是一个roguelike，所以失败很有趣,这是一个roguelike，所以失败很有趣,그것은 Roguelike이므로 잃는 것은 재미 있습니다,"Je to roguelike, takže ztrácí je zábava","Ez egy Roguelike, így a veszteség szórakoztató","Este un Roguelike, așa că pierderea este distractivă",มันเป็น Roguelike ดังนั้นการสูญเสียจึงสนุก,"Това е рогуелийка, така че загубата е забавна","זה רוגולי, אז לאבד את זה כיף",إنه روجويليك، لذلك فقدان هو متعة,"To je rogueli, tako da je izgubljenje zabavno","Itu adalah roguelike, jadi kalah menyenangkan","Dit is 'n roguelike, so verloor is pret","Roguelike bat da, beraz, galtzea dibertigarria da","Гэта Roguelike, так страціць гэта весела","És una roguelike, de manera que la pèrdua és divertida","See on Roguelik, nii et kaotamine on lõbus","Það er roguelike, svo að tapa er gaman","Tas ir roguelike, tāpēc zaudēt ir jautri","Tai yra roguelike, todėl prarandate yra smagu","Je to Roguelike, takže strata je zábava","To je roguelike, zato je izgubljeno zabavno","Це рогуля(jоце то гугл транслейт жже, мав бути roguelike), тому програвати це весело","Đó là một roguelike, vì vậy thua là niềm vui"
 LOADING_TIP_4,,Don't shoot into enemies to don't kill them,Ne tirez pas dans des ennemis pour ne pas les tuer,No dispares a los enemigos para no matarlos.,"Schießen Sie nicht in Feinde, um sie nicht zu töten",Non sparare a nemici per non ucciderli,Não atire em inimigos para não matá-los,Não atire em inimigos para não matá-los,"Не стреляйте в врагов, чтобы не убить их",Μην πυροβολείτε σε εχθρούς για να μην τους σκοτώσετε,Onları öldürmemek için düşmanlara ateş etme,Skyd ikke ind i fjender for ikke at dræbe dem,Ikke skyt inn i fiender for ikke å drepe dem,Skjut inte i fiender för att inte döda dem,Schiet niet in vijanden om ze niet te doden,"Nie strzelaj do wrogów, aby ich nie zabijać","Älä ampua vihollisia, ettet tappaa niitä",殺さないように敵に撃たないでください,不要射入敌人不要杀死他们,不要射入敌人不要杀死他们,그들을 죽이지 않도록 적을 쏘지 마십시오,"Nestřílejte nepřátele, aby je nezabili","Ne lőjen az ellenségekbe, hogy ne ölje meg őket",Nu trageți în dușmani să nu-i omorâți,อย่ายิงเข้าไปในศัตรูเพื่ออย่าฆ่าพวกเขา,"Не стреляйте в врагове, за да не ги убивате",לא יורים לתוך אויבים כדי לא להרוג אותם,لا تطلق النار على الأعداء على عدم قتلهم,Ne pucajte u neprijatelje da ih ne ubijete,Jangan menembak musuh untuk tidak membunuh mereka,Moenie in vyande skiet om hulle nie dood te maak nie,Ez ezazu etsaiei tiro egin ez dezaten hiltzeko,"Не страляйце ворагаў, каб не забіць іх",No dispareu enemics per no matar-los,"Ärge tulistage vaenlasi, et neid tappa",Ekki skjóta í óvini til að drepa þá ekki,"Nenovietojiet ienaidniekus, lai tos nogalinātu","Negalima šaudyti į priešus, kad jų nežudytų","Nesvietite sa na nepriateľov, aby ich nezabili","Ne streljajte v sovražnike, da jih ne ubijete","Не стріляйте в ворогів, щоб не вбити їх",Đừng bắn vào kẻ thù để không giết chúng
 LOADING_TIP_5,,Powers' buffs are bigger than debuffs. So stack 2 opposite powers to have a little boost always,Les buffs des pouvoirs sont plus gros que des aboutissants. Alors empilez 2 pouvoirs opposés pour avoir un peu de boost toujours,Los aficionados a los poderes son más grandes que los debuffs. Así que pila 2 poderes opuestos para tener un pequeño impulso siempre,"Powers 'Buffs' Buffs sind größer als Debuffs. Stapeln Sie also 2 gegenüberliegende Kräfte, um immer einen kleinen Schub zu haben",Gli appassionati di poteri sono più grandi dei debuffs. Quindi impila 2 poteri opposti per avere un po 'di boost sempre,Os fãs dos poderes são maiores que os debuffs. Então empilhar 2 poderes opostos para ter um pouco de impulso sempre,Os fãs dos poderes são maiores que os debuffs. Então empilhar 2 poderes opostos para ter um pouco de impulso sempre,"Баффы держав больше дебаффов. Так что стека 2 противоположных державах, чтобы немного повысить",Οι λάτρεις των εξουσιών είναι μεγαλύτεροι από τα debuffs. Έτσι στοίβα 2 αντίθετες δυνάμεις για να έχετε μια μικρή ώθηση πάντα,"Yetkilerin meraklıları, debuffs'tan daha büyük. Öyleyse, her zaman biraz destek almak için 2 zıt güç yığını",Powers 'buffs er større end debuffs. Så stack 2 modsatte kræfter at have lidt boost altid,Powers 'buffs er større enn debuffs. Så stable 2 motsatte krefter for å ha litt løft alltid,Powers buffs är större än debuffs. Så stapla 2 motsatta krafter att alltid ha lite boost,Buffs van de bevoegdheden zijn groter dan debuffs. Dus stapel 2 tegengestelde krachten om altijd een beetje boost te hebben,"Buffy mocy są większe niż debuffy. Więc stos 2 naprzeciwko mocy, aby zawsze mieć trochę boost",Powerin buffit ovat suurempia kuin debuffit. Joten pinoa 2 vastakkaista voimaa saada hieman vauhtia aina,Powersのバフはデバフよりも大きいです。だから常に少し後押しするために反対側の力を積み重ねる,权力'Buffs大于Debuffs。所以堆叠2个相反的力量总是提升,权力'Buffs大于Debuffs。所以堆叠2个相反的力量总是提升,힘의 버프는 debuffs보다 큽니다. 그래서 항상 2 개의 반대의 힘을 가질 수 있습니다.,"Síla 'Buffs jsou větší než debuffy. Tak stack 2 opačné síly, aby se trochu zvýšil","A hatalmak bivalása nagyobb, mint a debuff. Olyan verem 2 ellentétes hatalmakkal, hogy mindig egy kicsit lendüljenek","Powers ""sunt mai mari decât debuffurile. Astfel încât stivă 2 puteri opuse să aibă un pic de creștere întotdeauna",Buffs 'พลังนั้นใหญ่กว่า Debuffs ดังนั้นสแต็ค 2 พลังตรงข้ามที่จะเพิ่มขึ้นเล็กน้อยเสมอ,"Блюсите на властите са по-големи от дебферсите. Така че стека 2 противоположни сили, за да имате малко тласък",חובבי הכוחות גדולים יותר מאשר בדיונות. אז מחסנית 2 כוחות מנוגדים יש דחיפה קטנה תמיד,آهام القوى أكبر من النظارات. كومة جدا 2 القوى المعاكسة للحصول على دفعة صغيرة دائما,Buffs ovlaštenja su veći od debuffa. Pa stog 2 suprotne sile da se uvijek pojačaju,Buff Powers lebih besar dari debuff. Jadi tumpukan 2 kekuatan yang berlawanan untuk selalu dorongan,Bevoegdhede 'buffs is groter as debuffs. So stap 2 teenoorgestelde magte om altyd 'n bietjie hupstoot te hê,"Botereen buffak debuffs baino handiagoak dira. Beraz, pilatu bi botere kontrakoak beti bultzada pixka bat izateko","Бафф Powers 'больш, чым дебаффы. Так стэк 2 супрацьлеглыя паўнамоцтвы, каб мець трохі павышэння заўсёды",Els aficionats als poders són més grans que els debuffs. Així que la pila 2 poders oposats per tenir un petit impuls sempre,"Powers 'Buffs on suuremad kui debuffid. Nii stack 2 vastupidine volitused, et alati vähe suurendada",Buffs völd eru stærri en debuffs. Svo stafla 2 gagnstæða völd til að hafa smá uppörvun alltaf,"Pilnvaras ""Buffs ir lielāks nekā debuffs. Tik kaudze 2 pretējās pilnvaras, lai vienmēr palielinātu","Įgaliojimai yra didesni už debuffs. Taip sukrauti 2 priešingus įgaliojimus, kad visada būtų šiek tiek padidinti","Powers 'Bunchs sú väčšie ako debuffy. Takže zásobník 2 opačné sily, aby ste mali trochu boost","Pooblastila so večji od debuffs. Torej stack 2 nasprotnih moči, da se vedno poveča","Бафи пікапів більші, ніж дебафи. Тому зберіть 2 протилежних, щоб мати баф послабше завжди","Buff của Powers lớn hơn Debuff. Vì vậy, ngăn xếp 2 quyền lực đối diện để có một chút boost luôn luôn"
 LOADING_TIP_6,,Don't forget to upgrade in a Valhalla,N'oubliez pas de mettre à niveau dans une valhalla,No te olvides de actualizar en un valhalla.,"Vergiss nicht, in einer Valhalla aufzutreten",Non dimenticare di aggiornare in Valhalla,Não se esqueça de atualizar em um valhalla,Não se esqueça de atualizar em um valhalla,Не забудьте обновить в Вальхальской,Μην ξεχάσετε να αναβαθμίσετε σε μια Valhalla,Valhalla'da yükseltmeyi unutma,Glem ikke at opgradere i en Valhalla,Ikke glem å oppgradere i en Valhalla,Glöm inte att uppgradera i en Valhalla,Vergeet niet om te upgraden in een valhalla,Nie zapomnij uaktualnić w Valhalla,Älä unohda päivittää Valhalla,バルハラでアップグレードすることを忘れないでください,别忘了升级valhalla,别忘了升级valhalla,Valhalla에서 업그레이드하는 것을 잊지 마십시오,Nezapomeňte upgradovat v Valhallu,Ne felejtsd el frissíteni egy Valhalla-ban,Nu uitați să faceți upgrade într-un Valhalla,อย่าลืมอัพเกรดใน Valhalla,Не забравяйте да надстроите в Valhalla,אל תשכח לשדרג ב Valhalla,لا تنس الترقية في فالهالي,Ne zaboravite nadograditi u Valhalla,Jangan lupa untuk meningkatkan dalam valhalla,Moenie vergeet om in 'n valhalla op te gradeer nie,Ez ahaztu Valhalla batean berritzea,Не забудзьцеся абнавіць у Valhalla,No us oblideu d'actualitzar a Valhalla,Ära unusta Valhalla uuendada,Ekki gleyma að uppfæra í Valhalla,Neaizmirstiet jaunināt Valhalla,Nepamirškite atnaujinti Valhalla,Nezabudnite upgrade v Valhalle,Ne pozabite nadgraditi v Valhalla,Не забудьте покращуватися в Вальгаллі,Đừng quên nâng cấp trong một valhalla
 LOADING_TIP_7,,Each class have different ablities - try them all,Chaque classe a des abliques différents - essayez-les tous,"Cada clase tiene diferentes ablituras, pruebe todos.",Jede Klasse hat unterschiedliche Älder - probieren Sie sie alle aus,Ogni classe ha diverse Ablity - Provali tutti,Cada aula tem diferentes ablities - experimentá-los todos,Cada aula tem diferentes ablities - experimentá-los todos,У каждого класса разные возможности - попробуйте их все,Κάθε τάξη έχει διαφορετικές επίτευξη - δοκιμάστε τα όλα,Her sınıfın farklı ablar var - hepsini deneyin,Hver klasse har forskellige ablities - prøv dem alle,Hver klasse har forskjellige ablities - prøv dem alle,Varje klass har olika ablities - prova dem alla,Elke klas heeft verschillende Ablities - probeer ze allemaal,Każda klasa ma różne wojny - spróbuj ich wszystkich,Jokaisella luokalla on erilaisia ​​abliteetit - kokeile niitä kaikkia,各クラスには異なる承認があります - それらすべてを試してください,每个班级都有不同的绝佳 - 试试杂志,每个班级都有不同的绝佳 - 试试杂志,각 학급에는 다른 일도가 있습니다 - 모두를 시도하십시오,Každá třída má různé obrobky - zkuste je všechny,Minden osztálynak különböző ablities - próbálja meg őket,Fiecare clasă are abilități diferite - încercați toate,แต่ละคลาสมีความแตกต่างกัน - ลองพวกเขาทั้งหมด,Всеки клас има различни неприятности - опитайте ги всички,לכל בכיתה יש elbities שונים - נסה את כולם,كل فئة لها oblities مختلفة - جربهم جميعا,Svaka klasa ima različite znamenitosti - isprobajte ih sve,Setiap kelas memiliki kemampuan yang berbeda - cobalah semuanya,Elke klas het verskillende abliteite - probeer hulle almal,Klase bakoitzak ablitate desberdinak ditu - saiatu guztiak,Кожны клас маюць розныя ablities - паспрабаваць іх усіх,Cada classe té diferents ablies: proveu-los a tots,Igal klassil on erinevad abimid - proovige neid kõiki,Hver flokkur hefur mismunandi ablities - reyndu þá alla,Katrai klasei ir dažādas ablas - izmēģiniet tos visus,Kiekviena klasė turi skirtingų ablituacijų - pabandykite juos visus,Každá trieda má rôzne veľké množstvo - skúste ich všetko,Vsak razred ima različne ablanties - poskusite vse,Кожен клас має різні здібності - спробуйте їх усіх,Mỗi lớp có các ablity khác nhau - thử tất cả
-LOADING_TIP_8,,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!
+LOADING_TIP_8,,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Панкам - хой!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Oi!,Панкам - хой!,Oi!
 LOADING_TIP_9,,Does anyone actually read these,Est-ce que quelqu'un lit réellement ces,¿Alguien realmente lee estos,Liest jeder tatsächlich diese,Qualcuno ha davvero letto questi,Alguém realmente lê estes,Alguém realmente lê estes,Кто-нибудь на самом деле читает эти,Μήπως κάποιος διαβάσει πραγματικά αυτά,Aslında bunları okuduğu var mı?,Læser nogen faktisk disse,Leser noen faktisk disse,Läser någon faktiskt dessa,Leest iemand deze,Czy ktoś rzeczywiście to czyta,Onko kukaan todella lukenut nämä,誰もが実際にこれらを読んでいますか,有没有人实际读过这些,有没有人实际读过这些,누구든지 실제로 읽을 수 있습니까?,Čete si to někdo,Valaki ténylegesen elolvassa ezeket,Are cineva de fapt le-a citit,ไม่มีใครอ่านสิ่งเหล่านี้จริง ๆ,Някой всъщност прочете това,האם מישהו באמת קורא את אלה,هل قرأ أي شخص بالفعل,Da li je neko zapravo čitao ove,Apakah ada yang benar-benar membaca ini,Lees iemand dit eintlik,Norbaitek benetan irakurtzen al ditu hauek,Хто-небудзь на самай справе прачытаць гэтыя,Algú realment llegeix aquests,Kas keegi neid tegelikult lugeda,Er einhver að lesa þetta í raun,Vai kāds faktiski lasa šos,Ar kas nors iš tikrųjų perskaito šiuos,Skutočne číta niekto,Ali je kdo dejansko prebral,Хто-небудь насправді читає це?,Có ai thực sự đọc những thứ này không
 LOADING_TIP_10,,"Every death makes final boss stronger, so reset world if it too hard for you","Chaque mort rend le dernier patron plus fort, alors réinitialiser le monde si c'est trop difficile pour vous","Cada muerte hace que el jefe final sea más fuerte, así que restablece el mundo si es demasiado difícil para ti","Jeder Tod macht den endgültigen Chef stärker, also somit die Welt zurücksetzen, wenn es für Sie zu schwer ist","Ogni morte rende il boss finale più forte, quindi ripristinare il mondo se è troppo difficile per te","Toda morte faz o chefe final mais forte, então redefinir o mundo se é muito difícil para você","Toda morte faz o chefe final mais forte, então redefinir o mundo se é muito difícil para você","Каждая смерть делает последний босс сильнее, поэтому сбросить мир, если это слишком сложно для вас","Κάθε θάνατος κάνει τον τελικό αφεντικό ισχυρότερο, οπότε επαναφέρετε τον κόσμο αν είναι πολύ δύσκολο για εσάς","Her ölüm son patronu daha güçlü yapar, bu yüzden sizi sizin için çok zorsa sıfırlayın","Hver død gør den endelige chef stærkere, så nulstiller verden, hvis det er for svært for dig","Hver død gjør endelig sjef sterkere, så tilbakestill verden hvis det er for vanskelig for deg","Varje död gör slutlig chef starkare, så återställ världen om det är för hårt för dig","Elke dood maakt de laatste baas sterker, dus reset de wereld als het te moeilijk voor je is","Każda śmierć czyni ostate boss silniejszy, więc zresetować świat, jeśli zbyt trudno dla ciebie","Jokainen kuolema tekee lopullisesta pomo vahvemmaksi, joten nollaa maailma, jos se on liian kova sinulle",すべての死は最終上司を強くしますので、あなたにとって難しい場合は世界をリセットしてください,每次死亡都会使最终的老板更强大，所以如果它对你来说太难了,每次死亡都会使最终的老板更强大，所以如果它对你来说太难了,모든 죽음은 최종 보스를 강하게 만듭니다. 그래서 당신을 위해 너무 열심히 당신을 재설정하십시오.,"Každá smrt dělá finální šéf silnější, takže resetujte svět, pokud je pro vás příliš těžké","Minden halál végső főnök erősebbé teszi, így visszaállítani a világot, ha túl nehéz neked","Fiecare moarte face șeful final mai puternic, deci resetați lumea dacă este prea tare pentru dvs.",การตายทุกครั้งทำให้บอสสุดท้ายแข็งแกร่งขึ้นดังนั้นรีเซ็ตโลกถ้ามันยากเกินไปสำหรับคุณ,"Всяка смърт прави последния шеф по-силен, така че възстановява света, ако е твърде трудно за вас","כל מוות עושה סופי הבוס חזק, אז לאפס את העולם אם זה קשה מדי בשבילך",كل وفاة يجعل مدرب نهائي أقوى، لذلك إعادة تعيين العالم إذا كان من الصعب عليك,"Svaka smrt čini konačni šef jači, pa resetirajte svijet ako vam previše teško","Setiap kematian membuat bos terakhir lebih kuat, jadi reset dunia jika terlalu sulit untuk Anda","Elke dood maak die finale baas sterker, so reset die wêreld as dit te hard vir jou is","Heriotza bakoitzak azken buruzagia indartsuagoa egiten du, beraz, berrezarri mundua zuretzako gogorra bada","Кожная смерць робіць канчатковы бос мацней, так што скінуць свет, калі гэта занадта цяжка для вас","Cada mort fa que el cap final sigui més fort, així que restabliu el món si és massa difícil per a vosaltres","Iga surm teeb lõpliku boss tugevamaks, nii et reset maailma, kui see on liiga raske teile","Sérhver dauði gerir endanlega stjóri sterkari, svo endurstillt heim ef það er of erfitt fyrir þig","Katrs nāve padara galīgo boss spēcīgāku, tāpēc reset pasauli, ja tas ir pārāk grūti jums","Kiekviena mirtis daro galutinį bosą, todėl atstatykite pasaulį, jei jums per sunku","Každá smrť robí konečný šéf silnejší, takže reset svet, ak to pre teba príliš tvrdý","Vsaka smrt naredi končni šef močnejši, tako ponasečen svet, če je preveč težko za vas","Кожна смерть робить фінального босса сильніше, тому скиньте світ, якщо це занадто важко для вас","Mỗi cái chết khiến ông chủ cuối cùng mạnh mẽ hơn, vì vậy hãy thiết lập lại thế giới nếu nó quá khó khăn với bạn"
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -40,3 +40,224 @@ POWER_PAIR_ATTACK_SPEED,,Attack speed,Vitesse d'attaque,Velocidad de ataque,Angr
 POWER_PAIR_MOVE_SPEED,,Move speed,Vitesse de déplacement,Velocidad de movimiento,Bewegungsgeschwindigkeit,Velocità di movimento,Velocidade de movimento,Velocidade de movimento,Скорость передвижения,Ταχύτητα κίνησης,Hareket hızı,Flyt hastigheden,Flytt hastigheten,Flytthastighet,Bewegingssnelheid,Prędkość ruchu,Liikkumisnopeus,移動速度,移动速度,移动速度,이동 속도,Rychlost pohybu,Mozgási sebesség,Viteza de miscare,ย้ายความเร็ว,Скорост на движение,להעביר מהירות,تحريك السرعة,Pomicanje brzine,Pindahkan kecepatan,Beweeg spoed,Mugitu abiadura,Перамясціць хуткасць,Moure la velocitat,Kiirust liigutama,Færðu hraða,Pārvietojiet ātrumu,Perkelti greitį,Rýchlosť presunu,Premaknite hitrost,Швидкість переміщення,Di chuyển tốc độ
 POWER_PAIR_ARMOR,,Armor,Armure,Armadura,Rüstung,Armatura,armaduras,armaduras,Броня,Πανοπλία,Zırh,Rustning,Rustning,Rustning,Schild,Zbroja,Panssari,鎧,盔甲,盔甲,갑옷,Brnění,Páncél,Armură,เกราะ,Броня,שִׁריוֹן,درع,Oklop,Baju zirah,Pantser,Armadura,Броніца,Armadura,Armor,Brynja,Bruņas,Šarvai,Brnení,Oklep,Броня,Giáp
 POWER_PAIR_DAMAGE,,Damage,Endommager,Daño,Beschädigung,Danno,Dano,Dano,Повреждать,Βλάβη,Zarar,Skade,Skader,Skada,Schade,Szkoda,Vahingoittaa,ダメージ,损害,损害,손상,Poškození,Kár,Deteriora,ความเสียหาย,Щета,נֵזֶק,تلف,Šteta,Kerusakan,Skade,Kalte,Шкода,Dany,Kahju,Tjón,Bojājums,Žala. \ T,Poškodenie,Poškodbe,Збиток,Tổn hại
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TUTORIAL_MOVE_1,,- move,- mouvement,- Muevete,- Bewegung,- spostare,- jogada,- jogada,- переехать,- μετακινήστε,- taşınmak,- bevæge sig,- bevege seg,- Flytta,- Actie,- ruszaj się,- Siirrä,- 動く,- 移动,- 移动,- 이동하다,- hýbat se,- Mozgás,- mișcare,- เคลื่อนไหว,- ход,- מהלך \ לזוז \ לעבור,- نقل,- pomaknuti se,- bergerak,- beweeg,- mugitu,- Перамяшчэнне,- Mou-te,- Liiguta,- Færa,- pārvietot,- judėti,- pohyb,- Premakni,- рух,- di chuyển
+TUTORIAL_MOVE_2,,- look,- voir,- Mira,- suchen,- Guarda,- Veja,- Veja,- Посмотрите,- Κοίτα,- bakmak,- Look.,- se,- se,- kijk,- Popatrz,- Katso,- 見る,- 看,- 看,- 바라보다,- dívej se,- néz,- uite,- ดู,- виж,- תראה,- نظرة,- Vidi,- Lihat,- kyk,- itxura,- Паглядзіце,- Mireu,- Vaata,- Útlit,- Skaties,- LOOK.,- Pozrite sa,Poglej,- камера,- nhìn
+TUTORIAL_MOVE_3,,- toggle run,- Toggle Run,- Toggle Run,- Toggle Run.,- Toggle run.,- Toggle Run.,- Toggle Run.,- Переключатель пробега,- Εναλλαγή τρέξιμο,- Geçiş koşusu,- skifte løb,- Slå løp,- Växla kör,- Wisselen,- Przełącz bieg,- Toggle Run, - 走りをトグルします, - 切换运行, - 切换运行,- 실행 토글,- Přepnout běh,- Váltás futtatás,- Toggle Run,- สลับวิ่ง,- Toggle Run,- לעבור לרוץ,- المدى تبديل,- Prebacite trčanje,- Beralih Run.,- Skakel hardloop,- Txandakatu exekutatu,- Toggle Run,- córrer,- Toggle Run,- Skipta Run.,- Toggle palaist,- perjungimas,- Prepínanie,- preklopi,- перемкнути спрінт,- Toggle Run.
+TUTORIAL_MOVE_4,,- jump,- saut,- salto,- springen,- salto,- pular,- pular,- Прыжок,- άλμα,- zıplamak,- hoppe,- Hopp,hoppa,- springen,- skok,- hypätä, - ジャンプ, - 跳跃, - 跳跃,- 점프,- skok,- ugrás,- a sari,- กระโดด,- скок,- קפיצה,- القفز,- Skoči,- melompat,- Spring,- salto egin,- скакаць,- saltar,- hüpata,- Jump.,- lēkt,- šokinėti,- skok,- Skoči,- стрибок,- nhảy
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TUTORIAL_ENEMY_1,,"Here are an enemy.
+Try to kill him. Don't worry, he can't hurt you","Voici un ennemi.
+Essayez de le tuer. Ne t'inquiète pas, il ne peut pas te faire mal","Aquí hay un enemigo.
+Intenta matarlo. No te preocupes, él no puede lastimarte.","Hier ist ein Feind.
+Versuche ihn zu töten. Keine Sorge, er kann dich nicht verletzen","Ecco un nemico.
+Cerca di ucciderlo. Non preoccuparti, non può farti del male","Aqui estão um inimigo.
+Tente matá-lo. Não se preocupe, ele não pode te machucar","Aqui estão um inimigo.
+Tente matá-lo. Não se preocupe, ele não pode te machucar","Вот враг.
+Попытаться убить его. Не волнуйся, он не может причинить тебе боль","Εδώ είναι ένας εχθρός.
+Προσπαθήστε να τον σκοτώσετε. Μην ανησυχείτε, δεν μπορεί να σας βλάψει","İşte bir düşman.
+Onu öldürmeye çalış. Endişelenme, sana zarar veremez","Her er en fjende.
+Prøv at dræbe ham. Bare rolig, han kan ikke skade dig","Her er en fiende.
+Prøv å drepe ham. Ikke bekymre deg, han kan ikke skade deg","Här är en fiende.
+Försök att döda honom. Oroa dig inte, han kan inte skada dig","Hier zijn een vijand.
+Probeer hem te doden. Maak je geen zorgen, hij kan je geen pijn doen","Oto wróg.
+Spróbuj go zabić. Nie martw się, nie może cię skrzywdzić","Tässä on vihollinen.
+Yritä tappaa hänet. Älä huoli, hän ei voi satuttaa sinua","これが敵です。
+彼を殺してみてください。心配しないで、彼はあなたを傷つけることができません","这是一个敌人。
+试着杀了他。别担心，他不能伤害你","这是一个敌人。
+试着杀了他。别担心，他不能伤害你","여기 적이 있습니다.
+그를 죽이려고 노력하십시오. 걱정하지 마라. 그는 너를 해칠 수 없어","Zde je nepřítel.
+Snažte se ho zabít. Neboj se, nemůže ti ublížit","Itt van egy ellenség.
+Próbáld meg megölni. Ne aggódj, nem bánthat meg","Iată un dușman.
+Încearcă să-l omori. Nu-ți face griji, nu te poate răni","นี่คือศัตรู
+พยายามฆ่าเขา ไม่ต้องกังวลเขาไม่สามารถทำร้ายคุณได้","Ето един враг.
+Опитайте се да го убиете. Не се притеснявайте, той не може да те нарани","הנה אויב.
+נסו להרוג אותו. אל תדאג, הוא לא יכול לפגוע בך","هنا عدوا.
+حاول قتله. لا تقلق، لا يستطيع أن يؤذيك","Evo neprijatelja.
+Pokušaj da ga ubiješ. Ne brini, ne može te povrijediti","Ini musuh.
+Cobalah untuk membunuhnya. Jangan khawatir, dia tidak bisa menyakitimu","Hier is 'n vyand.
+Probeer om hom dood te maak. Moenie bekommerd wees nie, hy kan jou nie seermaak nie","Hona hemen etsaia.
+Saiatu hura hiltzen. Ez kezkatu, ezin zaitu minik egin","Вось вораг.
+Паспрабуйце забіць яго. Не хвалюйцеся, ён не можа пашкодзіць вам","Aquí hi ha un enemic.
+Intenta matar-lo. No et preocupis, no et pot fer mal","Siin on vaenlane.
+Püüdke teda tappa. Ära muretse, ta ei saa sulle haiget teha","Hér eru óvinir.
+Reyndu að drepa hann. Ekki hafa áhyggjur, hann getur ekki meiða þig","Šeit ir ienaidnieks.
+Mēģiniet viņu nogalināt. Neuztraucieties, viņš nevar jums ievainot","Čia yra priešas.
+Pabandykite jį nužudyti. Nesijaudinkite, jis negali jums pakenkti","Tu je nepriateľ.
+Snažte sa ho zabiť. Nebojte sa, nemôže ti ublížiť","Tukaj je sovražnik.
+Poskusite ga ubiti. Ne skrbi, ne more te poškodovati","Ось ворог.
+Спробуй його вбити. Не хвилюйся, він не може зашкодити тобі","Dưới đây là một kẻ thù.
+Cố gắng giết anh ta. Đừng lo lắng, anh ấy không thể làm tổn thương bạn"
+TUTORIAL_ENEMY_2,,- attack 1,- attaque 1,- Ataque 1,- Angriff 1,- Attacco 1.,- ataque 1.,- ataque 1.,- Атака 1.,- επίθεση 1,- Saldırı 1,- Attack 1,- Angrep 1,- Attack 1,- Aanval 1,- Atak 1.,- Attack 1, - 攻撃1を攻撃する, - 攻击1, - 攻击1,- 공격 1.,- útok 1,- támadás 1,- atac 1.,- การโจมตี 1,- Атака 1.,- התקפה 1.,- الهجوم 1.,- napad 1,- Serangan 1.,- Aanval 1,- 1. erasoa,- Атака 1,- Atac 1,- rünnak 1,- Árás 1.,- uzbrukums 1,- ataka 1,- útok 1,- Napad 1.,- Атака 1,- Tấn công 1.
+TUTORIAL_ENEMY_3,,- attack 2,- attaque 2,- Ataque 2,- Angriff 2,- Attacco 2.,- ataque 2.,- ataque 2.,- Атака 2.,- επίθεση 2,- Saldırı 2,- Attack 2.,- Attack 2.,- Attack 2,- Aanval 2,- Atak 2.,- Attack 2, - 攻撃2., - 攻击2., - 攻击2.,- 공격 2,- útok 2,- támadás 2,- Atac 2.,- โจมตี 2,- Атака 2.,- התקפה 2.,الهجوم 2,- napad 2,- Serangan 2.,- Aanval 2,- 2 eraso,- атака 2,- Attack 2,- Attack 2,- Árás 2.,- Uzbrukums 2,- ataka 2,- útok 2,- Napad 2.,- Атака 2,- Tấn công 2.
+TUTORIAL_ENEMY_4,,You can deal additional damege when targeting head,Vous pouvez traiter de la dommage supplémentaire lorsque vous ciblez la tête,Puedes tratar a Damege adicional al dirigir la cabeza,"Sie können zusätzliche Damege, wenn Sie den Kopf ansprechen",Puoi offrire un ulteriore Damege quando mirato la testa,Você pode causar damege adicional ao segmentar a cabeça,Você pode causar damege adicional ao segmentar a cabeça,Вы можете иметь дело с дополнительным дамгем при нацелении на голову,Μπορείτε να αντιμετωπίσετε πρόσθετη Damege κατά τη στόχευση στο κεφάλι,Kafayı hedeflerken ek bir dalga başa çıkabilirsiniz.,"Du kan håndtere yderligere Dameege, når du målretter mod hovedet",Du kan håndtere ekstra damege når du målretter på hodet,Du kan hantera ytterligare dame när du riktar in huvudet,Je kunt extra Damege omgaan bij het targeten van het hoofd,Możesz poradzić sobie z dodatkową Damege podczas kierowania głowy,Voit käsitellä lisää damegea kohdentamalla päätä,頭をターゲットにするときに追加の妨害を対処することができます,目标头时可以处理额外的DAMEGE,目标头时可以处理额外的DAMEGE,머리를 타겟팅 할 때 추가로 더 많은을 처리 할 수 ​​있습니다,Při cílení hlavy se můžete zabývat další dámy,"További DAMEE-t kezelhet, ha a fejét célozza",Puteți face camege suplimentare atunci când direcționați capul,คุณสามารถจัดการ Damege เพิ่มเติมเมื่อกำหนดเป้าหมายหัว,Можете да се справите с допълнителни DAMEGE при насочване на главата,אתה יכול להתמודד damege נוסף כאשר מיקוד הראש,يمكنك التعامل مع ودايم إضافية عند الاستهداف,Možete da dodate dodatni Damege prilikom ciljanja glave,Anda dapat menangani Damege tambahan saat menargetkan kepala,U kan addisionele Damege hanteer wanneer u kop rig,Damege gehigarria aurre egin dezakezu burua zuzentzerakoan,Вы можаце мець справу дадатковай Damege пры арыентацыі галавы,Podeu fer front a Damege addicional quan s'orienta el cap,Te saate tegeleda täiendava damege sihtimise pea,Þú getur séð frekari damege þegar þú miðar á höfuð,"Jūs varat tikt galā ar papildu damege, kad mērķauditorija","Jei nukreipiate galvą, galite išspręsti papildomą damga",Pri zacielení hlavy môžete riešiť ďalší DAMEGE,Pri ciljni glavi lahko obravnavate dodatno dame,Ви можете нанести додактові пошкодження атакуючи в голову,Bạn có thể xử lý thêm Damege khi nhắm mục tiêu đầu
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TUTORIAL_PICKUP_1,,"This is an ancient obelisk.
+
+It will bless you, when you do something.
+But it would curse you, when you don't do that","Ceci est un ancien obélisque.
+
+Cela vous bénira, quand vous faites quelque chose.
+Mais cela vous maudirait, quand vous ne le faites pas","Este es un antiguo obelisco.
+
+Te bendecirá, cuando hagas algo.
+Pero lo maldeciría, cuando no hagas eso.","Dies ist ein alter Obelisk.
+
+Es wird dich segnen, wenn du etwas tust.
+Aber es würde dich verfluchen, wenn du das nicht tust","Questo è un antico obelisco.
+
+Ti benedirà, quando fai qualcosa.
+Ma ti maledirebbe, quando non lo fai","Este é um antigo obelisco.
+
+Isso te abençoará quando você fizer alguma coisa.
+Mas iria amaldiçoar você, quando você não fizer isso","Este é um antigo obelisco.
+
+Isso te abençoará quando você fizer alguma coisa.
+Mas iria amaldiçoar você, quando você não fizer isso","Это древний обелиск.
+
+Это благословит вас, когда ты что-то делаешь.
+Но это будет проклинать вас, когда вы этого не делаете","Αυτός είναι ένας αρχαίος οβελίσκος.
+
+Θα σας ευλογεί, όταν κάνετε κάτι.
+Αλλά θα σας καταδικάσει, όταν δεν το κάνετε αυτό","Bu eski bir dikilitaş.
+
+Bir şey yaptığın zaman seni kutsasın.
+Ama bunu yapmadığın zaman seni lanetleyecekti","Dette er en gammel obelisk.
+
+Det vil velsigne dig, når du gør noget.
+Men det ville forbande dig, når du ikke gør det","Dette er en gammel obelisk.
+
+Det vil velsigne deg når du gjør noe.
+Men det ville forbanne deg, når du ikke gjør det","Detta är en gammal obelisk.
+
+Det kommer att välsigna dig, när du gör något.
+Men det skulle förbannas dig, när du inte gör det","Dit is een oude obelisk.
+
+Het zal je zegenen, als je iets doet.
+Maar het zou je vervloeken, als je dat niet doet","To starożytny obelisk.
+
+Będzie cię pobłogosławić, kiedy coś zrobisz.
+Ale przeklinałoby cię, kiedy tego nie zrobisz","Tämä on antiikin obelisk.
+
+Se siunaa sinua, kun teet jotain.
+Mutta se kiroisi sinua, kun et tee sitä","これは古代のオベリスクです。
+
+あなたが何かをするとき、それはあなたを祝福します。
+しかし、あなたがそうしないとき、それはあなたを呪います","这是一个古老的方尖碑。
+
+当你做某事时，它会祝福你。
+但是当你不这样做时，它会诅咒你","这是一个古老的方尖碑。
+
+当你做某事时，它会祝福你。
+但是当你不这样做时，它会诅咒你","이것은 고대 오벨 리스크입니다.
+
+당신이 뭔가를 할 때 그것은 당신을 축복 할 것입니다.
+하지만 그렇게하지 않을 때 그것은 당신을 저주 할 것입니다.","To je starověký obelisk.
+
+Bude vám požehnat, když něco uděláte.
+Ale to by vás proklínalo, když to neuděláš","Ez egy ősi obeliszk.
+
+Meg fog áldani, ha valamit csinálsz.
+De átkozna, amikor nem teszed ezt","Acesta este un obelisc vechi.
+
+Te va binecuvânta, când faci ceva.
+Dar te-ar agita, când nu faci asta","นี่คือเสาโอเบลิสก์โบราณ
+
+มันจะอวยพรคุณเมื่อคุณทำอะไรบางอย่าง
+แต่มันจะสาปแช่งคุณเมื่อคุณไม่ทำเช่นนั้น","Това е древен обел.
+
+Ще ви благослови, когато направите нещо.
+Но това ще ви прокълне, когато не го направите","זוהי אובליסק עתיק.
+
+זה יברך אותך, כאשר אתה עושה משהו.
+אבל זה יהיה לקלל אותך, כאשר אתה לא עושה את זה","هذا هو المسلة القديمة.
+
+سوف يباركك، عندما تفعل شيئا.
+لكنه سيعنك، عندما لا تفعل ذلك","Ovo je drevni obelisk.
+
+Blagosloviće te, kad nešto učiniš.
+Ali to bi te psovao, kad to ne učiniš","Ini adalah obelisk kuno.
+
+Ini akan memberkati Anda, ketika Anda melakukan sesuatu.
+Tapi itu akan mengutukmu, ketika kamu tidak melakukan itu","Dit is 'n antieke Obelisk.
+
+Dit sal jou seën wanneer jy iets doen.
+Maar dit sal jou vervloek wanneer jy dit nie doen nie","Antzinako obeliskoa da.
+
+Zerbait egiten duzunean bedeinkatuko zaitu.
+Baina madarikatuko zenuke, hori egiten ez duzunean","Гэта старажытны абеліск.
+
+Ён будзе дабраславіць вас, калі вы робіце нешта.
+Але гэта будзе праклінаць вас, калі вы не зробіце, што","Aquest és un obelisc antic.
+
+Et beneeixi, quan fas alguna cosa.
+Però us maleiria, quan no ho feu","See on iidne obelisk.
+
+See õnnistagu teid, kui te midagi teete.
+Aga see oleks needus teid, kui sa seda ei tee","Þetta er forn obelisk.
+
+Það mun blessa þig, þegar þú gerir eitthvað.
+En það myndi bölva þér, þegar þú gerir það ekki","Tas ir senais obelisks.
+
+Tas jūs svētīs, kad jūs kaut ko darīsiet.
+Bet tas nolādētu jūs, kad to nedarīsiet","Tai senovės obelisko.
+
+Tai palaimins jus, kai darysite kažką.
+Bet tai jums prakeiktų, kai to nedarysite","Toto je staroveký obelisk.
+
+Požehná vám, keď niečo urobíte.
+Ale to by vás prekvihlo, keď to neurobíte","To je stari obelisk.
+
+Blagoslovil vas bo, ko bo nekaj naredil.
+Ampak to bi vas preklet, ko tega ne storiš","Це давній обеліск.
+
+Він благословить вас, коли ви щось робите.
+Але і прокляне, коли ви цього не робите","Đây là một obelisk cổ đại.
+
+Nó sẽ ban phước cho bạn, khi bạn làm một cái gì đó.
+Nhưng nó sẽ nguyền rủa bạn, khi bạn không làm điều đó"
+TUTORIAL_PICKUP_2,, - interact, - interagir, - interactuar, - interagieren, - interagire, - Interagir, - Interagir, - Взаимодействовать, - Αλληλεπίδραση, - etkileşime girmek, - Interact., - Interagere, - Interagera, - Interactie, - oddziaływać, - Vuorovaikutus, - 相互作用, - 相互作用, - 相互作用, - 상호 작용, - interakce, - kölcsönhatásba lép, - interacționa, - มีปฏิสัมพันธ์, - Интеракт, - אינטראקטיבי, - يتفاعل, - Interakcija, - Berinteraksi, - Interaksie, - Elkarreragin, - Узаемадзеянне, - Interactuar, - suhtle, - Interact., - mijiedarboties, - Sąveika, - interakcia, - Interact., - Взаємодія, - tương tác
+TUTORIAL_MAP_1,,"Let's start your journey!
+Find the ancient idol and kill him","Commençons votre voyage!
+Trouvez l'ancienne idole et tuez-le","¡Comencemos tu viaje!
+Encuentra el antiguo ídolo y mátalo.","Beginnen wir Ihre Reise!
+Finde das antike Idol und töte ihn","Iniziamo il tuo viaggio!
+Trova l'antico idolo e ucciderlo","Vamos começar sua jornada!
+Encontre o antigo ídolo e matá-lo","Vamos começar sua jornada!
+Encontre o antigo ídolo e matá-lo","Давайте начнем свое путешествие!
+Найди древнего идола и убить его","Ας ξεκινήσουμε το ταξίδι σας!
+Βρείτε το αρχαίο είδωλο και τον σκοτώστε","Yolculuğuna başlayalım!
+Eski idolü bulun ve onu öldür","Lad os starte din rejse!
+Find den gamle idol og dræb ham","La oss starte reisen din!
+Finn den gamle idol og drep ham","Låt oss börja din resa!
+Hitta den antika idolen och döda honom","Laten we beginnen met je reis!
+Zoek de oude idool en dood hem","Zacznijmy swoją podróż!
+Znajdź starożytnego idola i zabij go","Aloita matkasi!
+Löytää muinainen idoli ja tappaa hänet","あなたの旅を始めましょう！
+古代のアイドルを見つけて彼を殺してください","让我们开始旅程！
+找到古老的偶像并杀了他","让我们开始旅程！
+找到古老的偶像并杀了他","여행을 시작합시다!
+고대 우상을 찾아서 그를 죽이십시오","Začněme svou cestu!
+Najděte starověký idol a zabijte ho","Kezdjük az utazásodat!
+Keresse meg az ősi bálványt, és megölje őt","Să începem călătoria!
+Găsiți idolul vechi și îl ucideți","เริ่มการเดินทางของคุณกันเถอะ!
+ค้นหาไอดอลโบราณและฆ่าเขา","Да започнем вашето пътуване!
+Намерете древния идол и го убийте","בואו נתחיל את המסע שלך!
+מצא את האליל העתיק ולהרוג אותו","دعنا نبدأ رحلتك!
+العثور على المعبود القديم وقتله","Krenimo na vaše putovanje!
+Pronađite drevni idol i ubijte ga","Mari kita mulai perjalananmu!
+Temukan idola kuno dan bunuh dia","Kom ons begin jou reis!
+Vind die antieke idool en maak hom dood","Has gaitezen zure bidaia!
+Aurkitu antzinako idoloa eta hil","Давайце пачнем свой шлях!
+Знайсці старажытны ідал і забіць яго","Comencem el viatge!
+Troba l'antic ídol i matar-lo","Alustame oma reisi!
+Leia iidse iidol ja tappa teda","Við skulum byrja ferðina þína!
+Finndu fornu Idol og drepið hann","Sāksim savu ceļojumu!
+Atrodiet seno elku un nogalini viņu","Pradėkime savo kelionę!
+Raskite senovės stabą ir jį nužudyk","Začnime svoju cestu!
+Nájdite staroveký idol a zabite ho","Začnimo potovanje!
+Poiščite starodavni idol in ga ubijte","Давайте почнемо вашу подорож!
+Знайдіть стародавнього ідола і вбите його","Hãy bắt đầu hành trình của bạn!
+Tìm thần tượng cổ đại và giết anh ta"
+TUTORIAL_MAP_2,,Hold,Tenir,Sostener,Halt,Presa,Segure,Segure,Держать,Κρατήστε,Tutmak,Holde,Holde,Håll,Houden,Utrzymać,Pitää kiinni,所有,抓住,抓住,잡고있다,Držet,Tart,Hold.,ถือ,Държа се,לְהַחזִיק,معلق,Držati,Memegang,Hou,Eutsi,Трымаць,Contenir,Kinni pidama,Haltu,Aizturēt,Laikykite,Držať,HOLD.,Утримуйте,Giữ
+TUTORIAL_MAP_3,,- open map,- Ouvrir la carte,- Abrir mapa,- Karte öffnen,- Apri la mappa,- Abra o mapa,- Abra o mapa,- Открыть карту,- Άνοιγμα χάρτη,- Haritayı aç,- Åbn kort,- Åpne kart,- Öppna kartan,- Open kaart,- Otwórz mapę,- Avaa kartta, - 地図を開く, - 开放式地图, - 开放式地图,-지도 열기,- otevřená mapa,- Térkép megnyitása,- Harta deschisă,- เปิดแผนที่,- Отворена карта,- מפה פתוחה,- خريطة مفتوحة,- Otvori kartu,- Buka peta,- oop kaart,- Ireki mapa,- Адкрытая карта,- Obre el mapa,- Avage kaart,- Opna kort,- Atvērt karti,- Atidarykite žemėlapį,- otvorená mapa,- Odpri zemljevid,- відкрити карту,- Mở bản đồ
