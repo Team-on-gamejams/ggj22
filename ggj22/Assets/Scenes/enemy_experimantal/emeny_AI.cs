@@ -1,169 +1,135 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.Events;
 using UnityEngine;
 using System;
+using UnityEngine.AI;
+using UnityEngine.Events;
+using System.Collections;
+using System.Collections.Generic;
+using BattleSystem.Weapons;
+using BattleSystem.Health;
 
-public class emeny_AI : MonoBehaviour
-{
-	[SerializeField] private bool mage = false;
-	[SerializeField] private bool sworder = true;
-	[SerializeField] private int intelect_level = 1; // max = 3
-	[SerializeField] bool agred = false;
-	[SerializeField] private GameObject player;
-	private float cool_down_max = 100f; 
-	private float cool_down = 0f;
-	private int agro_distance = 10;
-	private float attack_range = 0.5f;
-	private int heal_spell = 20;
-	private double f = 0;
-	Vector3 point;
-	
-	public int hp = 100;
-	private float speed = 2f;
+public class emeny_AI : MonoBehaviour {
+	public BaseWeapon weapon;
+	public Health health;
+
+	public event Action EnemyAttack;
+	public event Action Patrooling;
+	public event Action Chasing;
+
+	public Vector3 agent;
+
+	public Transform player;
+
+	public LayerMask whatIsGround, whatIsPlayer;
+
+	public float speed;
+
+	//Patroling
+	public Vector3 walkPoint;
+	bool walkPointSet;
+	public float walkPointRange;
+
+	//Attacking
+	bool alreadyAttacked;
+
+	//States
+	public float sightRange, attackRange;
+	public bool playerInSightRange, playerInAttackRange;
 
 
-	public int dmg = 5; //player damage
 
 
-
-	[SerializeField] UnityEvent take_damage;
-	[SerializeField] UnityEvent damage_player;
-
-
-	void Start()
-    {
-		take_damage.AddListener(get_hurt);
-		damage_player.AddListener(attack);
-
-		player = GameObject.FindWithTag("Player");
-		//find and lock player
+	private void Awake() {
+		player = GameObject.FindGameObjectWithTag("Player").transform;
 	}
-	
-	void Update()
-    {
-		//agro if distance is <= than agro_distance
-		if (Vector3.Distance(player.transform.position, transform.position) <= agro_distance) {
-			agred = true;
-		}
 
-		if (agred) {
-			main_AI();
-		}
+	private void Update() {
+		//Check for sight and attack range
+		//playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+		//playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+
+		if (Vector3.Distance(transform.position, player.position) <= sightRange)
+			playerInSightRange = true;
+		else
+			playerInSightRange = false;
+
+		if (Vector3.Distance(transform.position, player.position) <= attackRange)
+			playerInAttackRange = true;
+		else
+			playerInAttackRange = false;
+
+		//float distance = Vector3.Distance(transform.position, agent);
+		//float finalSpeed = (distance / speed);
+		//transform.position = Vector3.Lerp(transform.position, agent, Time.deltaTime / finalSpeed);
+		transform.position =  Vector3.MoveTowards(transform.position, agent, speed);
+
+
+		if (!playerInSightRange && !playerInAttackRange) Patroling();
+		if (playerInSightRange && !playerInAttackRange) ChasePlayer();
+		if (playerInAttackRange && playerInSightRange) AttackPlayer();
 	}
-	
-	void main_AI()
-    {
-		if (cool_down > 0) {
-			cool_down--;
-		}
+
+	private void Patroling() {
+		if (!walkPointSet) SearchWalkPoint();
+
+		if (walkPointSet)
+			agent = walkPoint;
+
+		Vector3 distanceToWalkPoint = transform.position - walkPoint;
+
+		//Walkpoint reached
+		if (distanceToWalkPoint.magnitude < 1f)
+			walkPointSet = false;
+
+		transform.LookAt(agent);
+	}
+	private void SearchWalkPoint() {
+		//Calculate random point in range
+		float randomZ = UnityEngine.Random.Range(-walkPointRange, walkPointRange);
+		float randomX = UnityEngine.Random.Range(-walkPointRange, walkPointRange);
+
+		walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
+
+		//if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
+			walkPointSet = true;
+	}
+
+	private void ChasePlayer() {
+		agent = player.position;
+
+		Vector3 targetDirection = agent - transform.position;
+		targetDirection.y = 0;
+		float singleStep = 5 * Time.deltaTime;
+		Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, singleStep, 0.0f);
+		Debug.DrawRay(transform.position, newDirection, Color.red);
+		transform.rotation = Quaternion.LookRotation(newDirection);
+	}
+
+	private void AttackPlayer() {
+		//Make sure enemy doesn't move
+		agent = transform.position;
 
 
-		if (intelect_level >= 2 && 
-			cool_down <= cool_down_max - 1.5f &&
-			cool_down >= 1.5f &&
-			Vector3.Distance(player.transform.position, transform.position) <= attack_range) {
 
-			defend();
-		}
-
-		if(Vector3.Distance(player.transform.position, transform.position) > attack_range) {
-			approach();
-		}
-
-		if (cool_down <= 0 && 
-			Vector3.Distance(player.transform.position, transform.position) <= attack_range) {
-
-			damage_player.Invoke();
-			cool_down = cool_down_max;
-		}
+		Vector3 targetDirection = player.position - transform.position;
+		targetDirection.y = 0;
+		float singleStep = 5 * Time.deltaTime;
+		Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, singleStep, 0.0f);
+		Debug.DrawRay(transform.position, newDirection, Color.red);
+		transform.rotation = Quaternion.LookRotation(newDirection);
 
 
-		//if low hp
 
-		if (hp <= 10) {
+		if (weapon.IsCanAttack())
+			weapon.DoSingleAttack();
 
-
-			point = transform.position;
-			Vector3 vect = transform.position - player.transform.position;
-			while (Vector3.Distance(point, player.transform.position) < 8) {
-				point = vect + point;
-			}
 			
-
-
-			if (intelect_level >= 2) {
-				transform.position = Vector3.Lerp(transform.position, point, Time.deltaTime * speed);
-			}
-
-			if (intelect_level == 3) {
-				defend();
-			}
-
-
-
-			if (Vector3.Distance(transform.position, player.transform.position) >= 5) {
-				heal();
-			}
-
-		}
-		//if intelligence > 1 get back and heal
-		//if intelligence = 3 defend while go backwards
-	}
-	
-	void approach()
-    {
-		//if intelligence = 1 go straight
-		if(intelect_level == 1) {
-			transform.position = 
-				Vector3.Lerp(transform.position, player.transform.position, Time.deltaTime * speed);
-		}
-		//if intelligence >= 2 go around
-		if (intelect_level >= 2) {
-			//(x Ц a)2 + (y Ц b)2 = r2, где Ђaї и Ђbї -координаты центра
-			
-			Vector3 cent = (transform.position + player.transform.position) / 2;
-			float r = Vector3.Distance(cent, transform.position);
-			
-				transform.position = Vector3.Lerp(transform.position,
-					new Vector3(r * (float)Math.Cos(f) + cent.x,
-						transform.position.y,
-						r * (float)Math.Sin(f) + cent.z), //x = r cos f, y = r sin f.
-					Time.deltaTime * speed);
-				f+=0.05;
-			
-		}
-
 	}
 
-	void heal()
-    {
-		//play animation
-		StartCoroutine(wait());
-		hp += heal_spell;
+
+	private void OnDrawGizmosSelected() {
+		Gizmos.color = Color.red;
+		Gizmos.DrawWireSphere(transform.position, attackRange);
+		Gizmos.color = Color.yellow;
+		Gizmos.DrawWireSphere(transform.position, sightRange);
 	}
-
-	IEnumerator wait() {
-		yield return new WaitForSeconds(4);
-	}
-
-	public void attack()
-    {
-		//play animation
-		Debug.Log("attack");
-    }
-
-	public void defend() {
-		//defend with shield
-	}
-
-	public void get_hurt()
-    {
-		hp -= dmg;
-    }
-
-	
-
-
-
 }
