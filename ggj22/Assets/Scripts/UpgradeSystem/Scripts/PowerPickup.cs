@@ -28,7 +28,15 @@ namespace UpgradeSystem {
 
 		public void Pickup() {
 			PowersManager.Instance.AddPower(power);
-			Destroy(gameObject);
+
+			LeanTween.value(gameObject, gameObject.transform.localPosition.y, gameObject.transform.localPosition.y - 12, 1.0f)
+				.setEase(LeanTweenType.easeInQuad)
+				.setOnUpdate((float y) => {
+					gameObject.transform.localPosition = gameObject.transform.localPosition.SetY(y);
+				})
+				.setOnComplete(()=> {
+					Destroy(gameObject, 0.5f);
+				});
 		}
 	}
 }

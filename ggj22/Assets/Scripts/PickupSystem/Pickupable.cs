@@ -8,6 +8,9 @@ namespace PickupSystem {
 		public static Pickupable Selected;
 		public static List<Pickupable> SelectedPickupables = new List<Pickupable>(4);
 
+		[Header("Values"), Space]
+		[SerializeField] bool isSinglePickup = true;
+
 		[Header("UI"), Space]
 		[SerializeField] CanvasGroup descriptioncg;
 
@@ -15,6 +18,8 @@ namespace PickupSystem {
 		[SerializeField] UnityEvent onPickup;
 
 		Vector3 startSize;
+
+		bool isWasPickedUp;
 
 		private void Awake() {
 			startSize = descriptioncg.transform.localScale;
@@ -26,7 +31,13 @@ namespace PickupSystem {
 		}
 
 		public void Pickup() {
+			isWasPickedUp = true;
 			onPickup?.Invoke();
+
+			if (isSinglePickup) {
+				enabled = false;
+				SelectedPickupables.Remove(this);
+			}
 		}
 
 		public void OnPlayerEnter(Collider other) {
