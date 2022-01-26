@@ -73,7 +73,14 @@
             "date": "1/26/2022",
             "updateName": "Jam edition",
             "descriptionText": "More polished..",
-            "notes": []
+            "notes": [
+                {
+                    "isCommunityFeedback": false,
+                    "type": 2,
+                    "scope": 2,
+                    "text": "End of Demo"
+                }
+            ]
         }
     ],
     "readme": "Game page - https://teamon.itch.io/duality-roguelike\nSource code - https://github.com/Team-on-gamejams/ggj22\nUsed assets - https://github.com/Team-on-gamejams/ggj22#used-assets\n\nAvailable in Windows, OSX, Linux and Web \r\nIf you encounter any problem, please leave a issue! \nUse in-game form for that, report it in discord, or email me directly to timonsol13@gmail.com\n\r\nMac Version Notes:\r\nIf you get \"this package is from an unidentified developer\" right click (or control-click) and select open. You should now get the option to open anyways.\r\n\r\nLinux Version Notes:\r\nMake sure to set the x86_64 as executable before running.\r\n\n# Cheatcodes\r\n * Press ` to toggle debug texts\r\n * Hold ` to open debug console\r\n * In console write *Help* to see list of commands"
