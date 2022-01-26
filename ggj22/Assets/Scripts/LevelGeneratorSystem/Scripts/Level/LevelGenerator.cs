@@ -34,9 +34,10 @@ namespace LevelGeneratorSystem.Level {
 						break;
 
 					case LevelGeneratorPass.RandomRooms:
-						int count = randomRoomsCount.GetRandomValue();
+						randomRoomPrefabs.Shuffle();
+						int count = Mathf.Clamp(randomRoomsCount.GetRandomValue(), 0, randomRoomPrefabs.Length);
 						for (int i = 0; i < count; ++i) {
-							roomPrefabsToAdd.Enqueue(randomRoomPrefabs.Random());
+							roomPrefabsToAdd.Enqueue(randomRoomPrefabs[i]);
 						}
 						break;
 
@@ -185,14 +186,6 @@ namespace LevelGeneratorSystem.Level {
 					foreach (var conn in possibleConnections) {
 						if (conn.direction == Vector2Int.up && conn.connectionType == RoomConnectionInfo.ConnectionType.Opened && conn.roomToConnect == null) {
 							lastFreeWithUp = conn;
-						}
-					}
-
-					if(lastFreeWithUp == null) {
-						foreach (var conn in possibleConnections) {
-							if (conn.connectionType == RoomConnectionInfo.ConnectionType.Opened && conn.roomToConnect == null) {
-								lastFreeWithUp = conn;
-							}
 						}
 					}
 

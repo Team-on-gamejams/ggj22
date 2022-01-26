@@ -224,16 +224,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47390661b6b37554ca62c1eb7b165f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  randomRoomsCount: {x: 8, y: 10}
+  randomRoomsCount: {x: 1, y: 2}
   roomPrefabSize: {x: 80, y: 80}
   firstRoomPrefab: {fileID: 696541910810769527, guid: f5fbba55aa928c647987e88720634002,
     type: 3}
-  preBossRoomPrefab: {fileID: 5780720729054808186, guid: 46aca18af0c77b34ba20c7cf599a4599,
+  preBossRoomPrefab: {fileID: 696541910810769527, guid: f29405115a5b9fa4185393105552fbbb,
     type: 3}
-  bossRoomPrefab: {fileID: 4637782598298591005, guid: a70ee2eda2a90fb45a0d3d3d21c5925e,
+  bossRoomPrefab: {fileID: 696541910810769527, guid: 11f99e1461c4e0640b9d36ef9cec4d13,
     type: 3}
   randomRoomPrefabs:
-  - {fileID: 3380006626551404652, guid: 913000a46c192aa4c884e2a3c7a430f8, type: 3}
+  - {fileID: 696541910810769527, guid: 554305981c3cf3d4c944179fb288fa5f, type: 3}
+  - {fileID: 696541910810769527, guid: 554305981c3cf3d4c944179fb288fa5f, type: 3}
+  - {fileID: 696541910810769527, guid: 554305981c3cf3d4c944179fb288fa5f, type: 3}
+  - {fileID: 696541910810769527, guid: 554305981c3cf3d4c944179fb288fa5f, type: 3}
+  - {fileID: 696541910810769527, guid: 554305981c3cf3d4c944179fb288fa5f, type: 3}
+  - {fileID: 696541910810769527, guid: 554305981c3cf3d4c944179fb288fa5f, type: 3}
+  - {fileID: 696541910810769527, guid: 554305981c3cf3d4c944179fb288fa5f, type: 3}
+  - {fileID: 696541910810769527, guid: 554305981c3cf3d4c944179fb288fa5f, type: 3}
+  - {fileID: 696541910810769527, guid: 554305981c3cf3d4c944179fb288fa5f, type: 3}
+  - {fileID: 696541910810769527, guid: 554305981c3cf3d4c944179fb288fa5f, type: 3}
 --- !u!1 &494881955
 GameObject:
   m_ObjectHideFlags: 0
