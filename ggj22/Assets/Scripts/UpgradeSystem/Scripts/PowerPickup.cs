@@ -5,27 +5,38 @@ using UnityEngine;
 using NaughtyAttributes;
 using UnityForge;
 using UnityForge.PropertyDrawers;
+using UpgradeSystem.UI;
 
-namespace UpgradeSystem
-{
-    public class PowerPickup : MonoBehaviour
-    {
-		[Header("Global data"), Space]
-		[SerializeField] SerializedDictionary<PowerCondition, Sprite> conditionSprites;
-		[SerializeField] SerializedDictionary<PowerPair, Sprite> pairsSprites;
-		[SerializeField] Sprite buffIcon;
+namespace UpgradeSystem {
+	public class PowerPickup : MonoBehaviour {
+		public Power Power => power;
 
-		Power power;
+		[Header("Popup"), Space]
+		[SerializeField] PowerPopup popup;
 
-		private void Awake() {
-			power = new Power() {
-				condition = (PowerCondition)UnityEngine.Random.Range(0, Enum.GetValues(typeof(PowerCondition)).Length),
-				pair = (PowerPair)UnityEngine.Random.Range(0, Enum.GetValues(typeof(PowerPair)).Length),
-			};
+		[Header("Power"), Space]
+		[SerializeField] bool isRandomPower = true;
+		[SerializeField] Power power;
+
+		private void Start() {
+			if (isRandomPower) {
+				power = Power.GetRandomPower();
+			}
+
+			popup.Init(power, true);
 		}
 
 		public void Pickup() {
-			Destroy(gameObject);
+			PowersManager.Instance.AddPower(power);
+
+			LeanTween.value(gameObject, gameObject.transform.localPosition.y, gameObject.transform.localPosition.y - 12, 1.0f)
+				.setEase(LeanTweenType.easeInQuad)
+				.setOnUpdate((float y) => {
+					gameObject.transform.localPosition = gameObject.transform.localPosition.SetY(y);
+				})
+				.setOnComplete(()=> {
+					Destroy(gameObject, 0.5f);
+				});
 		}
 	}
 }

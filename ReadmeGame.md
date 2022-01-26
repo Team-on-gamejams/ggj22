@@ -1,8 +1,8 @@
-Game page - https://teamon.itch.io/gametemplate
-Source code - https://github.com/Team-on/UnityGameTemplate
-Used assets - https://github.com/Team-on/UnityGameTemplate/wiki/Used-assets
+Game page - https://teamon.itch.io/duality-roguelike
+Source code - https://github.com/Team-on-gamejams/ggj22
+Used assets - https://github.com/Team-on-gamejams/ggj22#used-assets
 
-Available in Windows, OSX, Linux, Android and Web 
+Available in Windows, OSX, Linux and Web 
 If you encounter any problem, please leave a issue! 
 Use in-game form for that, report it in discord, or email me directly to timonsol13@gmail.com
 

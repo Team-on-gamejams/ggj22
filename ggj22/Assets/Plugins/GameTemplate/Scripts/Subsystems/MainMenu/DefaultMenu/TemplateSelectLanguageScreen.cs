@@ -35,8 +35,18 @@ public class TemplateSelectLanguageScreen : MenuBase {
 
 				string additionalInfo = Localization.Get("ADDITIONAL_INFO_IN_SELECT", lang);
 				textField.text = $"{localizedLanguageNames[index]}";
-				if(lang != Language.English) 
-					textField.text += $" ({languageNames[index]})";
+				
+
+				if (lang == Language.Ukrainian) {
+					button.transform.SetAsFirstSibling();
+					textField.text = $"<b>{textField.text}</b>";
+				}
+				else {
+					button.transform.SetAsLastSibling();
+					if (lang != Language.English)
+						textField.text += $" ({languageNames[index]})";
+				}
+
 				if (!string.IsNullOrEmpty(additionalInfo))
 					textField.text += $" {additionalInfo}";
 
@@ -44,9 +54,6 @@ public class TemplateSelectLanguageScreen : MenuBase {
 					Localization.Instance.SelectedLanguage = lang;
 					OnSelectAnyLanguage();
 				});
-
-				if (lang == Localization.Instance.ConvertSystemLanguage(Application.systemLanguage)) 
-					textField.text = $"<b>{textField.text}</b>";
 
 				if(index == 0) 
 					firstSelected = button.GetComponent<ButtonSelector>();

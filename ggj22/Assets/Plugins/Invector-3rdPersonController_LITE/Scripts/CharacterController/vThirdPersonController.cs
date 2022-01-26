@@ -4,7 +4,18 @@ namespace Invector.vCharacterController
 {
     public class vThirdPersonController : vThirdPersonAnimator
     {
-        public virtual void ControlAnimatorRootMotion()
+		public float SpeedModifier { get; set; } = 1.0f;
+
+		public override void SetControllerMoveSpeed(vMovementSpeed speed) {
+			base.SetControllerMoveSpeed(speed);
+
+			if (speed.walkByDefault)
+				moveSpeed = Mathf.Lerp(moveSpeed, (isSprinting ? speed.runningSpeed : speed.walkSpeed) * SpeedModifier, speed.movementSmooth * Time.deltaTime);
+			else
+				moveSpeed = Mathf.Lerp(moveSpeed, (isSprinting ? speed.sprintSpeed : speed.runningSpeed) * SpeedModifier, speed.movementSmooth * Time.deltaTime);
+		}
+
+		public virtual void ControlAnimatorRootMotion()
         {
             if (!this.enabled) return;
 

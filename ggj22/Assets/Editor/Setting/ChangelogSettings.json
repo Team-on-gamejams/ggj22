@@ -2,11 +2,98 @@
     "versions": [
         {
             "version": "0.1",
-            "date": "1/4/2021",
+            "date": "1/26/2022",
+            "updateName": "Jam edition (core only)",
+            "descriptionText": "All core mechanics finished",
+            "notes": [
+                {
+                    "isCommunityFeedback": false,
+                    "type": 2,
+                    "scope": 0,
+                    "text": "Upgrades"
+                },
+                {
+                    "isCommunityFeedback": false,
+                    "type": 2,
+                    "scope": 0,
+                    "text": "Battle system"
+                },
+                {
+                    "isCommunityFeedback": false,
+                    "type": 2,
+                    "scope": 0,
+                    "text": "Pickups"
+                },
+                {
+                    "isCommunityFeedback": false,
+                    "type": 2,
+                    "scope": 0,
+                    "text": "Character controller"
+                },
+                {
+                    "isCommunityFeedback": false,
+                    "type": 2,
+                    "scope": 0,
+                    "text": "Enemies AI"
+                },
+                {
+                    "isCommunityFeedback": false,
+                    "type": 2,
+                    "scope": 0,
+                    "text": "Enemies"
+                },
+                {
+                    "isCommunityFeedback": false,
+                    "type": 2,
+                    "scope": 2,
+                    "text": "Level generation"
+                },
+                {
+                    "isCommunityFeedback": false,
+                    "type": 2,
+                    "scope": 6,
+                    "text": "Added game music"
+                },
+                {
+                    "isCommunityFeedback": false,
+                    "type": 2,
+                    "scope": 7,
+                    "text": "Added SFX to player actions"
+                },
+                {
+                    "isCommunityFeedback": false,
+                    "type": 9,
+                    "scope": 0,
+                    "text": "Added a lot of bugs"
+                }
+            ]
+        },
+        {
+            "version": "0.2",
+            "date": "1/26/2022",
             "updateName": "Jam edition",
-            "descriptionText": "Jam prototype release",
-            "notes": []
+            "descriptionText": "More polished..",
+            "notes": [
+                {
+                    "isCommunityFeedback": false,
+                    "type": 2,
+                    "scope": 1,
+                    "text": "After-death hub"
+                },
+                {
+                    "isCommunityFeedback": false,
+                    "type": 2,
+                    "scope": 2,
+                    "text": "End of Demo"
+                },
+                {
+                    "isCommunityFeedback": false,
+                    "type": 3,
+                    "scope": 1,
+                    "text": "Fix sometimes powers not working"
+                }
+            ]
         }
     ],
-    "readme": "Game page - https://teamon.itch.io/gametemplate\nSource code - https://github.com/Team-on/UnityGameTemplate\nUsed assets - https://github.com/Team-on/UnityGameTemplate/wiki/Used-assets\n\nAvailable in Windows, OSX, Linux, Android and Web \r\nIf you encounter any problem, please leave a issue! \nUse in-game form for that, report it in discord, or email me directly to timonsol13@gmail.com\n\r\nMac Version Notes:\r\nIf you get \"this package is from an unidentified developer\" right click (or control-click) and select open. You should now get the option to open anyways.\r\n\r\nLinux Version Notes:\r\nMake sure to set the x86_64 as executable before running.\r\n\n# Cheatcodes\r\n * Press ` to toggle debug texts\r\n * Hold ` to open debug console\r\n * In console write *Help* to see list of commands"
+    "readme": "Game page - https://teamon.itch.io/duality-roguelike\nSource code - https://github.com/Team-on-gamejams/ggj22\nUsed assets - https://github.com/Team-on-gamejams/ggj22#used-assets\n\nAvailable in Windows, OSX, Linux and Web \r\nIf you encounter any problem, please leave a issue! \nUse in-game form for that, report it in discord, or email me directly to timonsol13@gmail.com\n\r\nMac Version Notes:\r\nIf you get \"this package is from an unidentified developer\" right click (or control-click) and select open. You should now get the option to open anyways.\r\n\r\nLinux Version Notes:\r\nMake sure to set the x86_64 as executable before running.\r\n\n# Cheatcodes\r\n * Press ` to toggle debug texts\r\n * Hold ` to open debug console\r\n * In console write *Help* to see list of commands"
 }

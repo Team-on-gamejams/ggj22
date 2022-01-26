@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Team-on
+  companyName: To the moon
   productName: GGJ22
   defaultCursor: {fileID: 2800000, guid: 44c6f70a5220b324096ad57da72d45cf, type: 3}
   cursorHotspot: {x: 0, y: 0}
@@ -136,7 +136,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.1
+  bundleVersion: 0.2
   preloadedAssets:
   - {fileID: 11400000, guid: 64abcd9314851a5438eea74e4eb8c601, type: 2}
   - {fileID: 11400000, guid: 2d1208cce8a05f941a2435bfb33ec5cb, type: 2}
@@ -722,7 +722,7 @@ PlayerSettings:
   platformArchitecture: {}
   scriptingBackend:
     Android: 1
-    Standalone: 1
+    Standalone: 0
   il2cppCompilerConfiguration:
     Android: 2
     Standalone: 2

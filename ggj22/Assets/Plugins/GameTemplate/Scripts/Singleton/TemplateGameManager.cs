@@ -137,6 +137,8 @@ public class TemplateGameManager : Singleton<TemplateGameManager> {
 			yield return null;
 			yield return null;
 
+			Application.targetFrameRate = 60;
+
 			//TODO: save this on exit and load on enter
 			//TODO: use this for each save
 			HelpLevelMode = startHelpLevel;

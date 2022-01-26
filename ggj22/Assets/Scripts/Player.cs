@@ -4,8 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using BattleSystem.Health;
 using BattleSystem.Weapons;
 using Invector.vCharacterController;
+using PickupSystem;
+using UpgradeSystem;
 
 public class Player : MonoBehaviour {
 	[Header("Refs - per class"), Space]
@@ -22,7 +25,7 @@ public class Player : MonoBehaviour {
 	[SerializeField] vThirdPersonController thirdPersonController;
 	[SerializeField] vThirdPersonCamera camera;
 	[SerializeField] Camera minimapCamera;
-
+	[SerializeField] Health health;
 
 #if UNITY_EDITOR
 	private void Reset() {
@@ -42,10 +45,50 @@ public class Player : MonoBehaviour {
 
 	private void OnEnable() {
 		SubscribeInputs();
+
+		PowersManager.Instance.onPowersReapply += ReapplyPowers;
 	}
 
 	private void OnDisable() {
 		UnSubscribeInputs();
+
+		PowersManager.Instance.onPowersReapply -= ReapplyPowers;
+	}
+
+	private void Update() {
+		PowersManager.Instance.IsMoving = thirdPersonController.input != Vector3.zero;
+	}
+
+	void ReapplyPowers(Dictionary<PowerPair, float> powers) {
+		foreach (var power in powers) {
+			switch (power.Key) {
+				case PowerPair.TimeControl:
+					Time.timeScale = Mathf.Clamp(power.Value, 0.75f, 1.25f);
+					break;
+
+				case PowerPair.AttackSpeed:
+					foreach (var weapon in attacks)
+						weapon?.ApplyAttackSpeedMod(power.Value);
+					break;
+
+				case PowerPair.MoveSpeed:
+					thirdPersonController.SpeedModifier = power.Value;
+					break;
+
+				case PowerPair.Armor:
+					health.ApplyArmorMod(power.Value);
+					break;
+
+				case PowerPair.Damage:
+					foreach (var weapon in attacks) 
+						weapon?.ApplyDamageMod(power.Value);
+					break;
+
+				default:
+						Debug.LogError("Not inplemented power pair");
+					break;
+			}
+		}
 	}
 
 	#region Inputs
@@ -119,7 +162,7 @@ public class Player : MonoBehaviour {
 	}
 
 	void Interact() {
-		PickupSystem.Pickupable.Selected?.Pickup();
+		Pickupable.Selected?.Pickup();
 	}
 
 	void ProcessAttacks(int id) {
