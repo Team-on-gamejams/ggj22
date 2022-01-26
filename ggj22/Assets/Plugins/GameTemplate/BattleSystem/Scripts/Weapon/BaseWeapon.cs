@@ -146,7 +146,7 @@ namespace BattleSystem.Weapons {
 		}
 
 		public bool IsAttacking() {
-			return isDoSingleAttack || isPlayerHoldInput;
+			return isDoSingleAttack || isPlayerHoldInput || (state != WeaponState.Ready && state != WeaponState.Cooldown);
 		}
 
 		public bool IsCanInterruptAttack() {
@@ -155,11 +155,14 @@ namespace BattleSystem.Weapons {
 
 		public void InterruptAttack() {
 			isDoSingleAttack = false;
-			state = WeaponState.Ready;
-			timer = 0;
+			
+			if (state != WeaponState.Cooldown) {
+				state = WeaponState.Ready;
+				timer = 0;
 
-			if(animator)
-				animator.Play(emptyAnimationName, layer);
+				if (animator)
+					animator.Play(emptyAnimationName, layer);
+			}
 		}
 
 		#region Attack
