@@ -780,10 +780,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animTime: 0.2
   isCanReturnToMenu: 1
-  playOnForce: 0
+  playOnForce: 1
   openClip: {fileID: 0}
   closeClip: {fileID: 0}
-  ambient: {fileID: 0}
+  ambient: {fileID: 8300000, guid: 50309fee60604684ca820c1fb41006d3, type: 3}
   cg: {fileID: 5853992662855773455}
   rt: {fileID: 789628830840939437}
   firstSelected: {fileID: 0}
