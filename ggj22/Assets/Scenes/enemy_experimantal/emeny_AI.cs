@@ -47,12 +47,12 @@ public class emeny_AI : MonoBehaviour {
 		//playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
 		//playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-		if (Vector3.Distance(transform.position, player.position) <= sightRange)
+		if (Vector3.Distance(transform.position.SetY(0), player.position.SetY(0)) <= sightRange)
 			playerInSightRange = true;
 		else
 			playerInSightRange = false;
 
-		if (Vector3.Distance(transform.position, player.position) <= attackRange)
+		if (Vector3.Distance(transform.position.SetY(0), player.position.SetY(0)) <= attackRange)
 			playerInAttackRange = true;
 		else
 			playerInAttackRange = false;
@@ -131,5 +131,6 @@ public class emeny_AI : MonoBehaviour {
 		Gizmos.DrawWireSphere(transform.position, attackRange);
 		Gizmos.color = Color.yellow;
 		Gizmos.DrawWireSphere(transform.position, sightRange);
+		
 	}
 }
