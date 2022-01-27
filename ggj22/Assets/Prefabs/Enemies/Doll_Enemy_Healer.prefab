@@ -672,7 +672,7 @@ MonoBehaviour:
   projectilesSpawnPos:
   - {fileID: 944198799196484696}
   aimTo: {fileID: 944198800182712942}
-  projectilePrefab: {fileID: 5335947245597779792, guid: f69a47525375ce04cab10342f008cb03,
+  projectilePrefab: {fileID: 5335947245597779792, guid: a166b875c8363284bb9285a78ee407ed,
     type: 3}
 --- !u!114 &944198799132024637
 MonoBehaviour:

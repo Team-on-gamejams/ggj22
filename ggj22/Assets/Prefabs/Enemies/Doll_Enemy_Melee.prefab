@@ -433,7 +433,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5762043863863541669}
-  m_LocalRotation: {x: -0, y: -0.9843777, z: -0, w: -0.1760701}
+  m_LocalRotation: {x: -0, y: -0.98437744, z: 0, w: -0.17607102}
   m_LocalPosition: {x: -2.14, y: 0, z: 5.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -538,7 +538,7 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 5
   sightRange: 10
-  attackRange: 1
+  attackRange: 1.15
   playerInSightRange: 0
   playerInAttackRange: 0
 --- !u!1 &5762043863887044520
