@@ -1454,16 +1454,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossAltar
       objectReference: {fileID: 0}
-    - target: {fileID: 8246534737813229282, guid: 73f0cea69804e0748a191ae6d2846793,
-        type: 3}
-      propertyPath: onTriggerExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8246534737813229282, guid: 73f0cea69804e0748a191ae6d2846793,
-        type: 3}
-      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73f0cea69804e0748a191ae6d2846793, type: 3}
 --- !u!4 &1881529995995360280 stripped
