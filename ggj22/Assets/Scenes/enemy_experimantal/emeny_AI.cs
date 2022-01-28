@@ -10,12 +10,17 @@ using BattleSystem.Health;
 public class emeny_AI : MonoBehaviour {
 	public BaseWeapon weapon;
 	public Health health;
+	public bool CanMove = true;
 
 	public event Action EnemyAttack;
 	public event Action Patrooling;
 	public event Action Chasing;
 
 	public Vector3 agent;
+
+	private Vector3 start_pos;
+
+	public Rigidbody rb;
 
 	public Transform player;
 
@@ -39,6 +44,9 @@ public class emeny_AI : MonoBehaviour {
 
 
 	private void Awake() {
+		start_pos = transform.position;
+		rb = this.GetComponent<Rigidbody>();
+
 		player = GameObject.FindGameObjectWithTag("Player").transform;
 	}
 
@@ -57,10 +65,19 @@ public class emeny_AI : MonoBehaviour {
 		else
 			playerInAttackRange = false;
 
-		//float distance = Vector3.Distance(transform.position, agent);
-		//float finalSpeed = (distance / speed);
-		//transform.position = Vector3.Lerp(transform.position, agent, Time.deltaTime / finalSpeed);
-		transform.position =  Vector3.MoveTowards(transform.position, agent, speed);
+
+
+		if (CanMove) {
+			//transform.position =  Vector3.MoveTowards(transform.position, agent, speed);
+
+			Vector3 dir = agent - transform.position;
+			dir.y = transform.position.y;
+			rb.velocity = dir * speed;
+
+			transform.LookAt(new Vector3(agent.x, 0, agent.z));
+
+		}
+			
 
 
 		if (!playerInSightRange && !playerInAttackRange) Patroling();
@@ -80,49 +97,27 @@ public class emeny_AI : MonoBehaviour {
 		if (distanceToWalkPoint.magnitude < 1f)
 			walkPointSet = false;
 
-		transform.LookAt(agent);
 	}
 	private void SearchWalkPoint() {
 		//Calculate random point in range
 		float randomZ = UnityEngine.Random.Range(-walkPointRange, walkPointRange);
 		float randomX = UnityEngine.Random.Range(-walkPointRange, walkPointRange);
 
-		walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
+		walkPoint = new Vector3(start_pos.x + randomX, transform.position.y, start_pos.z + randomZ);
 
-		//if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
+		if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
 			walkPointSet = true;
 	}
 
 	private void ChasePlayer() {
-		agent = player.position;
 
-		Vector3 targetDirection = agent - transform.position;
-		targetDirection.y = 0;
-		float singleStep = 5 * Time.deltaTime;
-		Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, singleStep, 0.0f);
-		Debug.DrawRay(transform.position, newDirection, Color.red);
-		transform.rotation = Quaternion.LookRotation(newDirection);
+		agent = player.position;
 	}
 
 	private void AttackPlayer() {
-		//Make sure enemy doesn't move
-		agent = transform.position;
-
-
-
-		Vector3 targetDirection = player.position - transform.position;
-		targetDirection.y = 0;
-		float singleStep = 5 * Time.deltaTime;
-		Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, singleStep, 0.0f);
-		Debug.DrawRay(transform.position, newDirection, Color.red);
-		transform.rotation = Quaternion.LookRotation(newDirection);
-
-
 
 		if (weapon.IsCanAttack())
 			weapon.DoSingleAttack();
-
-			
 	}
 
 
