@@ -41,14 +41,13 @@ public class emeny_AI_range : MonoBehaviour {
 	public float sightRange, attackRange;
 	public bool playerInSightRange, playerInAttackRange;
 
-
-
-
 	private void Awake() {
-		start_pos = transform.position;
-		rb = this.GetComponent<Rigidbody>();
-
 		player = GameObject.FindGameObjectWithTag("Player").transform;
+		rb = this.GetComponent<Rigidbody>();
+	}
+
+	private void Start() {
+		start_pos = transform.position;
 	}
 
 	private void Update() {
@@ -63,13 +62,13 @@ public class emeny_AI_range : MonoBehaviour {
 			playerInAttackRange = false;
 
 
-		Vector3 dir = agent - transform.position;
-		dir.y = transform.position.y;
-		rb.velocity = dir * speed;
-
 		if (!playerInSightRange && !playerInAttackRange) Patroling();
 		if (playerInSightRange && !playerInAttackRange) ChasePlayer();
 		if (playerInAttackRange && playerInSightRange) AttackPlayer();
+
+		Vector3 dir = agent - transform.position;
+		dir.y = transform.position.y;
+		rb.velocity = dir * speed;
 
 	}
 

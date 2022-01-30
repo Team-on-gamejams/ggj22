@@ -456,7 +456,7 @@ MonoBehaviour:
   speed: 1
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 5
-  sightRange: 20
+  sightRange: 10
   attackRange: 7
   playerInSightRange: 0
   playerInAttackRange: 0

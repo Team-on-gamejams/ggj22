@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &681034844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 681034845}
+  m_Layer: 0
+  m_Name: WeaponAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &681034845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681034844}
+  m_LocalRotation: {x: -0.0018488839, y: -0.0011107603, z: 0.31292686, w: 0.9497748}
+  m_LocalPosition: {x: 0.28376296, y: 0.22438978, z: 0.0008592932}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1665526961075747029}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &20156553218765644
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +409,7 @@ Transform:
   - {fileID: 8226061254567869565}
   - {fileID: 1785243863482017621}
   - {fileID: 2560302066752646657}
+  - {fileID: 2113769336869190832}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -475,9 +507,9 @@ MonoBehaviour:
     name: 
     description: 
     image: {fileID: 0}
-  animator: {fileID: 0}
-  emptyAnimationName: Empty
-  attackTriggerName: 
+  animator: {fileID: 5455463163209098954}
+  emptyAnimationName: Stand
+  attackTriggerName: isAttacking
   layer: 1
   cooldownTime: 1
   startingTime: 0
@@ -488,7 +520,7 @@ MonoBehaviour:
   projectilesSpawnPos:
   - {fileID: 1785243863482017621}
   aimTo: {fileID: 2560302066752646657}
-  projectilePrefab: {fileID: 5335947245597779792, guid: a166b875c8363284bb9285a78ee407ed,
+  projectilePrefab: {fileID: 5335947245597779792, guid: 8d43ba285131a774da22c502ad35f3b6,
     type: 3}
 --- !u!54 &1936309788616623665
 Rigidbody:
@@ -533,7 +565,7 @@ MonoBehaviour:
   speed: 1
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 5
-  sightRange: 20
+  sightRange: 10
   attackRange: 7
   playerInSightRange: 0
   playerInAttackRange: 0
@@ -1289,7 +1321,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6440601877856985630}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1670,7 +1702,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6050079264401707946
 Transform:
   m_ObjectHideFlags: 0
@@ -1736,3 +1768,115 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &1936309788045351771
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7778004599641619060}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.003868103
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00783214
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9995552
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.029825026
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 3.418
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+        type: 3}
+      propertyPath: m_Name
+      value: Standing 2H Magic Attack 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: fae3eec2ef4737a4b9e0259112709d2b, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5033b703f9ae65e4ea505bd14b2961ca, type: 3}
+--- !u!1 &1593797834472367626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1936309788045351771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1690364203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593797834472367626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d474e5a602663604da61f7c38873041a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons:
+  - {fileID: 1936309788616623666}
+--- !u!4 &1665526961075747029 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 991359867808605070, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1936309788045351771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2113769336869190832 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1936309788045351771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5455463163209098954 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 5033b703f9ae65e4ea505bd14b2961ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1936309788045351771}
+  m_PrefabAsset: {fileID: 0}
