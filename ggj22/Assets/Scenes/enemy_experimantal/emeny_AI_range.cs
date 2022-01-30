@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using BattleSystem.Weapons;
 using BattleSystem.Health;
 
-public class emeny_AI_healer : MonoBehaviour {
+public class emeny_AI_range : MonoBehaviour {
 	[SerializeField] BaseWeapon weapon;
 	public Health health;
 
@@ -48,47 +48,10 @@ public class emeny_AI_healer : MonoBehaviour {
 		start_pos = transform.position;
 		rb = this.GetComponent<Rigidbody>();
 
-
-		int hp = 100;
-
-		foreach (GameObject go in GameObject.FindGameObjectsWithTag("Enemy")) {
-			if (go != gameObject &&
-				(go.TryGetComponent(out emeny_AI em) || go.TryGetComponent(out emeny_AI_range em1)) &&
-				go.GetComponent<Health>().CurrHealth <= hp
-				&& Vector3.Distance(transform.position, go.transform.position) < sightRange) {
-
-				player = go.transform;
-				hp = go.GetComponent<Health>().CurrHealth;
-			}
-		}
-
-		if (player == null) {
-			gameObject.GetComponent<emeny_AI>().enabled = true;
-			gameObject.GetComponent<emeny_AI_healer>().enabled = false;
-		}
-
+		player = GameObject.FindGameObjectWithTag("Player").transform;
 	}
 
 	private void Update() {
-
-		int hp = 100;
-
-		foreach (GameObject go in GameObject.FindGameObjectsWithTag("Enemy")) {
-			if (go != gameObject &&
-			go.TryGetComponent(out emeny_AI em) &&
-			em.playerInSightRange &&
-			go.GetComponent<Health>().CurrHealth <= hp
-			&& Vector3.Distance(transform.position, go.transform.position) < sightRange) {
-
-				player = go.transform;
-				hp = go.GetComponent<Health>().CurrHealth;
-			}
-		}
-
-		if (player == null) {
-			gameObject.GetComponent<emeny_AI>().enabled = true;
-			gameObject.GetComponent<emeny_AI_healer>().enabled = false;
-		}
 
 
 		if (Vector3.Distance(transform.position, player.position) <= sightRange)
@@ -151,9 +114,7 @@ public class emeny_AI_healer : MonoBehaviour {
 		transform.LookAt(new Vector3(player.position.x, 0, player.position.z));
 
 
-		if (weapon.IsCanAttack() 
-			&& player.gameObject.GetComponent<Health>().CurrHealth <
-			player.gameObject.GetComponent<Health>().MaxHealth) {
+		if (weapon.IsCanAttack()) {
 
 			weapon.DoSingleAttack();
 		}

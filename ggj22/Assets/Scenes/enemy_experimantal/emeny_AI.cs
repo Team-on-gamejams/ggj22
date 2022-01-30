@@ -43,7 +43,7 @@ public class emeny_AI : MonoBehaviour {
 
 
 
-	private void Awake() {
+	private void Start() {
 		start_pos = transform.position;
 		rb = this.GetComponent<Rigidbody>();
 
