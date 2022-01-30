@@ -19442,8 +19442,8 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Punching
-  m_Speed: 2
+  m_Name: Attack melee 1
+  m_Speed: 1.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 223632056638636753}
@@ -19456,7 +19456,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: a3c333988bd2a4845b018eb0fecb8e4b,
+  m_Motion: {fileID: -203655887218126122, guid: aedfe2df3d58d5d428b6af5ce4432379,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
