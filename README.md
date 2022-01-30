@@ -66,6 +66,8 @@ Video about TriJam from Rocknight Studios: https://www.youtube.com/watch?v=6PysB
 # Used assets
  * Unity game template - https://github.com/Team-on/UnityGameTemplate
  * Assets from template - https://github.com/Team-on/UnityGameTemplate/wiki/Used-assets
+ * Animations from - https://www.mixamo.com/
+ * 3D person controller + move animations - https://assetstore.unity.com/packages/tools/game-toolkits/third-person-controller-basic-locomotion-free-82048
  * https://freesound.org/people/fisu/sounds/350770/ - melee hit
  * https://freesound.org/people/saturdaysoundguy/sounds/391446/ -  melee miss
  * https://freesound.org/people/magnuswaker/sounds/528263/ - range hit
