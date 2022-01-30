@@ -52,8 +52,6 @@ public class emeny_AI_range : MonoBehaviour {
 	}
 
 	private void Update() {
-
-
 		if (Vector3.Distance(transform.position, player.position) <= sightRange)
 			playerInSightRange = true;
 		else
