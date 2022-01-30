@@ -1,50 +1,21 @@
-# [GAME_NAME](GAME_LINK)
-Made in X hours for [JAM_NAME](JAM_LINK)  
-Theme: THEME  
+# [My brother wants to show me his love by killing the strongest boss in this game](https://teamon.itch.io/mbwtsmhlbktsbitg)
+Made in 72 hours for [Global Game Jam 2022](globalgamejam.org)  
+Theme: Duality  
 
-Short desc(player should get game genre and USP)
+3D third-person roguelite
 
 ![Cover](Screenshots/ItchioPage/CoverImage.png) 
 
-A bit longer desc. 
-(e.g. Dyson Sphere Program is a sci-fi simulation game with space, adventure, exploration and factory automation elements where you can build your own galactic industrial empire from scratch)
-
-
-# Plot: 
- A quick summary of the story
- (E.g. In the distant future, the power of science and technology has ushered a new age to the human race. Space and time have become irrelevant thanks to virtual reality. A new kind of supercomputer has been developed – a machine whose superior artificial intelligence and computing capability will push humanity even further. There is only one problem: there isn’t enough energy in the whole planet to feed this machine.)
-
 
 # Key features
- * A list of features if your project is a tool or a game
+ * Third person battle system
+ * Random level generator
+ * Pickups with buff condition
+ * Groups enemy AI
 
 
-# Controls and supported input devices
- * Devices
- * You can play with keyboard or any gamepad
- * Controls
- * WASD - move
- * Mouse - aim
- 
- 
-# Cheatcodes
- * Press ` to toggle debug texts
- * Hold ` to open debug console
- * In console write *Help* to see list of commands
-
-
-# How to play
- * Do this to win
- * Do that to lose
- 
- 
-# Tips
- * Tips
- 
- 
-# What is TriJam?
-TriJam is a jam where your goal is to try and make something playable (and fun) in only 3 hours! How is that even possible, you ask? Well, just look at the history of previous TriJams and we're sure you'll be convinced that it is not only possible, but very manageable!  
-Video about TriJam from Rocknight Studios: https://www.youtube.com/watch?v=6PysBXflWdg&ab_channel=RocknightStudios
+# What is Global Game Jam?
+The Global Game Jam is the world's largest game jam event taking place around the world at physical locations. Think of it as a hackathon focused on game development. It is the growth of an idea that in today’s heavily connected world, we could come together, be creative, share experiences and express ourselves in a multitude of ways using video games – it is very universal. The weekend stirs a global creative buzz in games, while at the same time exploring the process of development, be it programming, iterative design, narrative exploration or artistic expression. It is all condensed into a 48 hour development cycle. The GGJ encourages people with all kinds of backgrounds to participate and contribute to this global spread of game development and creativity. [More here...](https://globalgamejam.org/about)
 
 
 # Diversifiers
@@ -53,14 +24,17 @@ Video about TriJam from Rocknight Studios: https://www.youtube.com/watch?v=6PysB
 
 # Credits
  * [Team-on](https://github.com/Team-on) - programmer
- * [Who](LINK) - role
+ * [Bohdan_Ukraine](LINK) - programmer
+ * [Lighthammer](LINK) - game design
+ * [HappyTan](LINK) - 3D art
+ * [Elvisinside](LINK) - sounds
 
 
 # Used tools
  * Unity 2020.2.0f1
  * Visual Studio 2019
  * Adobe Photoshop 2020
- * sfxr
+ * Audacity
 
 
 # Used assets
@@ -85,7 +59,7 @@ Video about TriJam from Rocknight Studios: https://www.youtube.com/watch?v=6PysB
 
  
 # Downloads and Links
-Available in [Windows, OSX, Linux, Android and Web](GAME_LINK).  
+Available in [Windows, OSX, Linux and Web](https://teamon.itch.io/mbwtsmhlbktsbitg).  
 Consider downloading a game instead of playing the web version for better performance and stability.  
 If you encounter any problem, please leave a issue!  
 
