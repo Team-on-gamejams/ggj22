@@ -913,5 +913,83 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3567303833809562072, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567303833809562072, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567303833809562072, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567303833809562075, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_text
+      value: My brother wants to show me his love by killing the strongest boss in
+        this game
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567303833809562075, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 59.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7714990019972217548, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_text
+      value: My brother wants to show me his love by killing the strongest boss in
+        this game
+      objectReference: {fileID: 0}
+    - target: {fileID: 7714990019972217548, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 59.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7714990019972217549, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7714990019972217549, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7714990019972217549, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520140370939710552, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_text
+      value: My brother wants to show me his love by killing the strongest boss in
+        this game
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520140370939710552, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 59.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520140370939710553, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520140370939710553, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520140370939710553, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 390f8f2827c469646aa52fffde920581, type: 3}
