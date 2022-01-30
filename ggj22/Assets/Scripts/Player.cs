@@ -41,6 +41,8 @@ public class Player : MonoBehaviour {
 
 	private void OnDestroy() {
 		Cursor.lockState = CursorLockMode.None;
+
+		SceneLoader.Instance.LoadScene(1, true, true);
 	}
 
 	private void OnEnable() {
