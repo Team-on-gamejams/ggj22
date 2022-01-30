@@ -1135,6 +1135,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7714990020943298832, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: key
+      value: SPLASH_SCREEN_ANYKEY_AWARE
+      objectReference: {fileID: 0}
     - target: {fileID: 8520140370939710552, guid: 390f8f2827c469646aa52fffde920581,
         type: 3}
       propertyPath: m_text
