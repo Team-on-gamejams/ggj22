@@ -1,4 +1,4 @@
-Game page - https://teamon.itch.io/duality-roguelike
+Game page - https://teamon.itch.io/mbwtsmhlbktsbitg
 Source code - https://github.com/Team-on-gamejams/ggj22
 Used assets - https://github.com/Team-on-gamejams/ggj22#used-assets
 
