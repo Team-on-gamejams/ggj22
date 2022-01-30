@@ -189,7 +189,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onGetHealClip: []
-  onGetDamageClip: []
+  onGetDamageClip:
+  - {fileID: 8300000, guid: 83f82171054d9b7458c50c918e16ff1a, type: 3}
+  - {fileID: 8300000, guid: b5b04b2c1e6655c43ac8c4fa958b2117, type: 3}
   onDieClip:
   - {fileID: 8300000, guid: a513eff9a9f3bac4a9aeba63e00cdae1, type: 3}
   health: {fileID: 5440287780133923542}
@@ -627,6 +629,46 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 5440287780133923542}
+    - target: {fileID: 1618470242872752565, guid: fc9b148a2950aaf4cba8422632222c5d,
+        type: 3}
+      propertyPath: onAttackHit.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618470242872752565, guid: fc9b148a2950aaf4cba8422632222c5d,
+        type: 3}
+      propertyPath: onAttackStart.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618470242872752565, guid: fc9b148a2950aaf4cba8422632222c5d,
+        type: 3}
+      propertyPath: onAttackHit.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 044ef8e778b215d4c961817e709636f5, type: 3}
+    - target: {fileID: 1618470242872752565, guid: fc9b148a2950aaf4cba8422632222c5d,
+        type: 3}
+      propertyPath: onAttackStart.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 168540a6ef8c8e74ab3114e1fbc48c23, type: 3}
+    - target: {fileID: 1721858982519378510, guid: fc9b148a2950aaf4cba8422632222c5d,
+        type: 3}
+      propertyPath: onAttackHit.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721858982519378510, guid: fc9b148a2950aaf4cba8422632222c5d,
+        type: 3}
+      propertyPath: onAttackMiss.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721858982519378510, guid: fc9b148a2950aaf4cba8422632222c5d,
+        type: 3}
+      propertyPath: onAttackHit.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 11699fdab66a00c4aa5ff75e34dc3945, type: 3}
+    - target: {fileID: 1721858982519378510, guid: fc9b148a2950aaf4cba8422632222c5d,
+        type: 3}
+      propertyPath: onAttackMiss.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9677316d386330640acf58d854a1c6a9, type: 3}
     - target: {fileID: 4425428723088313499, guid: fc9b148a2950aaf4cba8422632222c5d,
         type: 3}
       propertyPath: m_Name

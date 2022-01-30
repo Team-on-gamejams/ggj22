@@ -1126,26 +1126,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 3808872186215330916, guid: ff37cd42dac93db41b102d51d5c289a9,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3808872186215330916, guid: ff37cd42dac93db41b102d51d5c289a9,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6736550608379272070, guid: ff37cd42dac93db41b102d51d5c289a9,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6736550608379272070, guid: ff37cd42dac93db41b102d51d5c289a9,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff37cd42dac93db41b102d51d5c289a9, type: 3}
 --- !u!1001 &2739339818904750673
@@ -1304,5 +1284,75 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5440287780133923544, guid: 545ed84c26d8e094f95669104388d42c,
+        type: 3}
+      propertyPath: onGetDamageClip.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5440287780133923544, guid: 545ed84c26d8e094f95669104388d42c,
+        type: 3}
+      propertyPath: onGetDamageClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 83f82171054d9b7458c50c918e16ff1a, type: 3}
+    - target: {fileID: 5440287780133923544, guid: 545ed84c26d8e094f95669104388d42c,
+        type: 3}
+      propertyPath: onGetDamageClip.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: b5b04b2c1e6655c43ac8c4fa958b2117, type: 3}
+    - target: {fileID: 6672801340093021508, guid: 545ed84c26d8e094f95669104388d42c,
+        type: 3}
+      propertyPath: onAttackHit.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6672801340093021508, guid: 545ed84c26d8e094f95669104388d42c,
+        type: 3}
+      propertyPath: onAttackMiss.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6672801340093021508, guid: 545ed84c26d8e094f95669104388d42c,
+        type: 3}
+      propertyPath: onAttackHit.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 11699fdab66a00c4aa5ff75e34dc3945, type: 3}
+    - target: {fileID: 6672801340093021508, guid: 545ed84c26d8e094f95669104388d42c,
+        type: 3}
+      propertyPath: onAttackHit.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0f699a2898e1de942876208ff5d5ab0e, type: 3}
+    - target: {fileID: 6672801340093021508, guid: 545ed84c26d8e094f95669104388d42c,
+        type: 3}
+      propertyPath: onAttackHit.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 152997775afea084f853ec112fc2e28c, type: 3}
+    - target: {fileID: 6672801340093021508, guid: 545ed84c26d8e094f95669104388d42c,
+        type: 3}
+      propertyPath: onAttackHit.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0a8e5d5428dfcbf48ba25be0bee8698f, type: 3}
+    - target: {fileID: 6672801340093021508, guid: 545ed84c26d8e094f95669104388d42c,
+        type: 3}
+      propertyPath: onAttackMiss.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9677316d386330640acf58d854a1c6a9, type: 3}
+    - target: {fileID: 6704240220292044479, guid: 545ed84c26d8e094f95669104388d42c,
+        type: 3}
+      propertyPath: onAttackHit.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704240220292044479, guid: 545ed84c26d8e094f95669104388d42c,
+        type: 3}
+      propertyPath: onAttackStart.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704240220292044479, guid: 545ed84c26d8e094f95669104388d42c,
+        type: 3}
+      propertyPath: onAttackHit.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 044ef8e778b215d4c961817e709636f5, type: 3}
+    - target: {fileID: 6704240220292044479, guid: 545ed84c26d8e094f95669104388d42c,
+        type: 3}
+      propertyPath: onAttackStart.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 168540a6ef8c8e74ab3114e1fbc48c23, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 545ed84c26d8e094f95669104388d42c, type: 3}
